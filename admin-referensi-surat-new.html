@@ -15,15 +15,15 @@
 	<meta property="og:url" content="#" />
 	<meta property="og:site_name" content="E-Office Kabupaten Ogan Ilir" />
 	<link rel="canonical" href="https://e-office.oganilirkab.go.id" />
-	<link rel="shortcut icon" href="../assets/media/logos/fav.png" />
+	<link rel="shortcut icon" href="assets/media/logos/fav.png" />
 	<!--begin::Fonts-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 	<!--end::Fonts-->
 	<!--begin::Page Vendor Stylesheets(used by this page)-->
 	<!--end::Page Vendor Stylesheets-->
 	<!--begin::Global Stylesheets Bundle(used by all pages)-->
-	<link href="../assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-	<link href="../assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 	<!--end::Global Stylesheets Bundle-->
 </head>
 <!--end::Head-->
@@ -44,7 +44,7 @@
 				<div class="aside-logo flex-column-auto px-9 mb-9" id="kt_aside_logo">
 					<!--begin::Logo-->
 					<a href="#">
-						<img alt="Logo" src="../assets/media/logos/e-office-ogan-ilir.png" class="h-40px logo" />
+						<img alt="Logo" src="assets/media/logos/e-office-ogan-ilir.png" class="h-40px logo" />
 					</a>
 					<!--end::Logo-->
 				</div>
@@ -61,7 +61,7 @@
 						<div class="menu menu-column menu-rounded fw-bold my-auto" id="#kt_aside_menu"
 							data-kt-menu="true">
 							<div class="menu-item">
-								<a class="menu-link" href="../../demo3/dist/index.html">
+								<a class="menu-link" href="index.html">
 									<span class="menu-icon">
 										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
 										<span class="svg-icon svg-icon-5">
@@ -80,7 +80,7 @@
 								</a>
 							</div>
 							<div class="menu-item">
-								<a class="menu-link" href="../../demo3/dist/profil.html">
+								<a class="menu-link" href="profil.html">
 									<span class="menu-icon">
 										<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
 										<span class="svg-icon svg-icon-5">
@@ -95,7 +95,7 @@
 										</span>
 										<!--end::Svg Icon-->
 									</span>
-									<span class="menu-title">Profil ASN</span>
+									<span class="menu-title">Profil Lembaga</span>
 								</a>
 							</div>
 							<div data-kt-menu-trigger="click" class="menu-item menu-accordion show">
@@ -114,41 +114,175 @@
 										</span>
 										<!--end::Svg Icon-->
 									</span>
-									<span class="menu-title">Referensi Data</span>
+									<span class="menu-title">Master Data</span>
 									<span class="menu-arrow"></span>
 								</span>
 								<div class="menu-sub menu-sub-accordion">
-									<div class="menu-item">
-										<a class="menu-link" href="#">
+									<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+										<span class="menu-link">
 											<span class="menu-bullet">
 												<span class="bullet bullet-dot"></span>
 											</span>
-											<span class="menu-title">Referensi Perangkat Daerah</span>
-										</a>
+											<span class="menu-title">Import Data</span>
+											<span class="menu-arrow"></span>
+										</span>
+										<div class="menu-sub menu-sub-accordion">
+											<div class="menu-item">
+												<a class="menu-link" href="admin-import-skpd.html">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Import SKPD</span>
+												</a>
+											</div>
+											<div class="menu-item">
+												<a class="menu-link" href="admin-import-unit-kerja.html">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Import Unit Kerja</span>
+												</a>
+											</div>
+											<div class="menu-item">
+												<a class="menu-link" href="admin-import-pegawai.html">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Import Pegawai</span>
+												</a>
+											</div>
+											<div class="menu-item">
+												<a class="menu-link" href="admin-import-jabatan.html">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Import Data Jabatan</span>
+												</a>
+											</div>
+										</div>
 									</div>
-									<div class="menu-item">
-										<a class="menu-link" href="#">
+								</div>
+								<div class="menu-sub menu-sub-accordion">
+									<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+										<span class="menu-link">
 											<span class="menu-bullet">
 												<span class="bullet bullet-dot"></span>
 											</span>
-											<span class="menu-title">Referensi Surat</span>
-										</a>
+											<span class="menu-title">Data Referensi</span>
+											<span class="menu-arrow"></span>
+										</span>
+										<div class="menu-sub menu-sub-accordion">
+											<div class="menu-item">
+												<a class="menu-link" href="admin-referensi-pd.html">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Ref. SKPD</span>
+												</a>
+											</div>
+											<div class="menu-item">
+												<a class="menu-link" href="#">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Ref. Pegawai</span>
+												</a>
+											</div>
+											<div class="menu-item">
+												<a class="menu-link" href="#">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Ref. PP</span>
+												</a>
+											</div>
+											<div class="menu-item">
+												<a class="menu-link" href="#">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Ref. Gaji Pokok</span>
+												</a>
+											</div>
+
+											<div class="menu-item">
+												<a class="menu-link" href="#">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Ref. Jabatan</span>
+												</a>
+											</div>
+											<div class="menu-item">
+												<a class="menu-link" href="#">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Ref. Tusi</span>
+												</a>
+											</div>
+											<div class="menu-item">
+												<a class="menu-link" href="admin-referensi-aktivitas.html">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Ref. Aktivitas</span>
+												</a>
+											</div>
+											<div class="menu-item">
+												<a class="menu-link" href="#">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Ref. Hari Kerja</span>
+												</a>
+											</div>
+											<div class="menu-item">
+												<a class="menu-link" href="#">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Ref. Surat</span>
+												</a>
+											</div>
+											<div class="menu-item">
+												<a class="menu-link" href="#">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Ref. Surat Kuitansi</span>
+												</a>
+											</div>
+										</div>
 									</div>
-									<div class="menu-item">
-										<a class="menu-link" href="#">
+								</div>
+								<div class="menu-sub menu-sub-accordion">
+									<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+										<span class="menu-link">
 											<span class="menu-bullet">
 												<span class="bullet bullet-dot"></span>
 											</span>
-											<span class="menu-title">Referensi Surat Kuitansi</span>
-										</a>
-									</div>
-									<div class="menu-item">
-										<a class="menu-link active" href="#">
-											<span class="menu-bullet">
-												<span class="bullet bullet-dot"></span>
-											</span>
-											<span class="menu-title">Referensi Aktivitas</span>
-										</a>
+											<span class="menu-title">Kepegawaian</span>
+											<span class="menu-arrow"></span>
+										</span>
+										<div class="menu-sub menu-sub-accordion">
+											<div class="menu-item">
+												<a class="menu-link" href="#">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Master Pegawai</span>
+												</a>
+											</div>
+											<div class="menu-item">
+												<a class="menu-link" href="#">
+													<span class="menu-bullet">
+														<span class="bullet bullet-dot"></span>
+													</span>
+													<span class="menu-title">Mass Reset Password</span>
+												</a>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -166,17 +300,17 @@
 						<div class="d-flex align-items-center">
 							<!--begin::Avatar-->
 							<div class="symbol symbol-circle symbol-40px">
-								<img src="../assets/media/img-profil/anisa.png" alt="photo" />
+								<img src="assets/media/icons/logo-oi.png" alt="photo" />
 							</div>
 							<!--end::Avatar-->
 							<!--begin::User info-->
 							<div class="ms-2">
 								<!--begin::Name-->
-								<a href="#" class="text-gray-800 text-hover-primary fs-6 fw-bolder lh-1">Aanisah Rizqi
-									Ayudiah</a>
+								<a href="#"
+									class="text-gray-800 text-hover-primary fs-6 fw-bolder lh-1">Administrator</a>
 								<!--end::Name-->
 								<!--begin::Major-->
-								<span class="text-muted fw-bold d-block fs-7 lh-1">Staf</span>
+								<span class="text-muted fw-bold d-block fs-7 lh-1">Admin BKPSDM</span>
 								<!--end::Major-->
 							</div>
 							<!--end::User info-->
@@ -209,17 +343,12 @@
 									<div class="menu-content d-flex align-items-center px-3">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-50px me-5">
-											<img alt="Logo" src="../assets/media/avatars/150-26.jpg" />
+											<img alt="Logo" src="assets/media/icons/logo-oi.png" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Username-->
 										<div class="d-flex flex-column">
-											<div class="fw-bolder d-flex align-items-center fs-5">Max Smith
-												<span
-													class="badge badge-light-success fw-bolder fs-8 px-2 py-1 ms-2">Pro</span>
-											</div>
-											<a href="#"
-												class="fw-bold text-muted text-hover-primary fs-7">max@kt.com</a>
+											<div class="fw-bolder d-flex align-items-center fs-5">Administrator</div>
 										</div>
 										<!--end::Username-->
 									</div>
@@ -229,161 +358,13 @@
 								<div class="separator my-2"></div>
 								<!--end::Menu separator-->
 								<!--begin::Menu item-->
-								<div class="menu-item px-5">
-									<a href="../../demo3/dist/account/overview.html" class="menu-link px-5">My
-										Profile</a>
-								</div>
-								<!--end::Menu item-->
-								<!--begin::Menu item-->
-								<div class="menu-item px-5">
-									<a href="../../demo3/dist/pages/projects/list.html" class="menu-link px-5">
-										<span class="menu-text">My Projects</span>
-										<span class="menu-badge">
-											<span class="badge badge-light-danger badge-circle fw-bolder fs-7">3</span>
-										</span>
-									</a>
-								</div>
-								<!--end::Menu item-->
-								<!--begin::Menu item-->
-								<div class="menu-item px-5" data-kt-menu-trigger="hover"
-									data-kt-menu-placement="right-end">
-									<a href="#" class="menu-link px-5">
-										<span class="menu-title">My Subscription</span>
-										<span class="menu-arrow"></span>
-									</a>
-									<!--begin::Menu sub-->
-									<div class="menu-sub menu-sub-dropdown w-175px py-4">
-										<!--begin::Menu item-->
-										<div class="menu-item px-3">
-											<a href="../../demo3/dist/account/referrals.html"
-												class="menu-link px-5">Referrals</a>
-										</div>
-										<!--end::Menu item-->
-										<!--begin::Menu item-->
-										<div class="menu-item px-3">
-											<a href="../../demo3/dist/account/billing.html"
-												class="menu-link px-5">Billing</a>
-										</div>
-										<!--end::Menu item-->
-										<!--begin::Menu item-->
-										<div class="menu-item px-3">
-											<a href="../../demo3/dist/account/statements.html"
-												class="menu-link px-5">Payments</a>
-										</div>
-										<!--end::Menu item-->
-										<!--begin::Menu item-->
-										<div class="menu-item px-3">
-											<a href="../../demo3/dist/account/statements.html"
-												class="menu-link d-flex flex-stack px-5">Statements
-												<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
-													title="View your statements"></i></a>
-										</div>
-										<!--end::Menu item-->
-										<!--begin::Menu separator-->
-										<div class="separator my-2"></div>
-										<!--end::Menu separator-->
-										<!--begin::Menu item-->
-										<div class="menu-item px-3">
-											<div class="menu-content px-3">
-												<label
-													class="form-check form-switch form-check-custom form-check-solid">
-													<input class="form-check-input w-30px h-20px" type="checkbox"
-														value="1" checked="checked" name="notifications" />
-													<span class="form-check-label text-muted fs-7">Notifications</span>
-												</label>
-											</div>
-										</div>
-										<!--end::Menu item-->
-									</div>
-									<!--end::Menu sub-->
-								</div>
-								<!--end::Menu item-->
-								<!--begin::Menu item-->
-								<div class="menu-item px-5">
-									<a href="../../demo3/dist/account/statements.html" class="menu-link px-5">My
-										Statements</a>
-								</div>
-								<!--end::Menu item-->
-								<!--begin::Menu separator-->
-								<div class="separator my-2"></div>
-								<!--end::Menu separator-->
-								<!--begin::Menu item-->
-								<div class="menu-item px-5" data-kt-menu-trigger="hover"
-									data-kt-menu-placement="right-end">
-									<a href="#" class="menu-link px-5">
-										<span class="menu-title position-relative">Language
-											<span
-												class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">English
-												<img class="w-15px h-15px rounded-1 ms-2"
-													src="../assets/media/flags/united-states.svg"
-													alt="" /></span></span>
-									</a>
-									<!--begin::Menu sub-->
-									<div class="menu-sub menu-sub-dropdown w-175px py-4">
-										<!--begin::Menu item-->
-										<div class="menu-item px-3">
-											<a href="../../demo3/dist/account/settings.html"
-												class="menu-link d-flex px-5 active">
-												<span class="symbol symbol-20px me-4">
-													<img class="rounded-1" src="../assets/media/flags/united-states.svg"
-														alt="" />
-												</span>English</a>
-										</div>
-										<!--end::Menu item-->
-										<!--begin::Menu item-->
-										<div class="menu-item px-3">
-											<a href="../../demo3/dist/account/settings.html"
-												class="menu-link d-flex px-5">
-												<span class="symbol symbol-20px me-4">
-													<img class="rounded-1" src="../assets/media/flags/spain.svg"
-														alt="" />
-												</span>Spanish</a>
-										</div>
-										<!--end::Menu item-->
-										<!--begin::Menu item-->
-										<div class="menu-item px-3">
-											<a href="../../demo3/dist/account/settings.html"
-												class="menu-link d-flex px-5">
-												<span class="symbol symbol-20px me-4">
-													<img class="rounded-1" src="../assets/media/flags/germany.svg"
-														alt="" />
-												</span>German</a>
-										</div>
-										<!--end::Menu item-->
-										<!--begin::Menu item-->
-										<div class="menu-item px-3">
-											<a href="../../demo3/dist/account/settings.html"
-												class="menu-link d-flex px-5">
-												<span class="symbol symbol-20px me-4">
-													<img class="rounded-1" src="../assets/media/flags/japan.svg"
-														alt="" />
-												</span>Japanese</a>
-										</div>
-										<!--end::Menu item-->
-										<!--begin::Menu item-->
-										<div class="menu-item px-3">
-											<a href="../../demo3/dist/account/settings.html"
-												class="menu-link d-flex px-5">
-												<span class="symbol symbol-20px me-4">
-													<img class="rounded-1" src="../assets/media/flags/france.svg"
-														alt="" />
-												</span>French</a>
-										</div>
-										<!--end::Menu item-->
-									</div>
-									<!--end::Menu sub-->
-								</div>
-								<!--end::Menu item-->
-								<!--begin::Menu item-->
 								<div class="menu-item px-5 my-1">
-									<a href="../../demo3/dist/account/settings.html" class="menu-link px-5">Account
-										Settings</a>
+									<a href="#" class="menu-link px-5">Pengaturan Akun</a>
 								</div>
 								<!--end::Menu item-->
 								<!--begin::Menu item-->
 								<div class="menu-item px-5">
-									<a href="../../demo3/dist/authentication/flows/basic/sign-in.html"
-										class="menu-link px-5">Sign Out</a>
+									<a href="#" class="menu-link px-5">Keluar</a>
 								</div>
 								<!--end::Menu item-->
 								<!--begin::Menu separator-->
@@ -397,7 +378,7 @@
 											for="kt_user_menu_dark_mode_toggle">
 											<input class="form-check-input w-30px h-20px" type="checkbox" value="1"
 												name="mode" id="kt_user_menu_dark_mode_toggle"
-												data-kt-url="../../demo3/dist/index.html" />
+												data-kt-url="index.html" />
 											<span class="pulse-ring ms-n1"></span>
 											<span class="form-check-label text-gray-600 fs-7">Dark Mode</span>
 										</label>
@@ -431,7 +412,7 @@
 							<!--begin::Breadcrumb-->
 							<ul class="breadcrumb breadcrumb-dot fw-bold fs-base my-1">
 								<li class="breadcrumb-item text-muted">
-									<a href="../../demo3/dist/index.html" class="text-muted">Dashboard</a>
+									<a href="index.html" class="text-muted">Dashboard</a>
 								</li>
 								<li class="breadcrumb-item text-muted">Referensi Data</li>
 								<li class="breadcrumb-item text-muted">Referensi Surat</li>
@@ -459,8 +440,8 @@
 							</div>
 							<!--end::Aside mobile toggle-->
 							<!--begin::Logo-->
-							<a href="../../demo3/dist/index.html" class="d-flex align-items-center">
-								<img alt="Logo" src="../assets/media/logos/logo-demo3-default.svg" class="h-20px" />
+							<a href="index.html" class="d-flex align-items-center">
+								<img alt="Logo" src="assets/media/logos/logo-demo3-default.svg" class="h-20px" />
 							</a>
 							<!--end::Logo-->
 						</div>
@@ -468,13 +449,13 @@
 						<!--begin::Topbar-->
 						<div class="d-flex align-items-center flex-shrink-0">
 							<!--begin::Search-->
-							<a href="../../demo3/dist/index.html" type="button"
+							<a href="index.html" type="button"
 								class="btn btn-light-primary px-6 h-40px"><i class="fa fa-arrow-left"></i> Kembali</a>
 							<!--end::Search-->
 							<!--begin::Activities-->
 							<div class="d-flex align-items-center ms-3 ms-lg-4">
 								<!--begin::Drawer toggle-->
-								<a href="../../demo3/dist/pns-helpdesk.html"
+								<a href="pns-helpdesk.html"
 									class="btn btn-icon btn-color-gray-700 btn-active-color-primary btn-outline btn-outline-secondary w-40px h-40px">
 									<!--begin::Svg Icon | path: icons/duotune/general/gen007.svg-->
 									<span class="svg-icon svg-icon-1">
@@ -922,7 +903,7 @@
 							<div class="d-flex align-items-center mb-2">
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="../assets/media/avatars/150-15.jpg" />
+									<img alt="Pic" src="assets/media/avatars/150-15.jpg" />
 								</div>
 								<!--end::Avatar-->
 								<!--begin::Details-->
@@ -957,7 +938,7 @@
 								<!--end::Details-->
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="../assets/media/avatars/150-26.jpg" />
+									<img alt="Pic" src="assets/media/avatars/150-26.jpg" />
 								</div>
 								<!--end::Avatar-->
 							</div>
@@ -979,7 +960,7 @@
 							<div class="d-flex align-items-center mb-2">
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="../assets/media/avatars/150-15.jpg" />
+									<img alt="Pic" src="assets/media/avatars/150-15.jpg" />
 								</div>
 								<!--end::Avatar-->
 								<!--begin::Details-->
@@ -1013,7 +994,7 @@
 								<!--end::Details-->
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="../assets/media/avatars/150-26.jpg" />
+									<img alt="Pic" src="assets/media/avatars/150-26.jpg" />
 								</div>
 								<!--end::Avatar-->
 							</div>
@@ -1035,7 +1016,7 @@
 							<div class="d-flex align-items-center mb-2">
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="../assets/media/avatars/150-15.jpg" />
+									<img alt="Pic" src="assets/media/avatars/150-15.jpg" />
 								</div>
 								<!--end::Avatar-->
 								<!--begin::Details-->
@@ -1071,7 +1052,7 @@
 								<!--end::Details-->
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="../assets/media/avatars/150-26.jpg" />
+									<img alt="Pic" src="assets/media/avatars/150-26.jpg" />
 								</div>
 								<!--end::Avatar-->
 							</div>
@@ -1092,7 +1073,7 @@
 							<div class="d-flex align-items-center mb-2">
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="../assets/media/avatars/150-15.jpg" />
+									<img alt="Pic" src="assets/media/avatars/150-15.jpg" />
 								</div>
 								<!--end::Avatar-->
 								<!--begin::Details-->
@@ -1127,7 +1108,7 @@
 								<!--end::Details-->
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="../assets/media/avatars/150-26.jpg" />
+									<img alt="Pic" src="assets/media/avatars/150-26.jpg" />
 								</div>
 								<!--end::Avatar-->
 							</div>
@@ -1148,7 +1129,7 @@
 							<div class="d-flex align-items-center mb-2">
 								<!--begin::Avatar-->
 								<div class="symbol symbol-35px symbol-circle">
-									<img alt="Pic" src="../assets/media/avatars/150-15.jpg" />
+									<img alt="Pic" src="assets/media/avatars/150-15.jpg" />
 								</div>
 								<!--end::Avatar-->
 								<!--begin::Details-->
@@ -1246,7 +1227,7 @@
 					<!--end::Heading-->
 					<!--begin::Google Contacts Invite-->
 					<div class="btn btn-light-primary fw-bolder w-100 mb-8">
-						<img alt="Logo" src="../assets/media/svg/brand-logos/google-icon.svg"
+						<img alt="Logo" src="assets/media/svg/brand-logos/google-icon.svg"
 							class="h-20px me-3" />Invite Gmail Contacts</div>
 					<!--end::Google Contacts Invite-->
 					<!--begin::Separator-->
@@ -1271,7 +1252,7 @@
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="../assets/media/avatars/150-1.jpg" />
+										<img alt="Pic" src="assets/media/avatars/150-1.jpg" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -1331,7 +1312,7 @@
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="../assets/media/avatars/150-26.jpg" />
+										<img alt="Pic" src="assets/media/avatars/150-26.jpg" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -1361,7 +1342,7 @@
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="../assets/media/avatars/150-4.jpg" />
+										<img alt="Pic" src="assets/media/avatars/150-4.jpg" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -1391,7 +1372,7 @@
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="../assets/media/avatars/150-15.jpg" />
+										<img alt="Pic" src="assets/media/avatars/150-15.jpg" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -1451,7 +1432,7 @@
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="../assets/media/avatars/150-8.jpg" />
+										<img alt="Pic" src="assets/media/avatars/150-8.jpg" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -1541,7 +1522,7 @@
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="../assets/media/avatars/150-6.jpg" />
+										<img alt="Pic" src="assets/media/avatars/150-6.jpg" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -1601,7 +1582,7 @@
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="../assets/media/avatars/150-7.jpg" />
+										<img alt="Pic" src="assets/media/avatars/150-7.jpg" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -1661,7 +1642,7 @@
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="../assets/media/avatars/150-17.jpg" />
+										<img alt="Pic" src="assets/media/avatars/150-17.jpg" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -1721,7 +1702,7 @@
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="../assets/media/avatars/150-10.jpg" />
+										<img alt="Pic" src="assets/media/avatars/150-10.jpg" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -1751,7 +1732,7 @@
 								<div class="d-flex align-items-center">
 									<!--begin::Avatar-->
 									<div class="symbol symbol-35px symbol-circle">
-										<img alt="Pic" src="../assets/media/avatars/150-1.jpg" />
+										<img alt="Pic" src="assets/media/avatars/150-1.jpg" />
 									</div>
 									<!--end::Avatar-->
 									<!--begin::Details-->
@@ -2372,11 +2353,11 @@
 												<!--end::Input-->
 												<!--begin::Card logos-->
 												<div class="position-absolute translate-middle-y top-50 end-0 me-5">
-													<img src="../assets/media/svg/card-logos/visa.svg" alt=""
+													<img src="assets/media/svg/card-logos/visa.svg" alt=""
 														class="h-25px" />
-													<img src="../assets/media/svg/card-logos/mastercard.svg" alt=""
+													<img src="assets/media/svg/card-logos/mastercard.svg" alt=""
 														class="h-25px" />
-													<img src="../assets/media/svg/card-logos/american-express.svg"
+													<img src="assets/media/svg/card-logos/american-express.svg"
 														alt="" class="h-25px" />
 												</div>
 												<!--end::Card logos-->
@@ -2509,7 +2490,7 @@
 										<!--end::Description-->
 										<!--begin::Illustration-->
 										<div class="text-center px-4 py-15">
-											<img src="../assets/media/illustrations/dozzy-1/9.png" alt=""
+											<img src="assets/media/illustrations/dozzy-1/9.png" alt=""
 												class="w-100 mh-300px" />
 										</div>
 										<!--end::Illustration-->
@@ -3241,24 +3222,24 @@
 	<!--end::Scrolltop-->
 	<!--end::Main-->
 	<script>
-		var hostUrl = "../assets/";
+		var hostUrl = "assets/";
 	</script>
 	<!--begin::Javascript-->
 	<!--begin::Global Javascript Bundle(used by all pages)-->
-	<script src="../assets/plugins/global/plugins.bundle.js"></script>
-	<script src="../assets/js/scripts.bundle.js"></script>
+	<script src="assets/plugins/global/plugins.bundle.js"></script>
+	<script src="assets/js/scripts.bundle.js"></script>
 	<!--end::Global Javascript Bundle-->
 	<!--end::Page Vendors Javascript-->
 	<!--begin::Page Custom Javascript(used by this page)-->
-	<script src="../assets/js/custom/modals/create-app.js"></script>
+	<script src="assets/js/custom/modals/create-app.js"></script>
 
 	<!--begin::Page Custom Javascript(used by this page)-->
-	<script src="../assets/js/custom/modals/create-project.bundle.js"></script>
-	<script src="../assets/js/custom/widgets.js"></script>
-	<script src="../assets/js/custom/apps/chat/chat.js"></script>
-	<script src="../assets/js/custom/modals/upgrade-plan.js"></script>
-	<script src="../assets/js/custom/documentation/forms/dropzonejs.js"></script>
-	<script src="../assets/js/custom/documentation/documentation.js"></script>
+	<script src="assets/js/custom/modals/create-project.bundle.js"></script>
+	<script src="assets/js/custom/widgets.js"></script>
+	<script src="assets/js/custom/apps/chat/chat.js"></script>
+	<script src="assets/js/custom/modals/upgrade-plan.js"></script>
+	<script src="assets/js/custom/documentation/forms/dropzonejs.js"></script>
+	<script src="assets/js/custom/documentation/documentation.js"></script>
 	<script>
 		// set the dropzone container id
 		var id = "#kt_dropzonejs_example_2";
