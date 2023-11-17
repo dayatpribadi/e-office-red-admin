@@ -54349,7 +54349,7 @@ body {
 .aside {
     display: flex;
     flex-direction: column;
-    background-image: url(media/icons/decorative.png);
+    background-image: url(../media/icons/decorative.png);
     background-size: contain;
     background-repeat: no-repeat;
     /* background-color: #E0F4FF; */
