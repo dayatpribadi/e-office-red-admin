@@ -520,7 +520,481 @@
 				<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
 					<!--begin::Container-->
 					<div class="container-xxl" id="kt_content_container">
+						<!--begin::Navbar-->
+						<div class="card mb-5 mb-xxl-8">
+							<div class="card-body">
+								<!--begin::Row-->
+								<div class="row gy-0 gx-10">
+									<div class="col-12">
+										<!--begin::Engage widget 2-->
+										<div class="card card-xl-stretch bg-body border-0 mb-5 mb-xl-0">
+											<!--begin::Body-->
+											<div class="card-body d-flex flex-column flex-lg-row flex-stack p-lg-15">
+												<!--begin::Info-->
+												<div class="d-flex flex-column justify-content-center align-items-center align-items-lg-start me-10 text-center text-lg-start">
+													<!--begin::Title-->
+													<h3 class="fs-2hx line-height-lg mb-5">
+														<span class="fw-bold">Referensi</span>
+														<br />
+														<span class="fw-bolder">Data Gaji Pokok</span>
+													</h3>
+													<!--end::Title-->
+													<div class="fs-7 text-muted mb-7">Meliputi Data Referensi Gaji Pokok
+													<br /> berdasarkan Peraturan Pemerintah yang berlaku</div>
+												</div>
+												<!--end::Info-->
+												<!--begin::Illustration-->
+												<img src="assets/media/illustrations/sketchy-1/10.png" alt="" class="mw-200px mw-lg-350px mt-lg-n10" />
+												<!--end::Illustration-->
+											</div>
+											<!--end::Body-->
+										</div>
+										<!--end::Engage widget 2-->
+									</div>
+								</div>
+								<!--begin::Navs-->
+								<div class="d-flex overflow-x scroll h-55px">
+									<ul
+										class="nav nav-stretch nav-line-tabs nav-line-tabs-2x fs-5 fw-bolder flex-nowrap">
+										<!--begin::Nav item-->
+										<li class="nav-item">
+											<a class="nav-link text-active-primary fs-6 w-100 w-100  me-6 active"
+												data-bs-toggle="tab" href="#ref">Form Referensi gaji</a>
+										</li>
+										<!--end::Nav item-->
+										<!--begin::Nav item-->
+										<li class="nav-item">
+											<a class="nav-link text-active-primary fs-6 w-100 me-6" data-bs-toggle="tab"
+												href="#gapok1">Gapok Berdasarkan PP NO.15 TAHUN 2019</a>
+										</li>
+										<!--end::Nav item-->
+										<!--begin::Nav item-->
+										<li class="nav-item">
+											<a class="nav-link text-active-primary fs-6 w-100 me-6" data-bs-toggle="tab"
+												href="#gapok2">Gapok Berdasarkan PP NO.30 TAHUN 2015</a>
+										</li>
+										<!--end::Nav item-->
+									</ul>
+								</div>
+								<!--begin::Navs-->
+							</div>
+						</div>
+						<!--end::Navbar-->
 
+						<div class="row">
+							<div class="tab-content">
+								<!--begin::Tap pane-->
+
+								<!-- TAB#01 -->
+								<div class="tab-pane fade show active" id="ref">
+									<div class="row">
+										<div class="col-12">
+											<!--begin::Modal body-->
+											<div class="card">
+												<!--begin::Form-->
+												<div class="card-body">
+													<form class="form" action="#">
+														<!--begin::Input group-->
+														<div class="fv-row mb-4">
+															<label for="exampleFormControlInput1" class="form-label">Peraturan Pemerintah</label>
+															<select name="country" aria-label="Select a Country"
+															data-control="select2"
+															data-placeholder="PP. No. 15 Tahun 2019"
+															class="form-select form-select-solid form-select-lg fw-bold border border-primary border-dashed">
+															<option value="">Select a Country...</option>
+															</select>
+														</div>
+														<!--end::Input group-->
+														<!--begin::Input group-->
+														<div class="fv-row mb-4">
+															<label for="exampleFormControlInput1" class="form-label">Golongan</label>
+															<select name="country" aria-label="Select a Country"
+															data-control="select2"
+															data-placeholder="IV/a"
+															class="form-select form-select-solid form-select-lg fw-bold border border-primary border-dashed">
+															<option value="">Select a Country...</option>
+															</select>
+														</div>
+														<!--end::Input group-->
+																									<!--begin::Input group-->
+											<div class="fv-row mb-4">
+												<!--begin::Label-->
+												<label class="required fw-bold fs-6 mb-2">MKG</label>
+												<!--end::Label-->
+												<!--begin::Input-->
+												<input type="text" name="mkg" class="form-control form-control-solid mb-3 mb-lg-0" placeholder="MKG" value="MKG" />
+												<!--end::Input-->
+											</div>
+											<!--end::Input group-->
+														<!--begin::Input group-->
+														<div class="fv-row mb-4">
+															<!--begin::Label-->
+															<label class="required fw-bold fs-6 mb-2">Gaji Pokok</label>
+															<!--end::Label-->
+															<!--begin::Input-->
+															<input type="text" name="gapok" class="form-control form-control-solid mb-3 mb-lg-0" placeholder="Gaji Pokok" value="7.509.567" />
+															<!--end::Input-->
+														</div>
+														<!--end::Input group-->
+														<div class="fv-row mb-4">
+															<!--begin::Label-->
+															<label class="col-lg-6 col-form-label fw-bold fs-6">Aktif</label>
+															<!--begin::Label-->
+															<!--begin::Label-->
+															<div class="col-lg-6 d-flex align-items-center">
+																<div class="form-check form-check-solid form-switch fv-row">
+																	<input class="form-check-input w-45px h-30px" type="checkbox" id="aktif" checked="checked" />
+																	<label class="form-check-label" for="aktif"></label>
+																</div>
+															</div>
+															<!--begin::Label-->
+														</div>
+														<!--begin::Actions-->
+														<div class="card-footer d-flex justify-content-end pb-0 pe-0">
+															<button type="submit" class="btn btn-light-primary" id="#">Simpan</button>
+														</div>
+														<!--end::Actions-->
+													</form>
+												</div>
+												<!--end::Form-->
+											</div>
+											<!--end::Modal body-->										
+										</div>
+									</div>
+								</div>
+
+								<!-- TAB#02 -->
+								<div class="tab-pane fade" id="gapok1">
+									<div class="row">
+										<div class="col-12">
+											<div class="card">
+												<!--begin::Card body-->
+												<div class="card-body">
+													<!--begin::Table-->
+													<div class="table-responsive">
+														<table class="table align-middle table-row-dashed border border-4 fs-6 px-5"
+															id="kt_table_users">
+															<!--begin::Table head-->
+															<thead class="border">
+																<!--begin::Table row-->
+																<tr
+																	class="text-start text-white fw-bolder fs-7 bg-primary text-uppercase gs-0">
+																	<th class="w-20px pe-2 text-center">MKG</th>
+																	<th class="min-w-125px">I/a</th>
+																	<th class="min-w-125px">I/b</th>
+																	<th class="min-w-125px">I/c</th>
+																	<th class="min-w-125px">I/d</th>
+																	<th class="w-20px pe-2">MKG</th>
+																	<th class="min-w-125px">II/a</th>
+																	<th class="min-w-125px">II/b</th>
+																	<th class="min-w-125px">II/c</th>
+																	<th class="min-w-125px">II/d</th>
+																	<th class="w-20px pe-2">MKG</th>
+																	<th class="min-w-125px">III/a</th>
+																	<th class="min-w-125px">III/b</th>
+																	<th class="min-w-125px">III/c</th>
+																	<th class="min-w-125px">III/d</th>
+																	<th class="w-20px pe-2">MKG</th>
+																	<th class="min-w-125px">IV/a</th>
+																	<th class="min-w-125px">IV/b</th>
+																	<th class="min-w-125px">IV/c</th>
+																	<th class="min-w-125px">IV/d</th>
+																	<th class="min-w-125px">IV/e</th>
+																</tr>
+																<!--end::Table row-->
+															</thead>
+															<!--end::Table head-->
+															<!--begin::Table body-->
+															<tbody class="text-gray-600 border fw-bold">
+																<!--begin::Table row-->
+																<tr>
+																	<td class="text-center">0</td>
+																	<td><a href="#">1.560.800</a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																</tr>
+																<tr class="bg-light">
+																	<td class="text-center">1</td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																</tr>
+																<tr>
+																	<td class="text-center">2</td>
+																	<td><a href="#">1.610.200</a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																</tr>
+																<!--end::Table row-->
+															</tbody>
+															<!--end::Table body-->
+														</table>
+													</div>
+													<!--end::Table-->
+													<!--begin::Pagination-->
+													<div class="d-flex flex-stack flex-wrap pt-10">
+														<div class="fs-6 fw-bold text-gray-700">Showing 1 to 10 of 50 entries
+														</div>
+														<!--begin::Pages-->
+														<ul class="pagination">
+															<li class="page-item previous">
+																<a href="#" class="page-link">
+																	<i class="previous"></i>
+																</a>
+															</li>
+															<li class="page-item active">
+																<a href="#" class="page-link">1</a>
+															</li>
+															<li class="page-item">
+																<a href="#" class="page-link">2</a>
+															</li>
+															<li class="page-item">
+																<a href="#" class="page-link">3</a>
+															</li>
+															<li class="page-item">
+																<a href="#" class="page-link">4</a>
+															</li>
+															<li class="page-item">
+																<a href="#" class="page-link">5</a>
+															</li>
+															<li class="page-item">
+																<a href="#" class="page-link">6</a>
+															</li>
+															<li class="page-item next">
+																<a href="#" class="page-link">
+																	<i class="next"></i>
+																</a>
+															</li>
+														</ul>
+														<!--end::Pages-->
+													</div>
+													<!--end::Pagination-->
+												</div>
+												<!--end::Card body-->
+											</div>
+											<!--end::Card-->
+										</div>
+									</div>
+								</div>
+
+								<!-- TAB#03 -->
+								<div class="tab-pane fade" id="gapok2">
+									<div class="row">
+										<div class="col-12">
+											<div class="card">
+												<!--begin::Card body-->
+												<div class="card-body">
+													<!--begin::Table-->
+													<div class="table-responsive">
+														<table class="table align-middle table-row-dashed border border-4 fs-6 px-5"
+															id="kt_table_users">
+															<!--begin::Table head-->
+															<thead class="border">
+																<!--begin::Table row-->
+																<tr
+																	class="text-start text-white fw-bolder fs-7 bg-primary text-uppercase gs-0">
+																	<th class="w-20px pe-2 text-center">MKG</th>
+																	<th class="min-w-125px">I/a</th>
+																	<th class="min-w-125px">I/b</th>
+																	<th class="min-w-125px">I/c</th>
+																	<th class="min-w-125px">I/d</th>
+																	<th class="w-20px pe-2">MKG</th>
+																	<th class="min-w-125px">II/a</th>
+																	<th class="min-w-125px">II/b</th>
+																	<th class="min-w-125px">II/c</th>
+																	<th class="min-w-125px">II/d</th>
+																	<th class="w-20px pe-2">MKG</th>
+																	<th class="min-w-125px">III/a</th>
+																	<th class="min-w-125px">III/b</th>
+																	<th class="min-w-125px">III/c</th>
+																	<th class="min-w-125px">III/d</th>
+																	<th class="w-20px pe-2">MKG</th>
+																	<th class="min-w-125px">IV/a</th>
+																	<th class="min-w-125px">IV/b</th>
+																	<th class="min-w-125px">IV/c</th>
+																	<th class="min-w-125px">IV/d</th>
+																	<th class="min-w-125px">IV/e</th>
+																</tr>
+																<!--end::Table row-->
+															</thead>
+															<!--end::Table head-->
+															<!--begin::Table body-->
+															<tbody class="text-gray-600 border fw-bold">
+																<!--begin::Table row-->
+																<tr>
+																	<td class="text-center">0</td>
+																	<td><a href="#">1.560.800</a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																</tr>
+																<tr class="bg-light">
+																	<td class="text-center">1</td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																</tr>
+																<tr>
+																	<td class="text-center">2</td>
+																	<td><a href="#">1.610.200</a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																	<td><a href="#"></a></td>
+																</tr>
+																<!--end::Table row-->
+															</tbody>
+															<!--end::Table body-->
+														</table>
+													</div>
+													<!--end::Table-->
+													<!--begin::Pagination-->
+													<div class="d-flex flex-stack flex-wrap pt-10">
+														<div class="fs-6 fw-bold text-gray-700">Showing 1 to 10 of 50 entries
+														</div>
+														<!--begin::Pages-->
+														<ul class="pagination">
+															<li class="page-item previous">
+																<a href="#" class="page-link">
+																	<i class="previous"></i>
+																</a>
+															</li>
+															<li class="page-item active">
+																<a href="#" class="page-link">1</a>
+															</li>
+															<li class="page-item">
+																<a href="#" class="page-link">2</a>
+															</li>
+															<li class="page-item">
+																<a href="#" class="page-link">3</a>
+															</li>
+															<li class="page-item">
+																<a href="#" class="page-link">4</a>
+															</li>
+															<li class="page-item">
+																<a href="#" class="page-link">5</a>
+															</li>
+															<li class="page-item">
+																<a href="#" class="page-link">6</a>
+															</li>
+															<li class="page-item next">
+																<a href="#" class="page-link">
+																	<i class="next"></i>
+																</a>
+															</li>
+														</ul>
+														<!--end::Pages-->
+													</div>
+													<!--end::Pagination-->
+												</div>
+												<!--end::Card body-->
+											</div>
+											<!--end::Card-->
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
 					</div>
 					<!--end::Container-->
 

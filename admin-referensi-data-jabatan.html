@@ -622,25 +622,28 @@
 									
 												<div class="modal-body">
 													<div class="mb-6">
-														<label for="exampleFormControlInput1" class="required form-label">Nama Jabatan</label>
-														<input type="najab" class="form-control form-control-solid" placeholder="Nama Jabatan"/>
+														<label for="jbt" class="required form-label">Nama Jabatan</label>
+														<input type="text" class="form-control form-control-solid" name="jbt" placeholder="Nama Jabatan"/>
 													</div>
 													<div class="mb-6">
-														<label for="exampleFormControlInput1" class="required form-label">Jenis Jabatan</label>
-														<select name="jejab" aria-label="Jenis Jabatan"
+														<label for="jnsAiya" class="form-label">Jenis Jabatan</label>
+														<select  name="jnsAiya" aria-label="Jenis Jabatan"
 														data-control="select2"
 														data-placeholder="Jenis Jabatan"
 														class="form-select form-select-solid form-select-lg fw-bold border border-primary border-dashed justify-content-start">
-														<option value="">Pilih Jenis Jabatan...</option>
+														<option value="1" selected>1...</option>
+														<option value="2">2...</option>
+														<option value="3">3...</option>
+														<option value="4">4...</option>
 														</select>
 													</div>
 													<div class="mb-6">
-														<label for="exampleFormControlInput1" class="required form-label">Tugas Jabatan</label>
-														<input type="tujab" class="form-control form-control-solid" placeholder="Tugas Jabatan"/>
+														<label for="tujab" class="required form-label">Tugas Jabatan</label>
+														<input type="text" name="tujab" class="form-control form-control-solid" placeholder="Tugas Jabatan"/>
 													</div>
 													<div class="mb-6">
-														<label for="exampleFormControlInput1" class="required form-label">Fungsi Jabatan</label>
-														<input type="fujab" class="form-control form-control-solid" placeholder="Fungsi Jabatan"/>
+														<label for="fungsijab" class="required form-label">Fungsi Jabatan</label>
+														<input type="text" class="form-control form-control-solid" name="fungsijab" placeholder="Fungsi Jabatan"/>
 													</div>
 												</div>
 									
@@ -696,7 +699,7 @@
 											</div>
 										</div>
 									</div>
-									
+
 
 								</div>
 								<!--end::Card body-->
@@ -707,6 +710,7 @@
 
 				</div>
 				<!--begin::Footer-->
+				
 				<div class="footer pb-10 d-flex flex-lg-column" id="kt_footer">
 					<!--begin::Container-->
 					<div class="container d-flex flex-column flex-md-row flex-stack">
@@ -1212,90 +1216,9 @@
 	<!--end::Global Javascript Bundle-->
 	<!--end::Page Vendors Javascript-->
 	<!--begin::Page Custom Javascript(used by this page)-->
-	<script src="assets/js/custom/modals/create-app.js"></script>
-
-	<!--begin::Page Custom Javascript(used by this page)-->
-	<script src="assets/js/custom/modals/create-project.bundle.js"></script>
 	<script src="assets/js/custom/widgets.js"></script>
-	<script src="assets/js/custom/apps/chat/chat.js"></script>
-	<script src="assets/js/custom/modals/upgrade-plan.js"></script>
-	<script src="assets/js/custom/documentation/forms/dropzonejs.js"></script>
-	<script src="assets/js/custom/documentation/documentation.js"></script>
-	<script>
-		// set the dropzone container id
-		var id = "#kt_dropzonejs_example_2";
+	<script src="assets/js/custom/apps/customers/add.js"></script>
 
-		// set the preview element template
-		var previewNode = $(id + " .dropzone-item");
-		previewNode.id = "";
-		var previewTemplate = previewNode.parent(".dropzone-items").html();
-		previewNode.remove();
-
-		var myDropzone = new Dropzone(id, { // Make the whole body a dropzone
-			url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
-			parallelUploads: 20,
-			previewTemplate: previewTemplate,
-			maxFilesize: 1, // Max filesize in MB
-			autoQueue: false, // Make sure the files aren't queued until manually added
-			previewsContainer: id + " .dropzone-items", // Define the container to display the previews
-			clickable: id +
-				" .dropzone-select" // Define the element that should be used as click trigger to select files.
-		});
-
-		myDropzone.on("addedfile", function (file) {
-			// Hookup the start button
-			file.previewElement.querySelector(id + " .dropzone-start").onclick = function () {
-				myDropzone.enqueueFile(file);
-			};
-			$(document).find(id + " .dropzone-item").css("display", "");
-			$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "inline-block");
-		});
-
-		// Update the total progress bar
-		myDropzone.on("totaluploadprogress", function (progress) {
-			$(this).find(id + " .progress-bar").css("width", progress + "%");
-		});
-
-		myDropzone.on("sending", function (file) {
-			// Show the total progress bar when upload starts
-			$(id + " .progress-bar").css("opacity", "1");
-			// And disable the start button
-			file.previewElement.querySelector(id + " .dropzone-start").setAttribute("disabled", "disabled");
-		});
-
-		// Hide the total progress bar when nothing's uploading anymore
-		myDropzone.on("complete", function (progress) {
-			var thisProgressBar = id + " .dz-complete";
-			setTimeout(function () {
-				$(thisProgressBar + " .progress-bar, " + thisProgressBar + " .progress, " + thisProgressBar +
-					" .dropzone-start").css("opacity", "0");
-			}, 300)
-
-		});
-
-		// Setup the buttons for all transfers
-		document.querySelector(id + " .dropzone-upload").onclick = function () {
-			myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
-		};
-
-		// Setup the button for remove all files
-		document.querySelector(id + " .dropzone-remove-all").onclick = function () {
-			$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "none");
-			myDropzone.removeAllFiles(true);
-		};
-
-		// On all files completed upload
-		myDropzone.on("queuecomplete", function (progress) {
-			$(id + " .dropzone-upload").css("display", "none");
-		});
-
-		// On all files removed
-		myDropzone.on("removedfile", function (file) {
-			if (myDropzone.files.length < 1) {
-				$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "none");
-			}
-		});
-	</script>
 	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->
 </body>
