@@ -132,7 +132,7 @@
 												</a>
 											</div>
 											<div class="menu-item">
-												<a class="menu-link " href="admin-disposisi-surat-masuk-internal.html">
+												<a class="menu-link" href="admin-disposisi-surat-masuk-internal.html">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -140,7 +140,7 @@
 												</a>
 											</div>
 											<div class="menu-item">
-												<a class="menu-link" href="admin-surat-keluar-internal.html">
+												<a class="menu-link active" href="admin-surat-keluar-internal.html">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -148,7 +148,7 @@
 												</a>
 											</div>
 											<div class="menu-item">
-												<a class="menu-link active" href="admin-disposisi-surat-keluar-internal.html">
+												<a class="menu-link" href="admin-disposisi-surat-keluar-internal.html">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -621,6 +621,7 @@
 					<!--begin::Container-->
 					<div class="container-xxl" id="kt_content_container">
 							<!--begin::Row-->
+							<!--begin::Row-->
 							<div class="row gy-5 g-xl-10">
 								<div class="col-xl-12">
 									<!--begin::Notice-->
@@ -639,6 +640,16 @@
 											<!--end::Col-->
 											<!--begin::Col-->
 											<div class="col-6 col-xxl-2">
+												<label class="form-label fs-6 fw-bolder text-gray-700 mb-3">No. Register</label>
+												<!--begin::Input group-->
+												<div class="mb-5 border border-primary border-dashed rounded">
+													<input type="text" class="form-control form-control-solid" placeholder="No. Register" />
+												</div>
+												<!--end::Input group-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-6 col-xxl-3">
 												<label class="form-label fs-6 fw-bolder text-gray-700 mb-3">Tgl. Terima Surat</label>
 												<!--begin::Input group-->
 												<div class="mb-5 border border-primary border-dashed rounded">
@@ -647,26 +658,7 @@
 												<!--end::Input group-->
 											</div>
 											<!--end::Col-->
-											<!--begin::Col-->
-											<div class="col-6 col-xxl-3">
-												<label class="form-label fs-6 fw-bolder text-gray-700 mb-3">Pengirim</label>
-												<!--begin::Input group-->
-												<div class="mb-5 border border-primary border-dashed rounded">
-													<input type="text" class="form-control form-control-solid" placeholder="Pengirim Surat" />
-												</div>
-												<!--end::Input group-->
-											</div>
-											<!--end::Col-->
-											<!--begin::Col-->
-											<div class="col-6 col-xxl-2">
-												<label class="form-label fs-6 fw-bolder text-gray-700 mb-3">Penerimaan</label>
-												<!--begin::Input group-->
-												<div class="mb-5 border border-primary border-dashed rounded">
-													<input type="text" class="form-control form-control-solid" placeholder="Penerimaan Surat" />
-												</div>
-												<!--end::Input group-->
-											</div>
-											<!--end::Col-->
+
 											<div class="col-2 pt-6 text-md-end">
 												<a href="#" class="btn btn-primary px-6 align-self-center text-nowrap">Filter Pencarian</a>
 											</div>
@@ -679,6 +671,7 @@
 							<div class="row">
 								<!--begin::Hero nav-->
 								<div class="card-rounded bg-light d-flex flex-stack flex-wrap p-5 mt-6">
+									<a href="pns-tata-naskah-new-surat-keluar-internal.html" class="btn btn-light-primary  px-6 align-self-center text-nowrap"><i class="fa fa-envelope-open-text me-2"></i>Buat Surat Baru</a>
 									<!--begin::Nav-->
 									<ul
 									class="nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bolder flex-nowrap">
@@ -693,7 +686,7 @@
 									<!--begin::Nav item-->
 									<li class="nav-item">
 										<a class="nav-link text-active-primary me-6" data-bs-toggle="tab"
-											href="#TabMenunggu">Belum Dibaca
+											href="#TabProses">Dalam Proses
 											<span class="badge badge-warning badge-circle ms-1">8</span>
 										</a>
 									</li>
@@ -701,7 +694,7 @@
 									<!--begin::Nav item-->
 									<li class="nav-item">
 										<a class="nav-link text-active-primary me-6" data-bs-toggle="tab"
-											href="#TabSelesai">Sudah Dibaca
+											href="#TabSelesai">Selesai
 											<span class="badge badge-success badge-circle ms-1">5</span>
 										</a>
 									</li>
@@ -709,7 +702,7 @@
 									<!--begin::Nav item-->
 									<li class="nav-item">
 										<a class="nav-link text-active-primary me-6" data-bs-toggle="tab"
-											href="#TabTutup">Perlu Tanggapan
+											href="#TabPerluTanggapan">Perlu Tanggapan
 											<span class="badge badge-danger badge-circle ms-1">10</span>
 										</a>
 									</li>
@@ -728,23 +721,23 @@
 										<!--begin::Card-->
 										<div class="card ">
 											<div class="card-header ribbon ribbon-start">
-												<div class="ribbon-label bg-warning"><i class="fa fa-envelope text-white me-2"></i> Belum Dibaca</div>
+												<div class="ribbon-label bg-success"><i class="fa fa-edit text-white me-2"></i> Sudah Ditandatangani</div>
 											</div>
 											<!--begin::Card body-->
 											<div class="card-body d-flex flex-column p-9">
 												<!--begin::Name-->
-												<a href="#" class="fs-4 text-gray-800 text-hover-primary fw-bolder mb-0">Surat Kepala Dinas Penyampaian Pemantauan Evaluasi dan Monitoring Pers</a>
+												<a href="#" class="fs-4 text-gray-800 text-hover-primary fw-bolder mb-0">Melakukan pendampingan pembelajaran Aplikasi SIDESI </a>
 												<!--end::Name-->
 												<!--begin::Position-->
 												<div class="fw-bold text-gray-400 mb-6">
-													<i class="fa fa-envelope me-2"></i>Rahasia
+													<i class="fa fa-envelope me-2"></i>Biasa
 												</div>
 												<!--end::Position-->
 												<!--begin::Details item-->
 												<div class="fw-bolder mt-5"><i class="fa fa-user me-2"></i> Penerima
 													<span><i class="fa fa-calendar-alt mx-2"></i>02-06-2023</span>
 												</div>
-												<div class="text-gray-600">ARISCATUR PRATOMO</div>
+												<div class="text-gray-600">Dinas Komunikasi, Informatika, Statistik dan Persandian</div>
 												<!--begin::Details item-->
 												<!--begin::Details item-->
 												<div class="fw-bolder mt-5">
@@ -752,12 +745,11 @@
 													<span><i class="fa fa-calendar-alt mx-2"></i>02-06-2023</span>
 												</div>
 												<div class="text-gray-600 mb-3">
-													<a href="#" class="text-gray-600 text-hover-primary">FERDIAN RIZA YUDHA
-													</a>
+													<a href="#" class="text-gray-600 text-hover-primary">Bidang Informasi dan Komunikasi Publik</a>
 												</div>
 												<!--begin::Link-->
 												<div class="d-flex gap-3 mt-5">
-													<a href="pns-tata-naskah-detail-surat-disposisi-internal.html" type="button" class="btn btn-sm btn-light-primary fw-bolder"><i class="fa fa-file-alt me-2"></i>Detail Surat</a>
+													<a href="pns-tata-naskah-detail-surat-keluar-internal.html" type="button" class="btn btn-sm btn-light-primary fw-bolder"><i class="fa fa-file-alt me-2"></i>Detail Surat</a>
 												</div>
 												<!--end::Link-->
 											</div>
@@ -768,8 +760,9 @@
 								</div>
 							</div>
 							<!--end::Contacts-->
+
 							<!--begin::Pagination-->
-							<div class="d-flex flex-stack flex-wrap pt-10">
+							<div class="d-flex flex-stack flex-wrap py-10">
 								<div class="fs-6 fw-bold text-gray-700">Showing 1 to 10 of 50 entries</div>
 								<!--begin::Pages-->
 								<ul class="pagination">
@@ -805,7 +798,6 @@
 								<!--end::Pages-->
 							</div>
 							<!--end::Pagination-->
-
 					</div>
 					<!--end::Container-->
 

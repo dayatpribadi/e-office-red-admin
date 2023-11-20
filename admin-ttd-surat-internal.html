@@ -148,7 +148,7 @@
 												</a>
 											</div>
 											<div class="menu-item">
-												<a class="menu-link active" href="admin-disposisi-surat-keluar-internal.html">
+												<a class="menu-link" href="admin-disposisi-surat-keluar-internal.html">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -156,7 +156,7 @@
 												</a>
 											</div>
 											<div class="menu-item">
-												<a class="menu-link" href="admin-verifikator-surat-internal.html">
+												<a class="menu-link " href="admin-verifikator-surat-internal.html">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -164,7 +164,7 @@
 												</a>
 											</div>
 											<div class="menu-item">
-												<a class="menu-link" href="admin-ttd-surat-internal.html">
+												<a class="menu-link active" href="admin-ttd-surat-internal.html">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -507,15 +507,15 @@
 							data-kt-swapper="true" data-kt-swapper-mode="prepend"
 							data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
 							<!--begin::Heading-->
-							<h1 class="d-flex flex-column text-dark fw-bolder my-0 fs-1">Surat Keluar Internal</h1>
+							<h1 class="d-flex flex-column text-dark fw-bolder my-0 fs-1">Tandatangan Surat Internal</h1>
 							<!--end::Heading-->
 							<!--begin::Breadcrumb-->
 							<ul class="breadcrumb breadcrumb-dot fw-bold fs-base my-1">
 								<li class="breadcrumb-item text-muted">
 									<a href="index.html" class="text-muted">Dashboard</a>
 								</li>
-								<li class="breadcrumb-item text-muted">E-Absensi</li>
-								<li class="breadcrumb-item text-muted">Surat Keluar Internal</li>
+								<li class="breadcrumb-item text-muted">Tata Naskah Surat</li>
+								<li class="breadcrumb-item text-muted">Tandatangan Surat Internal</li>
 							</ul>
 							<!--end::Breadcrumb-->
 						</div>
@@ -642,7 +642,7 @@
 												<label class="form-label fs-6 fw-bolder text-gray-700 mb-3">Tgl. Terima Surat</label>
 												<!--begin::Input group-->
 												<div class="mb-5 border border-primary border-dashed rounded">
-													<input type="date" class="form-control form-control-solid" placeholder="Tgl. Terima Surat" />
+													<input class="form-control form-control-solid" type="date" placeholder="Select a date" name="due_date" />
 												</div>
 												<!--end::Input group-->
 											</div>
@@ -681,7 +681,7 @@
 								<div class="card-rounded bg-light d-flex flex-stack flex-wrap p-5 mt-6">
 									<!--begin::Nav-->
 									<ul
-									class="nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bolder flex-nowrap">
+									class="nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bolder flex-nowrap overflow-scroll">
 									<!--begin::Nav item-->
 									<li class="nav-item">
 										<a class="nav-link text-active-primary me-6 active" data-bs-toggle="tab"
@@ -693,23 +693,23 @@
 									<!--begin::Nav item-->
 									<li class="nav-item">
 										<a class="nav-link text-active-primary me-6" data-bs-toggle="tab"
-											href="#TabMenunggu">Belum Dibaca
-											<span class="badge badge-warning badge-circle ms-1">8</span>
+											href="#TabMenunggu">Sudah Ditandatangani
+											<span class="badge badge-warning badge-circle ms-1">1728</span>
 										</a>
 									</li>
 									<!--end::Nav item-->
 									<!--begin::Nav item-->
 									<li class="nav-item">
 										<a class="nav-link text-active-primary me-6" data-bs-toggle="tab"
-											href="#TabSelesai">Sudah Dibaca
-											<span class="badge badge-success badge-circle ms-1">5</span>
+											href="#TabSelesai">Menunggu Ditandatangani
+											<span class="badge badge-success badge-circle ms-1">576</span>
 										</a>
 									</li>
 									<!--end::Nav item-->
 									<!--begin::Nav item-->
 									<li class="nav-item">
 										<a class="nav-link text-active-primary me-6" data-bs-toggle="tab"
-											href="#TabTutup">Perlu Tanggapan
+											href="#TabTutup">Ditolak
 											<span class="badge badge-danger badge-circle ms-1">10</span>
 										</a>
 									</li>
@@ -728,36 +728,41 @@
 										<!--begin::Card-->
 										<div class="card ">
 											<div class="card-header ribbon ribbon-start">
-												<div class="ribbon-label bg-warning"><i class="fa fa-envelope text-white me-2"></i> Belum Dibaca</div>
+												<div class="ribbon-label bg-warning"><i class="fa fa-envelope text-white me-2"></i> Menunggu Ditandatangani</div>
 											</div>
 											<!--begin::Card body-->
 											<div class="card-body d-flex flex-column p-9">
 												<!--begin::Name-->
-												<a href="#" class="fs-4 text-gray-800 text-hover-primary fw-bolder mb-0">Surat Kepala Dinas Penyampaian Pemantauan Evaluasi dan Monitoring Pers</a>
+												<a href="#" class="fs-4 text-gray-800 text-hover-primary fw-bolder mb-0">SPT Bimtek Srikandi Lanjutan a.n ARIS</a>
 												<!--end::Name-->
 												<!--begin::Position-->
-												<div class="fw-bold text-gray-400 mb-6">
-													<i class="fa fa-envelope me-2"></i>Rahasia
+												<div class="fw-bold d-flex flex-wrap gap-1 text-gray-400 mb-6">
+													<span class="badge badge-warning badge-square px-2">Eksternal</span>
+													<span class="badge badge-primary badge-square px-2"><i class="fa fa-envelope text-white me-2"></i>Biasa</span>
+													<span class="badge badge-primary badge-square px-2">#Y2FHMDJI</span>
 												</div>
 												<!--end::Position-->
-												<!--begin::Details item-->
-												<div class="fw-bolder mt-5"><i class="fa fa-user me-2"></i> Penerima
-													<span><i class="fa fa-calendar-alt mx-2"></i>02-06-2023</span>
-												</div>
-												<div class="text-gray-600">ARISCATUR PRATOMO</div>
-												<!--begin::Details item-->
+
 												<!--begin::Details item-->
 												<div class="fw-bolder mt-5">
 													<i class="fa fa-paper-plane me-2"></i>Pengirim
 													<span><i class="fa fa-calendar-alt mx-2"></i>02-06-2023</span>
 												</div>
 												<div class="text-gray-600 mb-3">
-													<a href="#" class="text-gray-600 text-hover-primary">FERDIAN RIZA YUDHA
-													</a>
+													<a href="#" class="text-gray-600 text-hover-primary">Bidang Informasi dan Komunikasi Publik</a>
 												</div>
 												<!--begin::Link-->
+												<!--begin::Details item-->
+												<div class="fw-bolder mt-5"><i class="fa fa-user me-2"></i> Penerima
+													<span><i class="fa fa-calendar-alt mx-2"></i>02-06-2023</span>
+												</div>
+												<div class="text-gray-600">Ariscatur Pratomo ...
+													<button type="button" class="badge badge-danger badge-circle ms-1" data-bs-toggle="tooltip" data-bs-html="true" title="1. Ariscatur <br> 2. Ferdy Meirofa Eka Saputra <br> 3. Ferdian Riza Yudha">
+														3+</span>
+												</div>
+												<!--begin::Details item-->
 												<div class="d-flex gap-3 mt-5">
-													<a href="pns-tata-naskah-detail-surat-disposisi-internal.html" type="button" class="btn btn-sm btn-light-primary fw-bolder"><i class="fa fa-file-alt me-2"></i>Detail Surat</a>
+													<a href="pns-tata-naskah-detail-surat-masuk-internal.html" type="button" class="btn btn-sm btn-light-primary fw-bolder"><i class="fa fa-file-alt me-2"></i>Detail Surat</a>
 												</div>
 												<!--end::Link-->
 											</div>
@@ -768,6 +773,7 @@
 								</div>
 							</div>
 							<!--end::Contacts-->
+							
 							<!--begin::Pagination-->
 							<div class="d-flex flex-stack flex-wrap pt-10">
 								<div class="fs-6 fw-bold text-gray-700">Showing 1 to 10 of 50 entries</div>
