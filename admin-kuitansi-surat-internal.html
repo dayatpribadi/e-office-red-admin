@@ -132,7 +132,7 @@
 												</a>
 											</div>
 											<div class="menu-item">
-												<a class="menu-link " href="admin-disposisi-surat-masuk-internal.html">
+												<a class="menu-link" href="admin-disposisi-surat-masuk-internal.html">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -156,7 +156,7 @@
 												</a>
 											</div>
 											<div class="menu-item">
-												<a class="menu-link active" href="admin-verifikator-surat-internal.html">
+												<a class="menu-link" href="admin-verifikator-surat-internal.html">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -172,7 +172,7 @@
 												</a>
 											</div>
 											<div class="menu-item">
-												<a class="menu-link" href="admin-kuitansi-surat-internal.html">
+												<a class="menu-link active" href="admin-kuitansi-surat-internal.html">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -507,7 +507,7 @@
 							data-kt-swapper="true" data-kt-swapper-mode="prepend"
 							data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
 							<!--begin::Heading-->
-							<h1 class="d-flex flex-column text-dark fw-bolder my-0 fs-1">Verifikator Surat</h1>
+							<h1 class="d-flex flex-column text-dark fw-bolder my-0 fs-1">Surat Kuitansi</h1>
 							<!--end::Heading-->
 							<!--begin::Breadcrumb-->
 							<ul class="breadcrumb breadcrumb-dot fw-bold fs-base my-1">
@@ -515,7 +515,7 @@
 									<a href="index.html" class="text-muted">Dashboard</a>
 								</li>
 								<li class="breadcrumb-item text-muted">Tata Naskah Surat</li>
-								<li class="breadcrumb-item text-muted">Verifikator Surat</li>
+								<li class="breadcrumb-item text-muted">Surat Kuitansi</li>
 							</ul>
 							<!--end::Breadcrumb-->
 						</div>
@@ -642,7 +642,7 @@
 												<label class="form-label fs-6 fw-bolder text-gray-700 mb-3">No. Register</label>
 												<!--begin::Input group-->
 												<div class="mb-5 border border-primary border-dashed rounded">
-													<input type="date" class="form-control form-control-solid" placeholder="No. Register" />
+													<input type="text" class="form-control form-control-solid" placeholder="No. Register" />
 												</div>
 												<!--end::Input group-->
 											</div>
@@ -652,7 +652,7 @@
 												<label class="form-label fs-6 fw-bolder text-gray-700 mb-3">Tgl. Terima Surat</label>
 												<!--begin::Input group-->
 												<div class="mb-5 border border-primary border-dashed rounded">
-													<input type="text" class="form-control form-control-solid" placeholder="Tgl. Terima Surat" />
+													<input type="date" class="form-control form-control-solid" placeholder="Tgl. Terima Surat" />
 												</div>
 												<!--end::Input group-->
 											</div>
@@ -670,6 +670,7 @@
 							<div class="row">
 								<!--begin::Hero nav-->
 								<div class="card-rounded bg-light d-flex flex-stack flex-wrap p-5 mt-6">
+									<a href="pns-tata-naskah-new-surat-keluar-internal.html" class="btn btn-light-primary  px-6 align-self-center text-nowrap"><i class="fa fa-envelope-open-text me-2"></i>Buat Surat Baru</a>
 									<!--begin::Nav-->
 									<ul
 									class="nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bolder flex-nowrap">
@@ -684,7 +685,7 @@
 									<!--begin::Nav item-->
 									<li class="nav-item">
 										<a class="nav-link text-active-primary me-6" data-bs-toggle="tab"
-											href="#TabProses">Sudah Diverifikasi
+											href="#TabProses">Dalam Proses
 											<span class="badge badge-warning badge-circle ms-1">8</span>
 										</a>
 									</li>
@@ -692,16 +693,8 @@
 									<!--begin::Nav item-->
 									<li class="nav-item">
 										<a class="nav-link text-active-primary me-6" data-bs-toggle="tab"
-											href="#TabSelesai">Menunggu Verifikasi
+											href="#TabSelesai">Selesai
 											<span class="badge badge-success badge-circle ms-1">5</span>
-										</a>
-									</li>
-									<!--end::Nav item-->
-									<!--begin::Nav item-->
-									<li class="nav-item">
-										<a class="nav-link text-active-primary me-6" data-bs-toggle="tab"
-											href="#TabPerluTanggapan">Ditolak
-											<span class="badge badge-danger badge-circle ms-1">10</span>
 										</a>
 									</li>
 									<!--end::Nav item-->
@@ -719,23 +712,16 @@
 										<!--begin::Card-->
 										<div class="card ">
 											<div class="card-header ribbon ribbon-start">
-												<div class="ribbon-label bg-success"><i class="fa fa-edit text-white me-2"></i> Sudah Diverifikasi</div>
+												<div class="ribbon-label bg-warning"><i class="fa fa-clock text-white me-2"></i> Dalam Proses</div>
 											</div>
 											<!--begin::Card body-->
 											<div class="card-body d-flex flex-column p-9">
 												<!--begin::Name-->
-												<a href="#" class="fs-4 text-gray-800 text-hover-primary fw-bolder mb-0">SURAT REKOMENDASI PERMOHONAN PENERBITAN SERTIFIKAT </a>
+												<a href="#" class="fs-4 text-gray-800 text-hover-primary fw-bolder mb-0">Melakukan pendampingan pembelajaran Aplikasi SIDESI </a>
 												<!--end::Name-->
 												<!--begin::Position-->
-												<div class="d-flex flex-row gap-2">
-													<div class="fw-bold text-white mb-6">
-														<span class="badge badge-square badge-primary px-3">
-														<i class="fa fa-envelope text-white me-2"></i>Penting</span>
-													</div>
-													<div class="fw-bold text-white mb-6">
-														<span class="badge badge-square badge-primary px-3">
-														<i class="fa fa-envelope text-white me-2"></i>#MGQ5MJEX</span>
-													</div>
+												<div class="fw-bold text-gray-400 mb-6">
+													<i class="fa fa-envelope me-2"></i>Biasa
 												</div>
 												<!--end::Position-->
 												<!--begin::Details item-->
@@ -754,7 +740,7 @@
 												</div>
 												<!--begin::Link-->
 												<div class="d-flex gap-3 mt-5">
-													<a href="pns-tata-naskah-detail-surat-disposisi-internal.html" type="button" class="btn btn-sm btn-light-primary fw-bolder"><i class="fa fa-file-alt me-2"></i>Detail Surat</a>
+													<a href="pns-tata-naskah-detail-surat-keluar-internal.html" type="button" class="btn btn-sm btn-light-primary fw-bolder"><i class="fa fa-file-alt me-2"></i>Detail Surat</a>
 												</div>
 												<!--end::Link-->
 											</div>
@@ -765,9 +751,9 @@
 								</div>
 							</div>
 							<!--end::Contacts-->
-							
+
 							<!--begin::Pagination-->
-							<div class="d-flex flex-stack flex-wrap pt-10">
+							<div class="d-flex flex-stack flex-wrap py-10">
 								<div class="fs-6 fw-bold text-gray-700">Showing 1 to 10 of 50 entries</div>
 								<!--begin::Pages-->
 								<ul class="pagination">
@@ -803,7 +789,6 @@
 								<!--end::Pages-->
 							</div>
 							<!--end::Pagination-->
-
 					</div>
 					<!--end::Container-->
 
