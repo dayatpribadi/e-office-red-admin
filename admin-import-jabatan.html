@@ -383,7 +383,7 @@
 										<a href="index.html" class="text-muted">Dashboard</a>
 									</li>
 									<li class="breadcrumb-item text-muted">Master Data</li>
-									<li class="breadcrumb-item text-muted">Import Data</li>
+									<li class="breadcrumb-item text-muted">Import Data Jabatan</li>
 								</ul>
 								<!--end::Breadcrumb-->
 							</div>
@@ -470,89 +470,86 @@
 						<div class="container-xxl" id="kt_content_container">
 							<!--begin::Row-->
 							<div class="row gy-4 g-xl-8">
+								<!--begin::Notice-->
+								<div class="notice bg-light-primary rounded shadow py-4 px-6">
+									<!--begin::Input group-->
+									<div class="row my-4 align-items-center">
 
-								<div class="col-xl-12">
-									<!--begin::Notice-->
-									<div class="notice bg-light-primary rounded shadow py-4 px-6">
-										<!--begin::Input group-->
-										<div class="row my-4 align-items-center">
+										<!--begin::Form-->
 
-											<!--begin::Form-->
-
-											<div class="col-6">
-												<!--begin::Input group-->
-												<div class="form-group row">
-													<!--begin::Label-->
-													<label class="col-lg-3 col-form-label text-lg-right">Upload Files:</label>
-													<!--end::Label-->
-											
-													<!--begin::Col-->
-													<div class="col-lg-9">
-														<!--begin::Dropzone-->
-														<div class="dropzone dropzone-queue mb-2" id="kt_dropzonejs_example_2">
-															<!--begin::Controls-->
-															<div class="dropzone-panel mb-lg-0 mb-2">
-																<a class="dropzone-select btn btn-sm btn-primary me-2">Attach files</a>
-																<a class="dropzone-upload btn btn-sm btn-light-primary me-2">Upload All</a>
-																<a class="dropzone-remove-all btn btn-sm btn-light-primary">Remove All</a>
-															</div>
-															<!--end::Controls-->
-											
-															<!--begin::Items-->
-															<div class="dropzone-items wm-200px">
-																<div class="dropzone-item" style="display:none">
-																	<!--begin::File-->
-																	<div class="dropzone-file">
-																		<div class="dropzone-filename" title="some_image_file_name.jpg">
-																			<span data-dz-name>some_image_file_name.jpg</span>
-																			<strong>(<span data-dz-size>340kb</span>)</strong>
-																		</div>
-											
-																		<div class="dropzone-error" data-dz-errormessage></div>
-																	</div>
-																	<!--end::File-->
-											
-																	<!--begin::Progress-->
-																	<div class="dropzone-progress">
-																		<div class="progress">
-																			<div
-																				class="progress-bar bg-primary"
-																				role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-dz-uploadprogress>
-																			</div>
-																		</div>
-																	</div>
-																	<!--end::Progress-->
-											
-																	<!--begin::Toolbar-->
-																	<div class="dropzone-toolbar">
-																		<span class="dropzone-start"><i class="bi bi-play-fill fs-3"></i></span>
-																		<span class="dropzone-cancel" data-dz-remove style="display: none;"><i class="bi bi-x fs-3"></i></span>
-																		<span class="dropzone-delete" data-dz-remove><i class="bi bi-x fs-1"></i></span>
-																	</div>
-																	<!--end::Toolbar-->
-																</div>
-															</div>
-															<!--end::Items-->
+										<div class="col-6">
+											<!--begin::Input group-->
+											<div class="form-group row">
+												<!--begin::Label-->
+												<label class="col-lg-3 col-form-label text-lg-right">Upload Files:</label>
+												<!--end::Label-->
+										
+												<!--begin::Col-->
+												<div class="col-lg-9">
+													<!--begin::Dropzone-->
+													<div class="dropzone dropzone-queue mb-2" id="kt_dropzonejs_example_2">
+														<!--begin::Controls-->
+														<div class="dropzone-panel mb-lg-0 mb-2">
+															<a class="dropzone-select btn btn-sm btn-primary me-2">Attach files</a>
+															<a class="dropzone-upload btn btn-sm btn-light-primary me-2">Upload All</a>
+															<a class="dropzone-remove-all btn btn-sm btn-light-primary">Remove All</a>
 														</div>
-														<!--end::Dropzone-->
-											
-														<!--begin::Hint-->
-														<span class="form-text text-muted">Max file size is 1MB and max number of files is 5.</span>
-														<!--end::Hint-->
+														<!--end::Controls-->
+										
+														<!--begin::Items-->
+														<div class="dropzone-items wm-200px">
+															<div class="dropzone-item" style="display:none">
+																<!--begin::File-->
+																<div class="dropzone-file">
+																	<div class="dropzone-filename" title="some_image_file_name.jpg">
+																		<span data-dz-name>some_image_file_name.jpg</span>
+																		<strong>(<span data-dz-size>340kb</span>)</strong>
+																	</div>
+										
+																	<div class="dropzone-error" data-dz-errormessage></div>
+																</div>
+																<!--end::File-->
+										
+																<!--begin::Progress-->
+																<div class="dropzone-progress">
+																	<div class="progress">
+																		<div
+																			class="progress-bar bg-primary"
+																			role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-dz-uploadprogress>
+																		</div>
+																	</div>
+																</div>
+																<!--end::Progress-->
+										
+																<!--begin::Toolbar-->
+																<div class="dropzone-toolbar">
+																	<span class="dropzone-start"><i class="bi bi-play-fill fs-3"></i></span>
+																	<span class="dropzone-cancel" data-dz-remove style="display: none;"><i class="bi bi-x fs-3"></i></span>
+																	<span class="dropzone-delete" data-dz-remove><i class="bi bi-x fs-1"></i></span>
+																</div>
+																<!--end::Toolbar-->
+															</div>
+														</div>
+														<!--end::Items-->
 													</div>
-													<!--end::Col-->
+													<!--end::Dropzone-->
+										
+													<!--begin::Hint-->
+													<span class="form-text text-muted">Max file size is 1MB and max number of files is 5.</span>
+													<!--end::Hint-->
 												</div>
-												<!--end::Input group-->
+												<!--end::Col-->
 											</div>
-
-											<div class="col-3 pt-3 pt-md-0 text-md-end">
-												<a href="#" class="btn btn-light-primary align-self-center text-nowrap"><i class="fa fa-file-excel me-2"></i> Download Template Excel</a>
-											</div>
-	
+											<!--end::Input group-->
 										</div>
+
+										<div class="col-3 pt-3 pt-md-0 text-md-end">
+											<a href="#" class="btn btn-light-primary align-self-center text-nowrap"><i class="fa fa-file-excel me-2"></i> Download Template Excel</a>
+										</div>
+
 									</div>
-									<!--end::Notice-->
 								</div>
+								<!--end::Notice-->
 
 								<!--begin::Row-->
 								<div class="row pt-5 pe-2 ps-6">
@@ -634,34 +631,34 @@
 						<!--end::Container-->
 					</div>
 					<!--end::Content-->
-				</div>
-				<!--begin::Footer-->
-				<div class="footer pb-10 d-flex flex-lg-column" id="kt_footer">
-					<!--begin::Container-->
-					<div class="container d-flex flex-column flex-md-row flex-stack">
-						<!--begin::Copyright-->
-						<div class="text-dark order-2 order-md-1">
-							<span class="text-gray-400 fw-bold me-1">Developed by</span>
-							<a href="#" target="_blank" class="text-muted text-hover-primary fw-bold me-2 fs-6">Diskominfo Kab. Ogan Ilir 2023</a>
+					<!--begin::Footer-->
+					<div class="footer pb-10 d-flex flex-lg-column" id="kt_footer">
+						<!--begin::Container-->
+						<div class="container d-flex flex-column flex-md-row flex-stack">
+							<!--begin::Copyright-->
+							<div class="text-dark order-2 order-md-1">
+								<span class="text-gray-400 fw-bold me-1">Developed by</span>
+								<a href="#" target="_blank" class="text-muted text-hover-primary fw-bold me-2 fs-6">Diskominfo Kab. Ogan Ilir 2023</a>
+							</div>
+							<!--end::Copyright-->
+							<!--begin::Menu-->
+							<ul class="menu menu-gray-600 menu-hover-primary fw-bold order-1">
+								<li class="menu-item">
+									<a href="#" target="_blank" class="menu-link px-2">Website Pemda</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" target="_blank" class="menu-link px-2">Dokumentasi</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" target="_blank" class="menu-link px-2">Call Center</a>
+								</li>
+							</ul>
+							<!--end::Menu-->
 						</div>
-						<!--end::Copyright-->
-						<!--begin::Menu-->
-						<ul class="menu menu-gray-600 menu-hover-primary fw-bold order-1">
-							<li class="menu-item">
-								<a href="#" target="_blank" class="menu-link px-2">Website Pemda</a>
-							</li>
-							<li class="menu-item">
-								<a href="#" target="_blank" class="menu-link px-2">Dokumentasi</a>
-							</li>
-							<li class="menu-item">
-								<a href="#" target="_blank" class="menu-link px-2">Call Center</a>
-							</li>
-						</ul>
-						<!--end::Menu-->
+						<!--end::Container-->
 					</div>
-					<!--end::Container-->
+					<!--end::Footer-->
 				</div>
-				<!--end::Footer-->
 				<!--end::Wrapper-->
 
 			</div>
