@@ -114,7 +114,7 @@
 									<span class="menu-arrow"></span>
 								</span>
 								<div class="menu-sub menu-sub-accordion">
-									<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
+									<div data-kt-menu-trigger="click" class="menu-item menu-accordion show">
 										<span class="menu-link">
 											<span class="menu-bullet">
 												<span class="bullet bullet-dot"></span>
@@ -156,7 +156,7 @@
 												</a>
 											</div>
 											<div class="menu-item">
-												<a class="menu-link" href="admin-verifikator-surat-internal.html">
+												<a class="menu-link active" href="admin-verifikator-surat-internal.html">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -231,10 +231,10 @@
 												</a>
 											</div>
 											<div class="menu-item">
-												<a class="menu-link" href="admin-ttd-surat-keluar-eksternal.html">
+												<a class="menu-link " href="admin-ttd-surat-keluar-eksternal.html">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
-													</span>
+													/span>
 													<span class="menu-title">Tanda Tangan Surat</span>
 												</a>
 											</div>
@@ -267,7 +267,7 @@
 											</div>
 										</div>
 									</div>
-									<div data-kt-menu-trigger="click" class="menu-item menu-accordion show">
+									<div data-kt-menu-trigger="click" class="menu-item menu-accordion">
 										<span class="menu-link">
 											<span class="menu-bullet">
 												<span class="bullet bullet-dot"></span>
@@ -277,7 +277,7 @@
 										</span>
 										<div class="menu-sub menu-sub-accordion">
 											<div class="menu-item">
-												<a class="menu-link active" href="admin-surat-ttd.html">
+												<a class="menu-link" href="admin-surat-ttd.html">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -671,16 +671,25 @@
 
 						<div class="row ps-3 mb-10">
 							<div class="col-12 col-md-8 p-5 bg-white rounded">
-								<span class="badge badge-square badge-warning py-10 mb-8 pe-6 fs-5 fw-normal text-wrap text-start shadow border border-dashed">
+								<span class="badge badge-square badge-warning py-10 mb-8 fs-5 fw-normal text-wrap text-start shadow border border-dashed">
 									<i class="fa fa-check fs-2 text-white mx-8"></i>
 									Dokumen dibawah ini hanya versi preview (pratinjau), untuk melihat dokumen asli silahkan download surat ini.
 								</span>
 								<object type="application/pdf" data="assets/files/surat20230810012350YTA5NWRL_(signed).pdf" height="650px" width="100%"></object>
-								<div class="row mt-10">
+								<span class="badge badge-square badge-warning py-12 my-8 fs-5 fw-normal text-wrap text-start shadow border border-dashed">
+									<i class="fa fa-check fs-2 text-white mx-8"></i>
+									Surat ini memerlukan verifikasi dari Anda, silahkan klik salah satu opsi tombol diatas untuk memverifikasi surat atau anda bisa mengoreksi surat sendiri dengan mengklik tombol Download dibawah lalu koreksi dan Upload kembali..
+								</span>
+								<div class="row mt-5">
 									<div class="d-flex flex-wrap gap-2 flex-row">
 										<button type="button" data-bs-toggle="modal" data-bs-target="#modal_ttd" class="btn btn-primary">
 											<i class="fa fa-pen me-2"></i>
-											Tanda Tangan
+											Verifikasi
+										</button>
+
+										<button type="button" class="btn btn-success">
+											<i class="fa fa-arrow-right me-2"></i>
+											Teruskan
 										</button>
 
 										<button type="button" class="btn btn-danger">
@@ -696,6 +705,7 @@
 									<div class="card-header ribbon ribbon-end">
 										<div class="ribbon-label bg-warning"><i class="fa fa-edit text-white me-2"></i> Menunggu Ditandatangani</div>
 									</div>
+									<!--end::Card header-->
 									<!--begin::Card body-->
 									<div class="card-body pt-0 fs-6">
 										<!--begin::Section-->
