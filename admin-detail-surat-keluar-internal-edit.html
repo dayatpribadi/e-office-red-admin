@@ -24,6 +24,7 @@
 	<!--begin::Global Stylesheets Bundle(used by all pages)-->
 	<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 	<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="assets/css/multi.css">
 	<!--end::Global Stylesheets Bundle-->
 </head>
 <!--end::Head-->
@@ -602,109 +603,457 @@
 				<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
 					<!--begin::Container-->
 					<div class="container-xxl" id="kt_content_container">
-							<!--begin::Row-->
-							<div class="row mb-4">
-								<!--begin::Statistics Widget 1-->
-								<style>
-									.bg-tambahan {
-										background-color: #CEE6F3;
-									}
-								</style>
-								<div class="col-12">
-									<div class="card bgi-no-repeat card-xl-stretch bg-tambahan mb-3" style="background-position: right top; background-size: 30% auto; background-image: url(assets/media/svg/shapes/abstract-1.svg)">
-										<!--begin::Body-->
-										<div class="card-body">
-											<h5 class="fw-bold mb-5">
-												SURAT TUGAS MONITORING INTERNET DESA FERDY MEIROFA, EDI SUPRAYITNO DAN ARISCATUR
-											</h5>
-											<div class="row mb-5">
-												<div class="col-12 col-xxl-6">
-													<div class="d-flex flex-wrap">
-														<h6>No. Surat :</h6>
-														<span class="ms-2">094/199/D.KISP/III/2023</span>
-													</div>
+							<!--begin::Stepper-->
+							<div class="stepper stepper-pills stepper-column d-flex flex-column flex-xl-row flex-row-fluid" id="kt_create_account_stepper">
+								<!--begin::Aside-->
+								<div class="d-flex justify-content-center bg-body rounded justify-content-xl-start flex-row-auto w-100 w-xl-300px w-xxl-400px me-9">
+									<!--begin::Wrapper-->
+									<div class="px-6 px-lg-10 px-xxl-15 py-20">
+										<!--begin::Nav-->
+										<div class="stepper-nav">
+											<!--begin::Step 1-->
+											<div class="stepper-item current" data-kt-stepper-element="nav">
+												<!--begin::Line-->
+												<div class="stepper-line w-40px"></div>
+												<!--end::Line-->
+												<!--begin::Icon-->
+												<div class="stepper-icon w-40px h-40px">
+													<i class="stepper-check fas fa-check"></i>
+													<span class="stepper-number">1</span>
 												</div>
-												<div class="col-12 col-xxl-6">
-													<div class="d-flex flex-wrap">
-														<h6>Sifat :</h6>
-														<span class="ms-2">Biasa</span>
-													</div>
+												<!--end::Icon-->
+												<!--begin::Label-->
+												<div class="stepper-label">
+													<h3 class="stepper-title">Kepala Surat</h3>
+													<div class="stepper-desc fw-bold">Nomor, Perihal, dll</div>
 												</div>
-												<div class="col-12 col-xxl-6">
-													<div class="d-flex flex-wrap">
-														<h6>Pengirim :</h6>
-														<span class="ms-2">Tri Sutomo</span>
-													</div>
+												<!--end::Label-->
+											</div>
+											<!--end::Step 1-->
+											<!--begin::Step 2-->
+											<div class="stepper-item" data-kt-stepper-element="nav">
+												<!--begin::Line-->
+												<div class="stepper-line w-40px"></div>
+												<!--end::Line-->
+												<!--begin::Icon-->
+												<div class="stepper-icon w-40px h-40px">
+													<i class="stepper-check fas fa-check"></i>
+													<span class="stepper-number">2</span>
 												</div>
-												<div class="col-12 col-xxl-6">
-													<div class="d-flex flex-wrap">
-														<h6>Penerima :</h6>
-														<span class="ms-2">Ariscatur Pratomo,
-															<button type="button" class="badge badge-danger badge-square ms-1 px-3" data-bs-toggle="tooltip" data-bs-html="true" title="1. Ariscatur <br> 2. Ferdy Meirofa Eka Saputra <br> 3. Ferdian Riza Yudha">
-																3+</span>
+												<!--end::Icon-->
+												<!--begin::Label-->
+												<div class="stepper-label">
+													<h3 class="stepper-title">Badan Surat</h3>
+													<div class="stepper-desc fw-bold">Konsideran dan Isi surat</div>
+												</div>
+												<!--end::Label-->
+											</div>
+											<!--end::Step 2-->
+											<!--begin::Step 3-->
+											<div class="stepper-item" data-kt-stepper-element="nav">
+												<!--begin::Line-->
+												<div class="stepper-line w-40px"></div>
+												<!--end::Line-->
+												<!--begin::Icon-->
+												<div class="stepper-icon w-40px h-40px">
+													<i class="stepper-check fas fa-check"></i>
+													<span class="stepper-number">3</span>
+												</div>
+												<!--end::Icon-->
+												<!--begin::Label-->
+												<div class="stepper-label">
+													<h3 class="stepper-title">Lampiran Surat</h3>
+													<div class="stepper-desc fw-bold">Berkas Lampiran surat</div>
+												</div>
+												<!--end::Label-->
+											</div>
+											<!--end::Step 3-->
+											<!--begin::Step 4-->
+											<div class="stepper-item" data-kt-stepper-element="nav">
+												<!--begin::Line-->
+												<div class="stepper-line w-40px"></div>
+												<!--end::Line-->
+												<!--begin::Icon-->
+												<div class="stepper-icon w-40px h-40px">
+													<i class="stepper-check fas fa-check"></i>
+													<span class="stepper-number">4</span>
+												</div>
+												<!--end::Icon-->
+												<!--begin::Label-->
+												<div class="stepper-label">
+													<h3 class="stepper-title">Entitas Surat</h3>
+													<div class="stepper-desc fw-bold">Pemeriksa, Penandatangan dll</div>
+												</div>
+												<!--end::Label-->
+											</div>
+											<!--end::Step 4-->
+											<!--begin::Step 5-->
+											<div class="stepper-item" data-kt-stepper-element="nav">
+												<!--begin::Line-->
+												<div class="stepper-line w-40px"></div>
+												<!--end::Line-->
+												<!--begin::Icon-->
+												<div class="stepper-icon w-40px h-40px">
+													<i class="stepper-check fas fa-check"></i>
+													<span class="stepper-number">5</span>
+												</div>
+												<!--end::Icon-->
+												<!--begin::Label-->
+												<div class="stepper-label">
+													<h3 class="stepper-title">Selesai</h3>
+													<div class="stepper-desc fw-bold">Data surat telah diisi lengkap</div>
+												</div>
+												<!--end::Label-->
+											</div>
+											<!--end::Step 5-->
+										</div>
+										<!--end::Nav-->
+									</div>
+									<!--end::Wrapper-->
+								</div>
+								<!--begin::Aside-->
+								<!--begin::Content-->
+								<div class="d-flex flex-row-fluid flex-center bg-body rounded">
+									<!--begin::Form-->
+									<form class="py-20 w-100 w-xl-700px px-9" novalidate="novalidate" id="kt_create_account_form">
+										<!--begin::Step 1-->
+										<div class="current" data-kt-stepper-element="content">
+											<!--begin::Wrapper-->
+											<div class="w-100">
+												<!--begin::Heading-->
+												<div class="pb-10 pb-lg-15">
+													<!--begin::Title-->
+													<h2 class="fw-bolder d-flex align-items-center text-dark">Kepala Surat
+													<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Billing is issued based on your selected account type"></i></h2>
+													<!--end::Title-->
+													<!--begin::Notice-->
+													<div class="text-muted fw-bold fs-6">Lengkapi data Kop Surat, nomor surat, perihal, lampiran, sifat dan 
+													<a href="#" class="link-primary fw-bolder">penerima surat </a></div>
+													<!--end::Notice-->
+												</div>
+												<!--end::Heading-->
+												<!--begin::Input group-->
+												<div class="fv-row">
+													<!--begin::Row-->
+													<div class="row">
+													<!--begin::Option-->
+													<label class="form-check form-check-custom form-check-solid align-items-start mb-3">
+														<!--begin::Input-->
+														<input class="form-check-input mx-2" type="radio" name="email-preferences[]" value="1" />
+														<!--end::Input-->
+														<!--begin::Label-->
+														<span class="form-check-label d-flex flex-column align-items-start">
+															<span class="fw-bolder fs-5 mb-0">Dinas Komunikasi Informatika Statistik dan Persandian</span>
+															<span class="fw-bolder fs-5 mb-6">(KOP SURAT)</span>
 														</span>
+														<!--end::Label-->
+													</label>
+													<!--end::Option-->
+														<!--begin::Input group-->
+														<div class="fv-row mb-5">
+															<!--begin::Label-->
+															<label class="form-label required">Nomor Surat</label>
+															<!--end::Label-->
+															<!--begin::Input-->
+															<input name="nomor" class="form-control form-control-lg form-control-solid" value="Isi nomor surat" />
+															<!--end::Input-->
+														</div>
+														<!--end::Input group-->
+														<!--begin::Input group-->
+														<div class="fv-row mb-5">
+															<!--begin::Label-->
+															<label class="form-label required">Perihal Surat</label>
+															<!--end::Label-->
+															<!--begin::Input-->
+															<input name="perihal" class="form-control form-control-lg form-control-solid" value="Perihal surat tentang sesuatu ..." />
+															<!--end::Input-->
+														</div>
+														<!--end::Input group-->
+														<!--begin::Input group-->
+														<div class="fv-row mb-5">
+															<!--begin::Label-->
+															<label class="form-label required">Lampiran Surat</label>
+															<!--end::Label-->
+															<!--begin::Input-->
+															<input name="lampiran" class="form-control form-control-lg form-control-solid" value="3 Dokumen" />
+															<!--end::Input-->
+														</div>
+														<!--end::Input group-->
+														<!--begin::Input group-->
+														<div class="fv-row mb-5">
+															<!--begin::Label-->
+															<label class="form-label required">Sifat Surat</label>
+															<!--end::Label-->
+															<!--begin::Input-->
+															<select name="country" aria-label="Sifat Surat" data-control="select2" data-placeholder="Sifat Surat" class="form-select form-select-solid form-select-lg fw-bold">
+																<option value="">Sifat Surat</option>
+																<option>Biasa</option>
+																<option>Penting</option>
+																<option>Rahasia</option>
+															</select>
+															<!--end::Input-->
+														</div>
+														<!--end::Input group-->
+														<div class="fv-row mb-5">
+															<h5 class="fs-14 mb-1">Penerima Surat</h5>
+															<select required multiple="multiple" name="favorite_fruits" id="multiselect-basic" class="text-dark">
+																<option selected class="text-dark">FERDY MEIROFA EKA SAPUTRA</option>
+																<option class="text-dark">FERDIAN RIZA YUDHA</option>
+																<option class="text-dark">ARISCATUR PRATOMO</option>
+															</select>
+														</div>
+													</div>
+													<!--end::Row-->
+												</div>
+												<!--end::Input group-->
+											</div>
+											<!--end::Wrapper-->
+										</div>
+										<!--end::Step 1-->
+										<!--begin::Step 2-->
+										<div data-kt-stepper-element="content">
+											<!--begin::Wrapper-->
+											<div class="w-100">
+												<!--begin::Heading-->
+												<div class="pb-10 pb-lg-15">
+													<!--begin::Title-->
+													<h2 class="fw-bolder text-dark">BADAN SURAT</h2>
+													<!--end::Title-->
+													<!--begin::Notice-->
+													<div class="text-muted fw-bold fs-6">Konsideran dan Isi Surat
+													<a href="#" class="link-primary fw-bolder">Help Page</a>.</div>
+													<!--end::Notice-->
+													<!--begin::Input group-->
+													<div class="fv-row mb-10">
+														<!--begin::Label-->
+														<label class="form-label required">Dasar</label>
+														<!--end::Label-->
+														<!--begin::Input-->
+														<textarea name="dasar" class="form-control form-control-lg form-control-solid" value="Konsideran"  rows="10"></textarea>
+														<!--end::Input-->
 													</div>
 												</div>
 											</div>
+											<!--end::Wrapper-->
 										</div>
-										<!--end::Body-->
-									</div>
-								</div>
-							</div>
-							<!--end::Row-->
-
-							<div class="row">
-								<div class="col-12 col-md-8">
-									<div class="card mb-5">
-										<div class="card-header py-5">
-											<span class="badge badge-square badge-danger h-75px fs-5 fw-normal text-wrap text-start shadow border border-dashed text-white">
-												<i class="fa fa-info-circle fs-2 text-white mx-8"></i>
-												Dokumen dibawah ini hanya versi preview (pratinjau), untuk melihat dokumen asli silahkan download surat ini.										
-											</span>
-										</div>
-
-										<div class="card-body">
-											<iframe src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Fraw%2Egithubusercontent%2Ecom%3A443%2Fdolanmiu%2Fdocx%2Fmaster%2Fdemo%2Fdotx%2Ftemplate%2Edotx" width="100%" height="650px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
-										</div>
-										
-										
-										<div class="separator separator-dashed mb-7"></div>
-										
-										<span class="badge badge-square badge-warning h-75px mx-5 fs-5 fw-normal text-wrap text-start shadow border border-dashed text-white">
-											<i class="fa fa-info-circle fs-2 text-white mx-8"></i>
-											Anda belum meng-upload draf surat, silahkan klik tombol Download dibawah lalu Upload kembali
-										</span>
-										<div class="card-footer mt-5">
-											<div class="button-grup">
-												<div class="d-flex flex-wrap gap-2 justify-content-between">
-													<a href="#" type="button" class="btn btn-group-lg btn-primary">
-														<i class="fa fa-file-download fs-2"></i> Download Draft Surat
-													</a>
-													<a href="#" type="button" class="btn btn-group-lg btn-outline-info text-hover-white text-end">
-														<i class="fa fa-upload fs-2"></i> Upload Draft Surat
-													</a>
+										<!--end::Step 2-->
+										<!--begin::Step 3-->
+										<div data-kt-stepper-element="content">
+											<!--begin::Wrapper-->
+											<div class="w-100">
+												<!--begin::Heading-->
+												<div class="pb-10 pb-lg-12">
+													<!--begin::Title-->
+													<h2 class="fw-bolder text-dark">Berkas Lampiran Surat</h2>
+													<!--end::Title-->
+													<!--begin::Notice-->
+													<div class="text-muted fw-bold fs-6">Berkas Lampiran
+													<a href="#" class="link-primary fw-bolder">Help Page</a>.</div>
+													<!--end::Notice-->
 												</div>
+												<!--end::Heading-->
+												<div class="fv-row">
+													<!--begin::Dropzone-->
+													<div class="dropzone" id="kt_dropzonejs_example_1">
+														<!--begin::Message-->
+														<div class="dz-message needsclick">
+															<!--begin::Icon-->
+															<i class="bi bi-file-earmark-arrow-up text-primary fs-3x"></i>
+															<!--end::Icon-->
+											
+															<!--begin::Info-->
+															<div class="ms-4">
+																<h3 class="fs-5 fw-bolder text-gray-900 mb-1">Drop files here or click to upload.</h3>
+																<span class="fs-7 fw-bold text-gray-400">Silahkan pilih file lampiran apabila terdapat Lampiran Surat melalui form dibawah ini</span>
+																<span class="fs-7 fw-bold text-gray-400">Catatan : Ekstensi yang diizinkan adalah doc, docx, pdf, xls, xlsx, ppt, pptx, txt, zip, rar dengan Maksimal ukuran file <code>2MB</code> </span>
+															</div>
+															<!--end::Info-->
+														</div>
+													</div>
+													<!--end::Dropzone-->
+												</div>
+												<!--end::Input group-->
+												<script>
+													var myDropzone = new Dropzone("#kt_dropzonejs_example_1", {
+														url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
+														paramName: "file", // The name that will be used to transfer the file
+														maxFiles: 10,
+														maxFilesize: 10, // MB
+														addRemoveLinks: true,
+														accept: function(file, done) {
+															if (file.name == "wow.jpg") {
+																done("Naha, you don't.");
+															} else {
+																done();
+															}
+														}
+													});
+												</script>
 											</div>
+											<!--end::Wrapper-->
 										</div>
-									</div>
+										<!--end::Step 3-->
+										<!--begin::Step 4-->
+										<div data-kt-stepper-element="content">
+											<!--begin::Wrapper-->
+											<div class="w-100">
+												<!--begin::Heading-->
+												<div class="pb-10 pb-lg-15">
+													<!--begin::Title-->
+													<h2 class="fw-bolder text-dark">Entitas Surat</h2>
+													<!--end::Title-->
+													<!--begin::Notice-->
+													<div class="text-muted fw-bold fs-6">Pilih Pemeriksa, Penandatangan dan Tembusan Surat
+													<a href="#" class="text-primary fw-bolder">Help Page</a>.</div>
+													<!--end::Notice-->
+												</div>
+												<!--end::Heading-->
+												<!--begin::Input group-->
+												<div class="fv-row mb-5">
+													<!--begin::Label-->
+													<label class="form-label required">Pemeriksa</label>
+													<!--end::Label-->
+													<!--begin::Input-->
+													<select name="pemeriksa" aria-label="PemeriksaSurat" data-control="select2" data-placeholder="PemeriksaSurat" class="form-select form-select-solid form-select-lg fw-bold">
+														<option value="">Sifat Surat</option>
+														<option>FERDY MEIROFA EKA SAPUTRA - Kepala Bidang Aplikasi Informatika</option>
+													</select>
+													<!--end::Input-->
+												</div>
+												<!--end::Input group-->
+												<!--begin::Input group-->
+												<div class="fv-row mb-5">
+													<!--begin::Label-->
+													<label class="form-label required">Penandatangan</label>
+													<!--end::Label-->
+													<!--begin::Input-->
+													<select name="peneken" aria-label="Penandatangan" data-control="select2" data-placeholder="Penandatangan" class="form-select form-select-solid form-select-lg fw-bold">
+														<option value="">Sifat Surat</option>
+														<option>FERDY MEIROFA EKA SAPUTRA - Kepala Bidang Aplikasi Informatika</option>
+													</select>
+													<!--end::Input-->
+												</div>
+												<!--end::Input group-->
+												<!--begin::Input group-->
+												<div class="fv-row mb-5">
+													<!--begin::Label-->
+													<label class="form-label required">Tembusan Surat</label>
+													<!--end::Label-->
+													<!--begin::Input-->
+													<select name="tembusan" aria-label="Tembusan" data-control="select2" data-placeholder="Tembusan" class="form-select form-select-solid form-select-lg fw-bold">
+														<option value="">Sifat Surat</option>
+														<option>FERDY MEIROFA EKA SAPUTRA - Kepala Bidang Aplikasi Informatika</option>
+													</select>
+													<!--end::Input-->
+												</div>
+												<!--end::Input group-->
+											</div>
+											<!--end::Wrapper-->
+										</div>
+										<!--end::Step 4-->
+										<!--begin::Step 5-->
+										<div data-kt-stepper-element="content">
+											<!--begin::Wrapper-->
+											<div class="w-100">
+												<!--begin::Heading-->
+												<div class="pb-8 pb-lg-10">
+													<!--begin::Title-->
+													<h2 class="fw-bolder text-dark">Your Are Done!</h2>
+													<!--end::Title-->
+													<!--begin::Notice-->
+													<div class="text-muted fw-bold fs-6">Surat berhasil
+													<a href="#" class="link-primary fw-bolder">diperbarui</a></div>
+													<!--end::Notice-->
+												</div>
+												<!--end::Heading-->
+												<!--begin::Body-->
+												<div class="mb-0">
+													<!--begin::Text-->
+													<div class="fs-6 text-gray-600 mb-5">Deskripsi tambahan / atau keterangan untuk proses selanjutnya dalam tata naskah surat.</div>
+													<!--end::Text-->
+													<!--begin::Alert-->
+													<!--begin::Notice-->
+													<div class="notice d-flex bg-light-warning rounded border-warning border border-dashed p-6">
+														<!--begin::Icon-->
+														<!--begin::Svg Icon | path: icons/duotune/general/gen044.svg-->
+														<span class="svg-icon svg-icon-2tx svg-icon-warning me-4">
+															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																<rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10" fill="black" />
+																<rect x="11" y="14" width="7" height="2" rx="1" transform="rotate(-90 11 14)" fill="black" />
+																<rect x="11" y="17" width="2" height="2" rx="1" transform="rotate(-90 11 17)" fill="black" />
+															</svg>
+														</span>
+														<!--end::Svg Icon-->
+														<!--end::Icon-->
+														<!--begin::Wrapper-->
+														<div class="d-flex flex-stack flex-grow-1">
+															<!--begin::Content-->
+															<div class="fw-bold">
+																<h4 class="text-gray-900 fw-bolder">We need your attention!</h4>
+																<div class="fs-6 text-gray-700">To start using great tools, please, please
+																<a href="#" class="fw-bolder">Create Team Platform</a></div>
+															</div>
+															<!--end::Content-->
+														</div>
+														<!--end::Wrapper-->
+													</div>
+													<!--end::Notice-->
+													<!--end::Alert-->
+												</div>
+												<!--end::Body-->
+											</div>
+											<!--end::Wrapper-->
+										</div>
+										<!--end::Step 5-->
+										<!--begin::Actions-->
+										<div class="d-flex flex-stack pt-10">
+											<!--begin::Wrapper-->
+											<div class="mr-2">
+												<button type="button" class="btn btn-lg btn-light-primary me-3" data-kt-stepper-action="previous">
+												<!--begin::Svg Icon | path: icons/duotune/arrows/arr063.svg-->
+												<span class="svg-icon svg-icon-4 me-1">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+														<rect opacity="0.5" x="6" y="11" width="13" height="2" rx="1" fill="black" />
+														<path d="M8.56569 11.4343L12.75 7.25C13.1642 6.83579 13.1642 6.16421 12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75L5.70711 11.2929C5.31658 11.6834 5.31658 12.3166 5.70711 12.7071L11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25C13.1642 17.8358 13.1642 17.1642 12.75 16.75L8.56569 12.5657C8.25327 12.2533 8.25327 11.7467 8.56569 11.4343Z" fill="black" />
+													</svg>
+												</span>
+												<!--end::Svg Icon-->Kembali</button>
+											</div>
+											<!--end::Wrapper-->
+											<!--begin::Wrapper-->
+											<div>
+												<button type="button" class="btn btn-lg btn-primary me-3" data-kt-stepper-action="submit">
+													<span class="indicator-label">Selesaikan
+													<!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
+													<span class="svg-icon svg-icon-3 ms-2 me-0">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+															<rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="black" />
+															<path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="black" />
+														</svg>
+													</span>
+													<!--end::Svg Icon--></span>
+													<span class="indicator-progress">Please wait...
+													<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+												</button>
+												<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="next">Selanjutnya
+												<!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
+												<span class="svg-icon svg-icon-4 ms-1 me-0">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+														<rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="black" />
+														<path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="black" />
+													</svg>
+												</span>
+												<!--end::Svg Icon--></button>
+											</div>
+											<!--end::Wrapper-->
+										</div>
+										<!--end::Actions-->
+									</form>
+									<!--end::Form-->
 								</div>
-								<div class="col-12 col-md-4">	
-									<div class="card">
-										<div class="card-header ribbon ribbon-start">
-											<div class="ribbon-label text-dark bg-warning"><i class="fa fa-edit text-dark me-2"></i> Belum dibaca</div>
-										</div>
-										<div class="card-body">
-											<a href="#" class="btn btn-light-info w-100 mb-2 "><i class="fas fa-file-download fs-4 me-2"></i> Download</a>
-											<a href="#" class="btn btn-light-danger w-100 mb-2"><i class="fas fa-trash fs-4 me-2"></i> Hapus Surat</a>
-											<a href="admin-detail-surat-keluar-internal-edit.html" class="btn btn-light-success w-100 mb-2"><i class="fas fa-edit fs-4 me-2"></i> Edit</a>
-											<a href="#" class="btn btn-light-primary w-100 mb-2"><i class="fas fa-reply-all"></i> Refresh Surat</a>
-										</div>
-										<div class="card-footer">
-											<a href="#" class="btn btn-primary w-100 mb-2"><i class="fas fa-cloud-download-alt"></i> Download Lampiran Surat</a>
-										</div>
-									</div>								
-								</div>
+								<!--end::Content-->
 							</div>
+							<!--end::Stepper-->
 					</div>
 					<!--end::Container-->
 
@@ -3237,88 +3586,13 @@
 	<script src="assets/js/custom/modals/create-app.js"></script>
 
 	<!--begin::Page Custom Javascript(used by this page)-->
-	<script src="assets/js/custom/modals/create-project.bundle.js"></script>
+	<script src="assets/js/custom/modals/create-account.js"></script>
 	<script src="assets/js/custom/widgets.js"></script>
 	<script src="assets/js/custom/apps/chat/chat.js"></script>
 	<script src="assets/js/custom/modals/upgrade-plan.js"></script>
-	<script src="assets/js/custom/documentation/forms/dropzonejs.js"></script>
-	<script src="assets/js/custom/documentation/documentation.js"></script>
-	<script>
-		// set the dropzone container id
-		var id = "#kt_dropzonejs_example_2";
+	<script src="assets/js/multi.js"></script>
+	<script src="assets/js/formadv.js"></script>
 
-		// set the preview element template
-		var previewNode = $(id + " .dropzone-item");
-		previewNode.id = "";
-		var previewTemplate = previewNode.parent(".dropzone-items").html();
-		previewNode.remove();
-
-		var myDropzone = new Dropzone(id, { // Make the whole body a dropzone
-			url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
-			parallelUploads: 20,
-			previewTemplate: previewTemplate,
-			maxFilesize: 1, // Max filesize in MB
-			autoQueue: false, // Make sure the files aren't queued until manually added
-			previewsContainer: id + " .dropzone-items", // Define the container to display the previews
-			clickable: id +
-				" .dropzone-select" // Define the element that should be used as click trigger to select files.
-		});
-
-		myDropzone.on("addedfile", function (file) {
-			// Hookup the start button
-			file.previewElement.querySelector(id + " .dropzone-start").onclick = function () {
-				myDropzone.enqueueFile(file);
-			};
-			$(document).find(id + " .dropzone-item").css("display", "");
-			$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "inline-block");
-		});
-
-		// Update the total progress bar
-		myDropzone.on("totaluploadprogress", function (progress) {
-			$(this).find(id + " .progress-bar").css("width", progress + "%");
-		});
-
-		myDropzone.on("sending", function (file) {
-			// Show the total progress bar when upload starts
-			$(id + " .progress-bar").css("opacity", "1");
-			// And disable the start button
-			file.previewElement.querySelector(id + " .dropzone-start").setAttribute("disabled", "disabled");
-		});
-
-		// Hide the total progress bar when nothing's uploading anymore
-		myDropzone.on("complete", function (progress) {
-			var thisProgressBar = id + " .dz-complete";
-			setTimeout(function () {
-				$(thisProgressBar + " .progress-bar, " + thisProgressBar + " .progress, " + thisProgressBar +
-					" .dropzone-start").css("opacity", "0");
-			}, 300)
-
-		});
-
-		// Setup the buttons for all transfers
-		document.querySelector(id + " .dropzone-upload").onclick = function () {
-			myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
-		};
-
-		// Setup the button for remove all files
-		document.querySelector(id + " .dropzone-remove-all").onclick = function () {
-			$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "none");
-			myDropzone.removeAllFiles(true);
-		};
-
-		// On all files completed upload
-		myDropzone.on("queuecomplete", function (progress) {
-			$(id + " .dropzone-upload").css("display", "none");
-		});
-
-		// On all files removed
-		myDropzone.on("removedfile", function (file) {
-			if (myDropzone.files.length < 1) {
-				$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "none");
-			}
-		});
-	</script>
-	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->
 </body>
 <!--end::Body-->
