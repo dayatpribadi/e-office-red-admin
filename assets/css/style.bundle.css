@@ -54357,6 +54357,33 @@ body {
     padding: 0
 }
 
+.bg-pattern1 {
+    background-image: url(../media/misc/pattern-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-pattern2 {
+    background-image: url(../media/misc/pattern-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-pattern3 {
+    background-image: url(../media/misc/pattern-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-pattern4 {
+    background-image: url(../media/misc/pattern-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-pattern5 {
+    background-image: url(../media/misc/pattern-9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top top;
+}
+
 
 
 .aside .aside-menu {
