@@ -474,7 +474,7 @@
 					<!--begin::Container-->
 					<div class="container-xxl" id="kt_content_container">
 						<div class="row">
-							<div class="col-12 col-xl-4">
+							<div class="col-12 col-xxl-4">
 								<div class="card p-6">
 									<form action="#">
 										<!--begin::Input group-->
@@ -650,9 +650,12 @@
 								</div>
 							</div>
 							<div class="col-12 col-xl-8">
-								<div class="card p-6 ">
-
-								</div>
+								<style>
+									.build-wraps {
+										background: #f2f2f2 url('https://formbuilder.online/assets/img/noise.png');
+									}
+								</style>
+								<div id="build-wrap" class="build-wraps"></div>
 							</div>
 						</div>
 					</div>
@@ -660,7 +663,7 @@
 				</div>
 				<!--end::Content-->
 				<!--begin::Footer-->
-				<div class="footer pb-10 d-flex flex-lg-column" id="kt_footer">
+				<div class="footer py-10 d-flex flex-lg-column" id="kt_footer">
 					<!--begin::Container-->
 					<div class="container d-flex flex-column flex-md-row flex-stack">
 						<!--begin::Copyright-->
@@ -729,84 +732,18 @@
 	<script src="assets/js/custom/widgets.js"></script>
 	<script src="assets/js/custom/apps/chat/chat.js"></script>
 	<script src="assets/js/custom/modals/upgrade-plan.js"></script>
-	<script src="assets/js/custom/documentation/forms/dropzonejs.js"></script>
 	<script src="assets/js/custom/documentation/documentation.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+	<script src="assets/js/custom/form-builder.js"></script>
+	<!-- <script src="https://formbuilder.online/assets/js/form-builder.min.js"></script> -->
 	<script>
-		// set the dropzone container id
-		var id = "#kt_dropzonejs_example_2";
-
-		// set the preview element template
-		var previewNode = $(id + " .dropzone-item");
-		previewNode.id = "";
-		var previewTemplate = previewNode.parent(".dropzone-items").html();
-		previewNode.remove();
-
-		var myDropzone = new Dropzone(id, { // Make the whole body a dropzone
-			url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
-			parallelUploads: 20,
-			previewTemplate: previewTemplate,
-			maxFilesize: 1, // Max filesize in MB
-			autoQueue: false, // Make sure the files aren't queued until manually added
-			previewsContainer: id + " .dropzone-items", // Define the container to display the previews
-			clickable: id +
-				" .dropzone-select" // Define the element that should be used as click trigger to select files.
-		});
-
-		myDropzone.on("addedfile", function (file) {
-			// Hookup the start button
-			file.previewElement.querySelector(id + " .dropzone-start").onclick = function () {
-				myDropzone.enqueueFile(file);
-			};
-			$(document).find(id + " .dropzone-item").css("display", "");
-			$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "inline-block");
-		});
-
-		// Update the total progress bar
-		myDropzone.on("totaluploadprogress", function (progress) {
-			$(this).find(id + " .progress-bar").css("width", progress + "%");
-		});
-
-		myDropzone.on("sending", function (file) {
-			// Show the total progress bar when upload starts
-			$(id + " .progress-bar").css("opacity", "1");
-			// And disable the start button
-			file.previewElement.querySelector(id + " .dropzone-start").setAttribute("disabled", "disabled");
-		});
-
-		// Hide the total progress bar when nothing's uploading anymore
-		myDropzone.on("complete", function (progress) {
-			var thisProgressBar = id + " .dz-complete";
-			setTimeout(function () {
-				$(thisProgressBar + " .progress-bar, " + thisProgressBar + " .progress, " + thisProgressBar +
-					" .dropzone-start").css("opacity", "0");
-			}, 300)
-
-		});
-
-		// Setup the buttons for all transfers
-		document.querySelector(id + " .dropzone-upload").onclick = function () {
-			myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
-		};
-
-		// Setup the button for remove all files
-		document.querySelector(id + " .dropzone-remove-all").onclick = function () {
-			$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "none");
-			myDropzone.removeAllFiles(true);
-		};
-
-		// On all files completed upload
-		myDropzone.on("queuecomplete", function (progress) {
-			$(id + " .dropzone-upload").css("display", "none");
-		});
-
-		// On all files removed
-		myDropzone.on("removedfile", function (file) {
-			if (myDropzone.files.length < 1) {
-				$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "none");
-			}
+		jQuery($ => {
+		const fbTemplate = document.getElementById('build-wrap');
+		$(fbTemplate).formBuilder();
 		});
 	</script>
-	<!--end::Page Custom Javascript-->
+
 	<!--end::Javascript-->
 </body>
 <!--end::Body-->
