@@ -25,7 +25,6 @@
 	<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 	<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 	<!--end::Global Stylesheets Bundle-->
-
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -303,7 +302,7 @@
 												</a>
 											</div>
 											<div class="menu-item">
-												<a class="menu-link active" href="admin-e-sakip-laporan-perencanaan.html">
+												<a class="menu-link" href="admin-e-sakip-laporan-perencanaan.html">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -311,7 +310,7 @@
 												</a>
 											</div>
 											<div class="menu-item">
-												<a class="menu-link" href="admin-e-sakip-laporan-pencapaian.html">
+												<a class="menu-link active" href="admin-e-sakip-laporan-pencapaian.html">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -483,7 +482,7 @@
 							data-kt-swapper="true" data-kt-swapper-mode="prepend"
 							data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
 							<!--begin::Heading-->
-							<h1 class="d-flex flex-column text-dark fw-bolder my-0 fs-1">E-Sakip Laporan Perencanaan</h1>
+							<h1 class="d-flex flex-column text-dark fw-bolder my-0 fs-1">E-Sakip Laporan Pencapaian</h1>
 							<!--end::Heading-->
 							<!--begin::Breadcrumb-->
 							<ul class="breadcrumb breadcrumb-dot fw-bold fs-base my-1">
@@ -491,7 +490,7 @@
 									<a href="index.html" class="text-muted">Dashboard</a>
 								</li>
 								<li class="breadcrumb-item text-muted">E-Sakip</li>
-								<li class="breadcrumb-item text-muted">Laporan Perencanaan</li>
+								<li class="breadcrumb-item text-muted">Laporan Pencapaian</li>
 							</ul>
 							<!--end::Breadcrumb-->
 						</div>
@@ -839,83 +838,8 @@
 	<script src="assets/js/custom/widgets.js"></script>
 	<script src="assets/js/custom/apps/chat/chat.js"></script>
 	<script src="assets/js/custom/modals/upgrade-plan.js"></script>
-	<script src="assets/js/custom/documentation/forms/dropzonejs.js"></script>
 	<script src="assets/js/custom/documentation/documentation.js"></script>
-	<script>
-		// set the dropzone container id
-		var id = "#kt_dropzonejs_example_2";
 
-		// set the preview element template
-		var previewNode = $(id + " .dropzone-item");
-		previewNode.id = "";
-		var previewTemplate = previewNode.parent(".dropzone-items").html();
-		previewNode.remove();
-
-		var myDropzone = new Dropzone(id, { // Make the whole body a dropzone
-			url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
-			parallelUploads: 20,
-			previewTemplate: previewTemplate,
-			maxFilesize: 1, // Max filesize in MB
-			autoQueue: false, // Make sure the files aren't queued until manually added
-			previewsContainer: id + " .dropzone-items", // Define the container to display the previews
-			clickable: id +
-				" .dropzone-select" // Define the element that should be used as click trigger to select files.
-		});
-
-		myDropzone.on("addedfile", function (file) {
-			// Hookup the start button
-			file.previewElement.querySelector(id + " .dropzone-start").onclick = function () {
-				myDropzone.enqueueFile(file);
-			};
-			$(document).find(id + " .dropzone-item").css("display", "");
-			$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "inline-block");
-		});
-
-		// Update the total progress bar
-		myDropzone.on("totaluploadprogress", function (progress) {
-			$(this).find(id + " .progress-bar").css("width", progress + "%");
-		});
-
-		myDropzone.on("sending", function (file) {
-			// Show the total progress bar when upload starts
-			$(id + " .progress-bar").css("opacity", "1");
-			// And disable the start button
-			file.previewElement.querySelector(id + " .dropzone-start").setAttribute("disabled", "disabled");
-		});
-
-		// Hide the total progress bar when nothing's uploading anymore
-		myDropzone.on("complete", function (progress) {
-			var thisProgressBar = id + " .dz-complete";
-			setTimeout(function () {
-				$(thisProgressBar + " .progress-bar, " + thisProgressBar + " .progress, " + thisProgressBar +
-					" .dropzone-start").css("opacity", "0");
-			}, 300)
-
-		});
-
-		// Setup the buttons for all transfers
-		document.querySelector(id + " .dropzone-upload").onclick = function () {
-			myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
-		};
-
-		// Setup the button for remove all files
-		document.querySelector(id + " .dropzone-remove-all").onclick = function () {
-			$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "none");
-			myDropzone.removeAllFiles(true);
-		};
-
-		// On all files completed upload
-		myDropzone.on("queuecomplete", function (progress) {
-			$(id + " .dropzone-upload").css("display", "none");
-		});
-
-		// On all files removed
-		myDropzone.on("removedfile", function (file) {
-			if (myDropzone.files.length < 1) {
-				$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "none");
-			}
-		});
-	</script>
 	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->
 </body>

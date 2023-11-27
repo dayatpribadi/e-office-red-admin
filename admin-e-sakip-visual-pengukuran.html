@@ -24,8 +24,54 @@
 	<!--begin::Global Stylesheets Bundle(used by all pages)-->
 	<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 	<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="assets/js/orgchart/orgchart.css" rel="stylesheet" >
+	<style type="text/css">
+		.navbar-default .navbar-nav > li.clr1 a{
+			color:#ffffff;
+		}
+		.navbar-default .navbar-nav > li.clr2 a{
+			color: #FFEB3B;;
+		}
+		.navbar-default .navbar-nav > li.clr3 a{
+			color: #5EC64D;
+		}
+		.navbar-default .navbar-nav > li.clr4 a{
+			color: #29AAE2;
+		}
+		.navbar-default .navbar-nav > li.clr1 a:hover, .navbar-default .navbar-nav > li.clr1.active a{
+			color:#fff;
+			background: #F55;
+		}
+		.navbar-default .navbar-nav > li.clr2 a:hover, .navbar-default .navbar-nav > li.clr2.active a{
+			color: #fff;
+			background:#973CB6;
+		}
+		.navbar-default .navbar-nav > li.clr3 a:hover, .navbar-default .navbar-nav > li.clr3.active a{
+			color: #fff;
+			background:#5EC64D;
+		}
+		.navbar-default .navbar-nav > li.clr4 a:hover, .navbar-default .navbar-nav > li.clr4.active a{
+			color: #fff;
+			background: #29AAE2;
+		}
+		.navbar-default{
+			background-color: #3b5998;
+			font-size:18px;
+		}
+		.navbar-default .navbar-brand {
+			color: #ffffff;
+			font-weight:bold;
+		}
+		.navbar-default .navbar-text {
+			color:#ffffff;
+		}
+		a{
+			color: #FFC107;
+			text-decoration: none;
+		}
+		
+		</style>
 	<!--end::Global Stylesheets Bundle-->
-
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -303,7 +349,7 @@
 												</a>
 											</div>
 											<div class="menu-item">
-												<a class="menu-link active" href="admin-e-sakip-laporan-perencanaan.html">
+												<a class="menu-link" href="admin-e-sakip-laporan-perencanaan.html">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -335,7 +381,7 @@
 												</a>
 											</div>
 											<div class="menu-item">
-												<a class="menu-link" href="admin-e-sakip-visual-pengukuran.html">
+												<a class="menu-link active" href="admin-e-sakip-visual-pengukuran.html">
 													<span class="menu-bullet">
 														<span class="bullet bullet-dot"></span>
 													</span>
@@ -483,7 +529,7 @@
 							data-kt-swapper="true" data-kt-swapper-mode="prepend"
 							data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
 							<!--begin::Heading-->
-							<h1 class="d-flex flex-column text-dark fw-bolder my-0 fs-1">E-Sakip Laporan Perencanaan</h1>
+							<h1 class="d-flex flex-column text-dark fw-bolder my-0 fs-1">E-Sakip Visual Pengukuran</h1>
 							<!--end::Heading-->
 							<!--begin::Breadcrumb-->
 							<ul class="breadcrumb breadcrumb-dot fw-bold fs-base my-1">
@@ -491,7 +537,7 @@
 									<a href="index.html" class="text-muted">Dashboard</a>
 								</li>
 								<li class="breadcrumb-item text-muted">E-Sakip</li>
-								<li class="breadcrumb-item text-muted">Laporan Perencanaan</li>
+								<li class="breadcrumb-item text-muted">Visual Pengukuran</li>
 							</ul>
 							<!--end::Breadcrumb-->
 						</div>
@@ -581,185 +627,112 @@
 
 							<!--begin::Row-->
 							<div class="row">
+								<div class="row mb-10 justify-content-between">
+									<div class="col-12 col-xxl-6 mb-4 mb-xxl-0">
+										<select name="dash1" class="form-select border form-select-white shadow" data-control="select2" data-placeholder="Semua Perangkat Daerah">
+											<option></option>
+											<option value="1" selected>Sekretariat Daerah</option>
+											<option value="2">Dinas Komunikasi Informatika Statistik dan Persandian</option>
+										</select>
+									</div>
+									<div class="col-6 col-xxl-3 text-center">
+										<button type="button" class="btn btn-success w-100">
+											<i class="fa fa-filter"></i>
+											Filter
+										</button>
+									</div>
+									<div class="col-6 col-xxl-3">
+										<button type="button" class="btn btn-info w-100">
+											<i class="fa fa-print"></i>
+											Cetak Laporan
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="row">
 								<div class="col-12">
-									<div class="card">
-										<div class="row px-10 pt-10 justify-content-between py-5">
-											<div class="col-12 col-xxl-6 mb-4 mb-xxl-0">
-												<select name="skpds" class="form-select form-select-solid" data-control="select2" data-placeholder="Semua Perangkat Daerah">
-													<option></option>
-													<option value="1">Sekretariat Daerah</option>
-													<option value="2">Dinas Komunikasi Informatika Statistik dan Persandian</option>
-												</select>
-											</div>
-											<div class="col-6 col-xxl-3 text-center">
-												<button type="button" class="btn btn-success w-100">
-													<i class="fa fa-filter"></i>
-													Filter
-												</button>
-											</div>
-											<div class="col-6 col-xxl-3">
-												<button type="button" class="btn btn-info w-100">
-													<i class="fa fa-print"></i>
-													Cetak Laporan
-												</button>
-											</div>
-										</div>
+									<div class="card overflow-scroll">
 										<div class="card-body">
-											<div class="table border table-responsive dragscroll p-0" style="height: 750px;">
-												<table id="renstra_perencanaan" class="table border table-bordered border-white table-striped">
-													<thead class="bg-primary border border-white text-white" style="position: sticky; left: 0; top: 0; width: 100%;">
-														<tr style="text-align: center;">
-															<th style="min-width:50px" rowspan="3" class="text-center align-middle">Misi/Tujuan/Sasaran Program
-																Pembangunan Daerah</th>
-															<th style="min-width:50px" rowspan="3" class="text-center align-middle"> Indikator Kinerja
-																(tujuan/impact/outcome)</th>
-															<th style="min-width:50px" rowspan="3" class="text-center align-middle">Kondisi Kinerja Awal
-																Renstra (Tahun 0)</th>
-															<th style="min-width:50px" colspan="12" class="text-center align-middle">Capaian Kinerja Program
-																dan Kerangka Pendanaan</th>
-															<th style="min-width:50px" rowspan="3" class="text-center align-middle">Unit Penanggung Jawab</th>
-															<th style="min-width:50px" rowspan="3" class="text-center align-middle">Casecading Ke</th>
-														</tr>
-														<tr>
-									
-															<th style="min-width:50px" colspan="2" class="text-center align-middle">2022</th>
-															<th style="min-width:50px" colspan="2" class="text-center align-middle">2023</th>
-															<th style="min-width:50px" colspan="2" class="text-center align-middle">2024</th>
-															<th style="min-width:50px" colspan="2" class="text-center align-middle">2025</th>
-															<th style="min-width:50px" colspan="2" class="text-center align-middle">2026</th>
-															<th style="min-width:50px" colspan="2" class="text-center align-middle">Kondisi Kinerja pada akhir
-																periode Renstra</th>
-														</tr>
-														<tr>
-															<th style="min-width:50px" class="text-center align-middle">target</th>
-															<th style="min-width:50px" class="text-center align-middle">Rp</th>
-															<th style="min-width:50px" class="text-center align-middle">target</th>
-															<th style="min-width:50px" class="text-center align-middle">Rp</th>
-															<th style="min-width:50px" class="text-center align-middle">target</th>
-															<th style="min-width:50px" class="text-center align-middle">Rp</th>
-															<th style="min-width:50px" class="text-center align-middle">target</th>
-															<th style="min-width:50px" class="text-center align-middle">Rp</th>
-															<th style="min-width:50px" class="text-center align-middle">target</th>
-															<th style="min-width:50px" class="text-center align-middle">Rp</th>
-															<th style="min-width:50px" class="text-center align-middle">target</th>
-															<th style="min-width:50px" class="text-center align-middle">Rp</th>
-														</tr>
-														<tr class="bg-light text-dark">
-															<th style="min-width:50px" class="text-center align-middle">1</th>
-															<th style="min-width:50px" class="text-center align-middle">2</th>
-															<th style="min-width:50px" class="text-center align-middle">3</th>
-															<th style="min-width:50px" class="text-center align-middle">4</th>
-															<th style="min-width:50px" class="text-center align-middle">5</th>
-															<th style="min-width:50px" class="text-center align-middle">6</th>
-															<th style="min-width:50px" class="text-center align-middle">7</th>
-															<th style="min-width:50px" class="text-center align-middle">8</th>
-															<th style="min-width:50px" class="text-center align-middle">9</th>
-															<th style="min-width:50px" class="text-center align-middle">10</th>
-															<th style="min-width:50px" class="text-center align-middle">11</th>
-															<th style="min-width:50px" class="text-center align-middle">12</th>
-															<th style="min-width:50px" class="text-center align-middle">13</th>
-															<th style="min-width:50px" class="text-center align-middle">14</th>
-															<th style="min-width:50px" class="text-center align-middle">15</th>
-															<th style="min-width:50px" class="text-center align-middle">16</th>
-															<th style="min-width:50px" class="text-center align-middle">17</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr class="bg-success">
-															<td style="min-width:50px" colspan="19">MISI 1 : MEMBANGKITKAN TATA KELOLA PEMERINTAHAN YANG
-																PROFESIONAL DAN PELAYANAN MASYARAKAT SECARA INOVATIF, KREATIF, BERBUDAYA DAN
-																BERTANGGUNGJAWAB </td>
-														</tr>
-														<tr class="bg-warning">
-															<td style="min-width:50px" colspan="19">TUJUAN 1 : Meningkatkan Kualitas Tata Kelola
-																Pemerintahan Yang Baik Pada Delapan Area Perubahan Reformasi Birokrasi </td>
-														</tr>
-														<tr>
-															<td style="min-width:50px" rowspan="1">SASARAN 1 : Meningkatnya pecapaian kinerja perencanaan
-																pembagunan daerah </td>
-															<td style="min-width:50px">Nilai sakip kabupaten (Komponen perencanan Kinerja)</td>
-															<td style="min-width:50px">18,86 Dokumen</td>
-															<td style="min-width:50px">18,86 Dokumen</td>
-															<td style="min-width:50px">-</td>
-															<td style="min-width:50px">18,91 Dokumen</td>
-															<td style="min-width:50px">-</td>
-															<td style="min-width:50px">18,96 Dokumen</td>
-															<td style="min-width:50px">-</td>
-															<td style="min-width:50px">19,10 Dokumen</td>
-															<td style="min-width:50px">-</td>
-															<td style="min-width:50px">19,15 Dokumen</td>
-															<td style="min-width:50px">-</td>
-															<td style="min-width:50px">19,15 Dokumen</td>
-															<td style="min-width:50px">Rp. 1.000.000.000</td>
-															<td style="min-width:50px" rowspan="1"> Badan Perencanaan Pembangunan Daerah </td>
-															<td style="min-width:50px">
-																Sekretariat Badan Perencanaan Pembangunan Daerah; Bidang Pemerintahan Pembangunan Manusia;
-																Perencana Ahli Muda Sub Koordinator Pemerintahan; Perencana Ahli Muda Sub Koordinator
-																Kesejahteraan Sosial; Perencana Ahli Muda Sub Koordinator Kesejahteraan Rakyat; Bidang
-																Perencanaan, Pengendalian dan Evaluasi Pembangunan Daerah; Perencana Ahli Muda Sub
-																Koordinator Perencanaan dan Pendanaan; Perencana Ahli Muda Sub Koordinator Data dan
-																Informasi; Perencana Ahli Muda Sub Koordinator Pengendalian, Evaluasi dan Pelaporan; Bidang
-																Perekonomian dan Sumber Daya Alam; Perencana Ahli Muda Sub Koordinator Pariwisata, Industri
-																dan Perdagangan ; Perencana Ahli Muda Sub Koordinator Ekonomi dan Penanaman Modal; Perencana
-																Ahli Muda Sub Koordinator SDA, Ketahanan Pangan dan Iptek; Bidang Infrastruktur dan
-																Kewilayahan; Perencana Ahli Muda Sub Koordinator Permukiman; Perencana Ahli Muda Sub
-																Koordinator PU dan Pengembangan Wilayah; Perencana Ahli Muda Sub Koordinator Prasarana
-																Wilayah dan Komunikasi
-															</td>
-														</tr>
-									
-									
-														<tr>
-															<td style="min-width:50px" rowspan="1">PROGRAM 1.1 : Program koordinasi dan sinkronisasi
-																perencanaan pembangunan daerah </td>
-															<td style="min-width:50px">Indeks kepuasan perangkat daerah</td>
-															<td style="min-width:50px">- indeks</td>
-															<td style="min-width:50px">80 indeks</td>
-															<td style="min-width:50px">Rp. 9.000.000.000</td>
-															<td style="min-width:50px">85 indeks</td>
-															<td style="min-width:50px">Rp. 9.000.000.000</td>
-															<td style="min-width:50px">85 indeks</td>
-															<td style="min-width:50px">Rp. 9.000.000.000</td>
-															<td style="min-width:50px">90 indeks</td>
-															<td style="min-width:50px">Rp. 9.000.000.000</td>
-															<td style="min-width:50px">90 indeks</td>
-															<td style="min-width:50px">Rp. 9.000.000.000</td>
-															<td style="min-width:50px">90 indeks</td>
-															<td style="min-width:50px">Rp. 9.000.000.000</td>
-															<td style="min-width:50px" rowspan="1"> Sekretariat Badan Perencanaan Pembangunan Daerah </td>
-															<td style="min-width:50px">
-																Sekretariat Badan Perencanaan Pembangunan Daerah
-															</td>
-														</tr>
-									
-									
-														<tr>
-															<td style="min-width:50px" rowspan="1">KEGIATAN 1.1.1 : Perencanaan penganggaran dan evaluasi
-																kinerja perangkat daerah </td>
-															<td style="min-width:50px">Dokumen perencanaan penganggaran dan evaluasi kinerja perangkat
-																daerah</td>
-															<td style="min-width:50px">100 %</td>
-															<td style="min-width:50px">100 %</td>
-															<td style="min-width:50px">Rp. 100.000.000</td>
-															<td style="min-width:50px">100 %</td>
-															<td style="min-width:50px">Rp. 120.000.000</td>
-															<td style="min-width:50px">100 %</td>
-															<td style="min-width:50px">Rp. 140.000.000</td>
-															<td style="min-width:50px">100 %</td>
-															<td style="min-width:50px">Rp. 160.000.000</td>
-															<td style="min-width:50px">100 %</td>
-															<td style="min-width:50px">Rp. 200.000.000</td>
-															<td style="min-width:50px">100 %</td>
-															<td style="min-width:50px">Rp. 200.000.000</td>
-															<td style="min-width:50px" rowspan="1"> Sekretariat Badan Perencanaan Pembangunan Daerah </td>
-															<td style="min-width:50px">
-																-
-															</td>
-														</tr>
-									
-													</tbody>
-												</table>
-											</div>
+											<ul id="tree-data" style="display:none">
+													<li id="root" class="p-5 w-300px">
+														<img src="../../assets/media/icons/logo-oi.png" style="height: 50px; padding-bottom: 5px;">
+														<div class="text-hedigs">
+															<h6 class="text-white fw-bolder">Sekretariat Daerah</h6>
+														</div>
+														<span class="badge badge-danger badge-square px-4">100%</span> Capaian
+														<ul>
+															<li id="node1" class="p-5 w-300px">
+																<img src="../../assets/media/icons/logo-oi.png" style="height: 50px; padding-bottom: 5px;">
+																<div class="text-hedigs">
+																	<h6 class="text-white fw-bolder">Bagian Tata Pemerintahan dan Kerjasama</h6>
+																</div>
+																<span class="badge badge-danger badge-square px-4">100%</span> Capaian
+															   <ul>
+																	<li id="node6">
+																	Sub Bagian
+																	</li>
+																	<li id="node6">
+																	Sub Bagian
+																	<ul>
+																		<li id="node6">
+																		Sub Sub Bagian
+																		</li>
+																		<li id="node6">
+																		Sub Sub Bagian
+																		</li>
+																	</ul>
+																	</li>
+																	<li id="node6">
+																	Sub Bagian
+																	</li>
+																</ul>
+															</li>
+															<li id="node2" class="p-5 w-300px">
+																<img src="../../assets/media/icons/logo-oi.png" style="height: 50px; padding-bottom: 5px;">
+																<div class="text-hedigs">
+																	<h6 class="text-white fw-bolder">Bagian Hukum</h6>
+																</div>
+																<span class="badge badge-danger badge-square px-4">100%</span> Capaian
+																<ul>
+																	<li id="node6">
+																	Sub Bagian
+																	</li>
+																	<li id="node6">
+																	Sub Bagian
+																	</li>
+																	<li id="node6">
+																	Sub Bagian
+																	</li>
+																</ul>
+															</li>
+															<li id="node3" class="p-5 w-300px">
+																<img src="../../assets/media/icons/logo-oi.png" style="height: 50px; padding-bottom: 5px;">
+																<div class="text-hedigs">
+																	<h6 class="text-white fw-bolder">Bagian Administrasi Pembangunan</h6>
+																</div>
+																<span class="badge badge-danger badge-square px-4">100%</span> Capaian
+																
+															</li>
+															<li id="node4" class="p-5 w-300px">
+																<img src="../../assets/media/icons/logo-oi.png" style="height: 50px; padding-bottom: 5px;">
+																<div class="text-hedigs">
+																	<h6 class="text-white fw-bolder">Bagian Kesejahteraan Rakyat</h6>
+																</div>
+																<span class="badge badge-danger badge-square px-4">100%</span> Capaian
+															   
+															</li>
+															<li id="node5" class="p-5 w-300px">
+																<img src="../../assets/media/icons/logo-oi.png" style="height: 50px; padding-bottom: 5px;">
+																<div class="text-hedigs">
+																	<h6 class="text-white fw-bolder">Bagian Umum</h6>
+																</div>
+																<span class="badge badge-danger badge-square px-4">100%</span> Capaian
+															</li>
+														</ul>
+														
+													</li>
+											</ul>
+											<div id="tree-view"></div>		
 										</div>
 									</div>
 								</div>
@@ -830,92 +803,24 @@
 	<script src="assets/plugins/global/plugins.bundle.js"></script>
 	<script src="assets/js/scripts.bundle.js"></script>
 	<!--end::Global Javascript Bundle-->
-	<!--end::Page Vendors Javascript-->
-	<!--begin::Page Custom Javascript(used by this page)-->
-	<script src="assets/js/custom/modals/create-app.js"></script>
 
-	<!--begin::Page Custom Javascript(used by this page)-->
-	<script src="assets/js/custom/modals/create-project.bundle.js"></script>
-	<script src="assets/js/custom/widgets.js"></script>
-	<script src="assets/js/custom/apps/chat/chat.js"></script>
-	<script src="assets/js/custom/modals/upgrade-plan.js"></script>
-	<script src="assets/js/custom/documentation/forms/dropzonejs.js"></script>
-	<script src="assets/js/custom/documentation/documentation.js"></script>
+	<script src="assets/js/orgchart/orgchart.js"></script>
 	<script>
-		// set the dropzone container id
-		var id = "#kt_dropzonejs_example_2";
-
-		// set the preview element template
-		var previewNode = $(id + " .dropzone-item");
-		previewNode.id = "";
-		var previewTemplate = previewNode.parent(".dropzone-items").html();
-		previewNode.remove();
-
-		var myDropzone = new Dropzone(id, { // Make the whole body a dropzone
-			url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
-			parallelUploads: 20,
-			previewTemplate: previewTemplate,
-			maxFilesize: 1, // Max filesize in MB
-			autoQueue: false, // Make sure the files aren't queued until manually added
-			previewsContainer: id + " .dropzone-items", // Define the container to display the previews
-			clickable: id +
-				" .dropzone-select" // Define the element that should be used as click trigger to select files.
+		$(document).ready(function () {
+		// create a tree
+		$("#tree-data").jOrgChart({
+			chartElement: $("#tree-view"), 
+			nodeClicked: nodeClicked
 		});
-
-		myDropzone.on("addedfile", function (file) {
-			// Hookup the start button
-			file.previewElement.querySelector(id + " .dropzone-start").onclick = function () {
-				myDropzone.enqueueFile(file);
-			};
-			$(document).find(id + " .dropzone-item").css("display", "");
-			$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "inline-block");
-		});
-
-		// Update the total progress bar
-		myDropzone.on("totaluploadprogress", function (progress) {
-			$(this).find(id + " .progress-bar").css("width", progress + "%");
-		});
-
-		myDropzone.on("sending", function (file) {
-			// Show the total progress bar when upload starts
-			$(id + " .progress-bar").css("opacity", "1");
-			// And disable the start button
-			file.previewElement.querySelector(id + " .dropzone-start").setAttribute("disabled", "disabled");
-		});
-
-		// Hide the total progress bar when nothing's uploading anymore
-		myDropzone.on("complete", function (progress) {
-			var thisProgressBar = id + " .dz-complete";
-			setTimeout(function () {
-				$(thisProgressBar + " .progress-bar, " + thisProgressBar + " .progress, " + thisProgressBar +
-					" .dropzone-start").css("opacity", "0");
-			}, 300)
-
-		});
-
-		// Setup the buttons for all transfers
-		document.querySelector(id + " .dropzone-upload").onclick = function () {
-			myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
-		};
-
-		// Setup the button for remove all files
-		document.querySelector(id + " .dropzone-remove-all").onclick = function () {
-			$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "none");
-			myDropzone.removeAllFiles(true);
-		};
-
-		// On all files completed upload
-		myDropzone.on("queuecomplete", function (progress) {
-			$(id + " .dropzone-upload").css("display", "none");
-		});
-
-		// On all files removed
-		myDropzone.on("removedfile", function (file) {
-			if (myDropzone.files.length < 1) {
-				$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "none");
+		// lighting a node in the selection
+		function nodeClicked(node, type) {
+			node = node || $(this);
+			$('.jOrgChart .selected').removeClass('selected');
+				node.addClass('selected');
 			}
 		});
-	</script>
+	</script>	
+
 	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->
 </body>
