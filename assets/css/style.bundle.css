@@ -54398,13 +54398,13 @@ body {
 
 .aside .aside-menu .menu>.menu-item.menu-accordion.show>.menu-link>.menu-icon .svg-icon,
 .aside .aside-menu .menu>.menu-item.menu-accordion.showing>.menu-link>.menu-icon .svg-icon {
-    transform: rotateZ(90deg);
+    transform: rotateZ(0deg);
     transition: transform .3s ease
 }
 
 [direction=rtl] .aside .aside-menu .menu>.menu-item.menu-accordion.show>.menu-link>.menu-icon .svg-icon,
 [direction=rtl] .aside .aside-menu .menu>.menu-item.menu-accordion.showing>.menu-link>.menu-icon .svg-icon {
-    transform: rotateZ(-90deg)
+    transform: rotateZ(0deg);
 }
 
 .aside .aside-menu .menu>.menu-item.menu-accordion.hiding>.menu-link>.menu-icon .svg-icon {
