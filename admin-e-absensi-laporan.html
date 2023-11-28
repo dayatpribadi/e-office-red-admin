@@ -490,15 +490,15 @@
 						<div class="row pt-5">
 							<div class="d-flex flex-wrap flex-stack mb-2 pe-0 ps-4">
 								<!--begin::Title-->
-								<h3 class="fw-bolder my-2">Data Log Absensi
+								<h3 class="fw-bolder my-2">Data Absensi
 								<span class="fs-6 text-gray-400 fw-bold ms-1">Periode : Desember 2023</span></h3>
 								<!--end::Title-->
 								<!--begin::Controls-->
 								<div class="d-flex my-2">
 									<!--end::Search-->
-									<a type="button" class='btn btn-success btn-sm' data-bs-toggle="modal" data-bs-target="#kt_modal_tambah">
-										<i class="fa fa-plus-circle me-2"></i>
-										Tambah Log Absen</a>
+									<a href="#" class='btn btn-success btn-sm' data-bs-toggle="tooltip" title="Filter Menu">
+										<i class="fa fa-download me-2"></i>
+										Download Doc (.docx)</a>
 								</div>
 								<!--end::Controls-->
 							</div>
@@ -509,44 +509,119 @@
 						<div class="row pt-5">
 							<div class="ps-4 pe-0">
 								<div class="col-12">
-									<div class="card">
-										<!--begin::Table-->
-										<table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_table_users">
-											<!--begin::Table head-->
-											<thead>
-												<!--begin::Table row-->
-												<tr class="text-start text-dark border border-dashed bg-light-danger fw-bolder fs-7 text-uppercase gs-0">
-													<th class="align-middle text-center">No</th>
-													<th class="align-middle text-center">NIP</th>
-													<th class="align-middle text-center">Nama</th>
-													<th class="text-center">Tanggal</th>
-													<th class="align-middle text-center">Status</th>
-													<th class="align-middle text-center">Aksi</th>
-												</tr>
-												<!--end::Table row-->
-											</thead>
-											<!--end::Table head-->
-											<!--begin::Table body-->
-											<tbody class="text-gray-600 fw-bold">
-												
-												<!--begin::Table row-->
-												<tr class="text-center">
-													<td>1</td>
-													<td>196510221993031003</td>
-													<td>M. Ahmad</td>
-													<td>01 November 2023</td>
-													<td>Dinas Luar</td>
-													<td>
-														<button type="button" class="btn btn-primary btn-icon btn-sm" data-bs-toggle="modal" data-bs-target="#kt_modal_new_card"><i class="fa fa-eye"></i></button>
-														<button type="button" class="btn btn-danger btn-icon btn-sm"><i class="fa fa-trash"></i></button>
-														<button type="button" class="btn btn-success btn-icon btn-sm" data-bs-toggle="modal" data-bs-target="#kt_modal_edit"><i class="fa fa-edit"></i></button>
-													</td>
-												</tr>
-												<!--end::Table row-->
-											</tbody>
-											<!--end::Table body-->
-										</table>
-										<!--end::Table-->
+									<div class="card p-6">
+										<div class="table-responsive">
+											<!--begin::Table-->
+											<table class="table table-bordered table-striped align-middle fs-6 gy-5" id="kt_table_users">
+												<!--begin::Table head-->
+												<thead>
+													<!--begin::Table row-->
+													<tr class="text-start text-dark border fw-bolder fs-7 text-uppercase gs-0">
+														<th rowspan="2" class="align-middle text-center">No</th>
+														<th rowspan="2" class="align-middle text-center">NIP</th>
+														<th rowspan="2" class="align-middle text-center">Nama</th>
+														<th colspan="13" class="text-center">Jumlah Hari</th>
+														<th rowspan="2" class="align-middle text-center">Aksi</th>
+													</tr>
+													<tr class="text-start text-dark border fw-bolder fs-7 text-uppercase gs-0">
+														<th class="text-center">
+															<span class="badge badge-circle badge-success">H</span>
+														</th>
+														<th class="text-center">
+															<span class="badge badge-circle text-dark">TAP</span>
+														</th>
+														<th class="text-center">
+															<span class="badge badge-circle badge-primary">S</span>
+														</th>
+														<th class="text-center">
+															<span class="badge badge-circle badge-primary">CT</span>
+														</th>
+														<th class="text-center">
+															<span class="badge badge-circle badge-primary">I</span>
+														</th>
+														<th class="text-center">
+															<span class="badge badge-circle badge-primary">TK</span>
+														</th>
+														<th class="text-center">
+															<span class="badge badge-circle badge-warning">DL</span>
+														</th>
+														<th class="text-center">
+															<span class="badge badge-circle badge-warning">DK</span>
+														</th>
+														<th class="text-center">
+															<span class="badge badge-circle badge-warning">BTK</span>
+														</th>
+														<th class="text-center">
+															<span class="badge badge-circle text-dark">IM</span>
+														</th>
+														<th class="text-center">
+															<span class="badge badge-circle text-dark">WFH</span>
+														</th>
+														<th class="text-center">
+															<span class="badge badge-circle text-dark">MPP</span>
+														</th>
+														<th class="text-center">
+															<span class="badge badge-circle text-dark">HukDis</span>
+														</th>
+													</tr>
+													<!--end::Table row-->
+												</thead>
+												<!--end::Table head-->
+												<!--begin::Table body-->
+												<tbody class="text-gray-600 border fw-bold">
+													<!--begin::Table row-->
+													<tr class="text-center">
+														<td>1</td>
+														<td>196510221993031003</td>
+														<td>Akhmad Ahmad</td>
+														<td>1</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>
+															<button type="button" class="btn btn-success btn-icon btn-sm"><i class="fa fa-eye "></i></button>
+															<button type="button" class="btn btn-primary btn-icon btn-sm"><i class="fa fa-file-download "></i></button>
+														</td>
+													</tr>
+													<!--end::Table row-->
+													<!--begin::Table row-->
+													<tr class="text-center">
+														<td>2</td>
+														<td>196510221993031003</td>
+														<td>M. Ahmad</td>
+														<td>1</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>0</td>
+														<td>
+															<button type="button" class="btn btn-success btn-icon btn-sm"><i class="fa fa-eye "></i></button>
+															<button type="button" class="btn btn-primary btn-icon btn-sm"><i class="fa fa-file-download "></i></button>
+														</td>
+													</tr>
+													<!--end::Table row-->
+												</tbody>
+												<!--end::Table body-->
+											</table>
+											<!--end::Table-->
+										</div>
 									</div>
 								</div>
 							</div>
@@ -554,7 +629,7 @@
 						<!--end:Row-->
 
 						<!--begin::Pagination-->
-						<div class="d-flex flex-stack flex-wrap pt-3">
+						<div class="d-flex flex-stack flex-wrap pt-10">
 							<div class="fs-6 fw-bold text-gray-700">Showing 1 to 10 of 50 entries</div>
 							<!--begin::Pages-->
 							<ul class="pagination">
