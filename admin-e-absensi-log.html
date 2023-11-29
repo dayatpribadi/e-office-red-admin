@@ -441,7 +441,7 @@
 										<div class="row mb-6 align-items-center">
 											<div class="col-12 col-md-4 mb-3">
 												<label for="exampleFormControlInput1" class="form-label">Tanggal</label>
-												<input class="form-control form-control-solid border" placeholder="Pick date rage" id="kt_daterangepicker_2"/>
+												<input class="form-control form-control-solid border" placeholder="Pick date rage" id="kt_datepicker_1"/>
 											</div>
 
 											<div class="col-12 col-md-2 mb-3">
@@ -517,7 +517,7 @@
 							<div class="card">
 								<!--begin::Table-->
 								<div class="table-responsive p-6">
-									<table class="table align-middle table-striped table-row-dashed g-5" id="kt_table_users">
+									<table class="table align-middle table-striped border table-bordered g-5" id="kt_table_users">
 										<!--begin::Table head-->
 										<thead>
 											<!--begin::Table row-->
@@ -903,16 +903,9 @@
 			}
 		});
 	</script>
-			<script>
-				$("#kt_daterangepicker_2").daterangepicker({
-					timePicker: true,
-					startDate: moment().startOf("hour"),
-					endDate: moment().startOf("hour").add(32, "hour"),
-					locale: {
-						format: "M/DD hh:mm A"
-					}
-				});
-			</script>
+	<script>
+		$("#kt_datepicker_1").flatpickr();
+	</script>
 	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->
 </body>
