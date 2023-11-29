@@ -24,7 +24,6 @@
 	<!--begin::Global Stylesheets Bundle(used by all pages)-->
 	<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
 	<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
-	<link href="assets/js/filepond/filepond.css" rel="stylesheet">
 	<!--end::Global Stylesheets Bundle-->
 </head>
 <!--end::Head-->
@@ -494,9 +493,9 @@
 														placeholder="Search" />
 												</div>
 												<!--end::Search-->
-												<button type="button" class='btn btn-success btn-sm' data-bs-toggle="modal" data-bs-target="#kt_modal_tambah" >
+												<a type="button" class='btn btn-success btn-sm'>
 													<i class="fa fa-plus-circle me-2"></i>
-													Buat Permintaan Baru</button>
+													Buat Permintaan Baru</a>
 											</div>
 											<!--end::Controls-->
 										</div>
@@ -601,34 +600,39 @@
 											<!--begin::Form-->
 											<form id="kt_modal_new_card_form" class="form" action="#">
 												<div class="row">
-													<div class="col-12">
+													<div class="col-12 col-md-6">
 														<!--begin::Input group-->
 														<div class="d-flex flex-column mb-7 fv-row">
 															<label for="exampleFormControlInput1"
-																class="form-label">Permintaan Cuti</label>
-															<select name="country" aria-label="Permintaan Cuti"
-																data-control="select2" data-placeholder="Permintaan Cuti"
-																class="form-select form-select-lg fw-bold">
+																class="form-label">Pilih Pegawai</label>
+															<select name="country" aria-label="Pilih Pegawai"
+																data-control="select2" data-placeholder="Pilih Pegawai"
+																class="form-select form-select-solid form-select-lg fw-bold border border-primary border-dashed">
 																<option value="">Select a Country...</option>
-																<option>Alasan Penting</option>
-																<option>Bersalin</option>
-																<option>Cuti Besar</option>
+																<option>Agung Laksono</option>
+																<option>Mahfud Siregar</option>
+																<option>Prabowo Sanjaya</option>
 															</select>
 														</div>
 														<!--end::Input group-->
 													</div>
-													<div class="col-12 col-xxl-6">
-														<div class="fv-row mb-8">
-															<label for="" class="form-label">Periode Cuti (Tgl.Awal)</label>
-															<input class="form-control" placeholder="Pick a date" id="kt_datepicker_1"/>
+													<div class="col-12 col-md-6">
+														<!--begin::Input group-->
+														<div class="d-flex flex-column mb-7 fv-row">
+															<label for="exampleFormControlInput1"
+																class="form-label">Pilih Alasan Tidak Hadir</label>
+															<select name="country" aria-label="Alasan Tidak Hadir"
+																data-control="select2"
+																data-placeholder="Alasan Tidak Hadir"
+																class="form-select form-select-solid form-select-lg fw-bold border border-primary border-dashed">
+																<option value="">Select a Country...</option>
+																<option>Kurang Enak Badan</option>
+																<option>Ada Urusan Keluarga</option>
+																<option>Ziarah</option>
+																<option>Mengurus Anak Sakit</option>
+															</select>
 														</div>
-													</div>
-													
-													<div class="col-12 col-xxl-6">
-														<div class="fv-row mb-8">
-															<label for="" class="form-label">Periode Cuti (Tgl.Akhir)</label>
-															<input class="form-control" placeholder="Pick a date" id="kt_datepicker_2"/>
-														</div>
+														<!--end::Input group-->
 													</div>
 													<!--begin::Input group-->
 													<div class="fv-row mb-8">
@@ -644,34 +648,35 @@
 													<!--end::Input group-->
 													<!--begin::Input group-->
 													<div class="fv-row mb-8">
+														<!--begin::Dropzone-->
 														<div class="dropzone"
-														id="kt_dropzonejs_example_1">
-														<!--begin::Message-->
-														<div class="dz-message needsclick">
-															<!--begin::Icon-->
-															<!--begin::Svg Icon | path: icons/duotune/files/fil010.svg-->
-															<span class="svg-icon svg-icon-3hx svg-icon-primary">
-																<svg xmlns="http://www.w3.org/2000/svg" width="24"
-																	height="24" viewBox="0 0 24 24" fill="none">
-																	<path opacity="0.3"
-																		d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14L20 8V21C20 21.6 19.6 22 19 22ZM16 12.6L12.7 9.3C12.3 8.9 11.7 8.9 11.3 9.3L8 12.6H11V18C11 18.6 11.4 19 12 19C12.6 19 13 18.6 13 18V12.6H16Z"
-																		fill="black" />
-																	<path d="M15 8H20L14 2V7C14 7.6 14.4 8 15 8Z"
-																		fill="black" />
-																</svg>
-															</span>
-															<!--end::Svg Icon-->
-															<!--end::Icon-->
-															<!--begin::Info-->
-															<div class="ms-4">
-																<h3 class="dfs-3 fw-bolder text-gray-900 mb-1">File
-																	Pendukung/Surat Izin dll</h3>
-																<span class="fw-bold fs-4 text-muted">Seret dan
-																	letakkan file disini untuk diupload</span>
+															id="kt_modal_create_project_settings_logo">
+															<!--begin::Message-->
+															<div class="dz-message needsclick">
+																<!--begin::Icon-->
+																<!--begin::Svg Icon | path: icons/duotune/files/fil010.svg-->
+																<span class="svg-icon svg-icon-3hx svg-icon-primary">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="24"
+																		height="24" viewBox="0 0 24 24" fill="none">
+																		<path opacity="0.3"
+																			d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14L20 8V21C20 21.6 19.6 22 19 22ZM16 12.6L12.7 9.3C12.3 8.9 11.7 8.9 11.3 9.3L8 12.6H11V18C11 18.6 11.4 19 12 19C12.6 19 13 18.6 13 18V12.6H16Z"
+																			fill="black" />
+																		<path d="M15 8H20L14 2V7C14 7.6 14.4 8 15 8Z"
+																			fill="black" />
+																	</svg>
+																</span>
+																<!--end::Svg Icon-->
+																<!--end::Icon-->
+																<!--begin::Info-->
+																<div class="ms-4">
+																	<h3 class="dfs-3 fw-bolder text-gray-900 mb-1">File
+																		Pendukung/Surat Izin dll</h3>
+																	<span class="fw-bold fs-4 text-muted">Seret dan
+																		letakkan file disini untuk diupload</span>
+																</div>
+																<!--end::Info-->
 															</div>
-															<!--end::Info-->
 														</div>
-													</div>
 														<!--end::Dropzone-->
 													</div>
 													<!--end::Input group-->
@@ -679,7 +684,7 @@
 
 												<!--begin::Actions-->
 												<div class="text-center pt-15">
-													<button type="reset"
+													<button type="reset" id="kt_modal_new_card_cancel"
 														class="btn btn-light me-3">Batal</button>
 													<button type="submit" id="kt_modal_new_card_submit"
 														class="btn btn-primary">
@@ -996,30 +1001,83 @@
 	<script src="assets/js/custom/widgets.js"></script>
 	<script src="assets/js/custom/apps/chat/chat.js"></script>
 	<script src="assets/js/custom/modals/upgrade-plan.js"></script>
-	<script src="assets/js/filepond/filepond.js"></script>
-	<script src="assets/js/dropzone.js"></script>
+	<script src="assets/js/custom/documentation/forms/dropzonejs.js"></script>
+	<script src="assets/js/custom/documentation/documentation.js"></script>
 	<script>
-		$("#kt_datepicker_1").flatpickr();
-		$("#kt_datepicker_2").flatpickr();
-	</script>
-	<script>
-		var myDropzone = new Dropzone("#kt_dropzonejs_example_1", {
+		// set the dropzone container id
+		var id = "#kt_dropzonejs_example_2";
+
+		// set the preview element template
+		var previewNode = $(id + " .dropzone-item");
+		previewNode.id = "";
+		var previewTemplate = previewNode.parent(".dropzone-items").html();
+		previewNode.remove();
+
+		var myDropzone = new Dropzone(id, { // Make the whole body a dropzone
 			url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
-			paramName: "file", // The name that will be used to transfer the file
-			maxFiles: 10,
-			maxFilesize: 10, // MB
-			addRemoveLinks: true,
-			accept: function(file, done) {
-				if (file.name == "wow.jpg") {
-					done("Naha, you don't.");
-				} else {
-					done();
-				}
+			parallelUploads: 20,
+			previewTemplate: previewTemplate,
+			maxFilesize: 1, // Max filesize in MB
+			autoQueue: false, // Make sure the files aren't queued until manually added
+			previewsContainer: id + " .dropzone-items", // Define the container to display the previews
+			clickable: id +
+				" .dropzone-select" // Define the element that should be used as click trigger to select files.
+		});
+
+		myDropzone.on("addedfile", function (file) {
+			// Hookup the start button
+			file.previewElement.querySelector(id + " .dropzone-start").onclick = function () {
+				myDropzone.enqueueFile(file);
+			};
+			$(document).find(id + " .dropzone-item").css("display", "");
+			$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "inline-block");
+		});
+
+		// Update the total progress bar
+		myDropzone.on("totaluploadprogress", function (progress) {
+			$(this).find(id + " .progress-bar").css("width", progress + "%");
+		});
+
+		myDropzone.on("sending", function (file) {
+			// Show the total progress bar when upload starts
+			$(id + " .progress-bar").css("opacity", "1");
+			// And disable the start button
+			file.previewElement.querySelector(id + " .dropzone-start").setAttribute("disabled", "disabled");
+		});
+
+		// Hide the total progress bar when nothing's uploading anymore
+		myDropzone.on("complete", function (progress) {
+			var thisProgressBar = id + " .dz-complete";
+			setTimeout(function () {
+				$(thisProgressBar + " .progress-bar, " + thisProgressBar + " .progress, " + thisProgressBar +
+					" .dropzone-start").css("opacity", "0");
+			}, 300)
+
+		});
+
+		// Setup the buttons for all transfers
+		document.querySelector(id + " .dropzone-upload").onclick = function () {
+			myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
+		};
+
+		// Setup the button for remove all files
+		document.querySelector(id + " .dropzone-remove-all").onclick = function () {
+			$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "none");
+			myDropzone.removeAllFiles(true);
+		};
+
+		// On all files completed upload
+		myDropzone.on("queuecomplete", function (progress) {
+			$(id + " .dropzone-upload").css("display", "none");
+		});
+
+		// On all files removed
+		myDropzone.on("removedfile", function (file) {
+			if (myDropzone.files.length < 1) {
+				$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "none");
 			}
 		});
 	</script>
-
-
 	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->
 </body>
