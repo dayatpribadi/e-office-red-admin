@@ -635,7 +635,8 @@
 												<label class="form-label fs-6 fw-bolder text-gray-700 mb-3">Tgl. Terima Surat</label>
 												<!--begin::Input group-->
 												<div class="mb-5 border border-primary border-dashed rounded">
-													<input type="date" class="form-control form-control-solid" placeholder="Tgl. Terima Surat" />
+													<input class="form-control form-control-solid" placeholder="Pick a date" id="kt_datepicker_1"/>
+
 												</div>
 												<!--end::Input group-->
 											</div>
@@ -653,7 +654,7 @@
 							<div class="row">
 								<!--begin::Hero nav-->
 								<div class="card-rounded bg-light d-flex flex-stack flex-wrap mt-5">
-									<a href="admin-detail-surat-keluar-internal-new.html" class="btn btn-light-primary  px-6 align-self-center text-nowrap my-6"><i class="fa fa-envelope-open-text me-2"></i>Buat Surat Baru</a>
+									<a href="admin-detail-surat-keluar-internal-new.html" class="btn btn-light-primary border border-white shadow  px-6 align-self-center text-nowrap my-6"><i class="fa fa-envelope-open-text me-2"></i>Buat Surat Baru</a>
 									<!--begin::Nav-->
 									<ul
 									class="nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bolder flex-nowrap">
@@ -661,7 +662,7 @@
 									<li class="nav-item">
 										<a class="nav-link rounded-top px-6 m-0 text-active-primary  active" data-bs-toggle="tab"
 											href="#TabSemua">Total Surat
-											<span class="badge badge-danger badge-square fs-2 p-5 ms-2">120</span>
+											<span class="ms-2">(120)</span>
 										</a>
 									</li>
 									<!--end::Nav item-->
@@ -669,7 +670,7 @@
 									<li class="nav-item">
 										<a class="nav-link text-active-primary rounded-top m-0 px-6" data-bs-toggle="tab"
 											href="#TabProses">Dalam Proses
-											<span class="badge badge-warning badge-square fs-2 p-5 ms-2">8</span>
+											<span class="ms-2">(8)</span>
 										</a>
 									</li>
 									<!--end::Nav item-->
@@ -677,7 +678,7 @@
 									<li class="nav-item">
 										<a class="nav-link rounded-top m-0 px-6 text-active-primary " data-bs-toggle="tab"
 											href="#TabSelesai">Selesai
-											<span class="badge badge-success badge-square fs-2 p-5 ms-1">5</span>
+											<span class="ms-1">(5)</span>
 										</a>
 									</li>
 									<!--end::Nav item-->
@@ -685,7 +686,7 @@
 									<li class="nav-item">
 										<a class="nav-link rounded-top m-0 px-6 text-active-primary " data-bs-toggle="tab"
 											href="#TabPerluTanggapan">Perlu Tanggapan
-											<span class="badge badge-danger badge-square fs-2 p-5 ms-1">10</span>
+											<span class="ms-1">(10)</span>
 										</a>
 									</li>
 									<!--end::Nav item-->
@@ -854,82 +855,8 @@
 	<script src="assets/js/custom/widgets.js"></script>
 	<script src="assets/js/custom/apps/chat/chat.js"></script>
 	<script src="assets/js/custom/modals/upgrade-plan.js"></script>
-	<script src="assets/js/custom/documentation/forms/dropzonejs.js"></script>
-	<script src="assets/js/custom/documentation/documentation.js"></script>
 	<script>
-		// set the dropzone container id
-		var id = "#kt_dropzonejs_example_2";
-
-		// set the preview element template
-		var previewNode = $(id + " .dropzone-item");
-		previewNode.id = "";
-		var previewTemplate = previewNode.parent(".dropzone-items").html();
-		previewNode.remove();
-
-		var myDropzone = new Dropzone(id, { // Make the whole body a dropzone
-			url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
-			parallelUploads: 20,
-			previewTemplate: previewTemplate,
-			maxFilesize: 1, // Max filesize in MB
-			autoQueue: false, // Make sure the files aren't queued until manually added
-			previewsContainer: id + " .dropzone-items", // Define the container to display the previews
-			clickable: id +
-				" .dropzone-select" // Define the element that should be used as click trigger to select files.
-		});
-
-		myDropzone.on("addedfile", function (file) {
-			// Hookup the start button
-			file.previewElement.querySelector(id + " .dropzone-start").onclick = function () {
-				myDropzone.enqueueFile(file);
-			};
-			$(document).find(id + " .dropzone-item").css("display", "");
-			$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "inline-block");
-		});
-
-		// Update the total progress bar
-		myDropzone.on("totaluploadprogress", function (progress) {
-			$(this).find(id + " .progress-bar").css("width", progress + "%");
-		});
-
-		myDropzone.on("sending", function (file) {
-			// Show the total progress bar when upload starts
-			$(id + " .progress-bar").css("opacity", "1");
-			// And disable the start button
-			file.previewElement.querySelector(id + " .dropzone-start").setAttribute("disabled", "disabled");
-		});
-
-		// Hide the total progress bar when nothing's uploading anymore
-		myDropzone.on("complete", function (progress) {
-			var thisProgressBar = id + " .dz-complete";
-			setTimeout(function () {
-				$(thisProgressBar + " .progress-bar, " + thisProgressBar + " .progress, " + thisProgressBar +
-					" .dropzone-start").css("opacity", "0");
-			}, 300)
-
-		});
-
-		// Setup the buttons for all transfers
-		document.querySelector(id + " .dropzone-upload").onclick = function () {
-			myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
-		};
-
-		// Setup the button for remove all files
-		document.querySelector(id + " .dropzone-remove-all").onclick = function () {
-			$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "none");
-			myDropzone.removeAllFiles(true);
-		};
-
-		// On all files completed upload
-		myDropzone.on("queuecomplete", function (progress) {
-			$(id + " .dropzone-upload").css("display", "none");
-		});
-
-		// On all files removed
-		myDropzone.on("removedfile", function (file) {
-			if (myDropzone.files.length < 1) {
-				$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "none");
-			}
-		});
+		$("#kt_datepicker_1").flatpickr();
 	</script>
 	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->
