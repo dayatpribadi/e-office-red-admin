@@ -667,7 +667,7 @@
 				<!--begin::Modal body-->
 				<div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
 					<!--begin::Form-->
-					<form id="kt_modal_new_card_form" class="form" action="#">
+					<form class="form" action="#">
 						<div class="row">
 							<div class="col-12 col-md-6">
 								<!--begin::Input group-->
@@ -715,7 +715,7 @@
 							<!--begin::Input group-->
 							<div class="fv-row mb-8">
 								<!--begin::Dropzone-->
-								<div class="dropzone" id="kt_dropzonejs_example_1">
+								<div class="dropzone" id="demo-upload" action="/upload">
 									<!--begin::Message-->
 									<div class="dz-message needsclick">
 										<!--begin::Icon-->
@@ -826,8 +826,6 @@
 	<script src="assets/js/custom/widgets.js"></script>
 	<script src="assets/js/custom/apps/chat/chat.js"></script>
 	<script src="assets/js/custom/modals/upgrade-plan.js"></script>
-	<script src="assets/js/custom/documentation/forms/dropzonejs.js"></script>
-	<script src="assets/js/custom/documentation/documentation.js"></script>
 	<script>
 		// set the dropzone container id
 		var id = "#kt_dropzonejs_example_2";
@@ -906,6 +904,71 @@
 	<script>
 		$("#kt_datepicker_1").flatpickr();
 	</script>
+	<script>
+		var dropzone = new Dropzone('#demo-upload', {
+			previewTemplate: document.querySelector('#preview-template').innerHTML,
+			parallelUploads: 2,
+			thumbnailHeight: 120,
+			thumbnailWidth: 120,
+			maxFilesize: 3,
+			filesizeBase: 1000,
+			thumbnail: function(file, dataUrl) {
+				if (file.previewElement) {
+				file.previewElement.classList.remove("dz-file-preview");
+				var images = file.previewElement.querySelectorAll("[data-dz-thumbnail]");
+				for (var i = 0; i < images.length; i++) {
+					var thumbnailElement = images[i];
+					thumbnailElement.alt = file.name;
+					thumbnailElement.src = dataUrl;
+				}
+				setTimeout(function() { file.previewElement.classList.add("dz-image-preview"); }, 1);
+				}
+			}
+
+			});
+
+
+			// Now fake the file upload, since GitHub does not handle file uploads
+			// and returns a 404
+
+			var minSteps = 6,
+				maxSteps = 60,
+				timeBetweenSteps = 100,
+				bytesPerStep = 100000;
+
+			dropzone.uploadFiles = function(files) {
+			var self = this;
+
+			for (var i = 0; i < files.length; i++) {
+
+				var file = files[i];
+				totalSteps = Math.round(Math.min(maxSteps, Math.max(minSteps, file.size / bytesPerStep)));
+
+				for (var step = 0; step < totalSteps; step++) {
+				var duration = timeBetweenSteps * (step + 1);
+				setTimeout(function(file, totalSteps, step) {
+					return function() {
+					file.upload = {
+						progress: 100 * (step + 1) / totalSteps,
+						total: file.size,
+						bytesSent: (step + 1) * file.size / totalSteps
+					};
+
+					self.emit('uploadprogress', file, file.upload.progress, file.upload.bytesSent);
+					if (file.upload.progress == 100) {
+						file.status = Dropzone.SUCCESS;
+						self.emit("success", file, 'success', null);
+						self.emit("complete", file);
+						self.processQueue();
+						//document.getElementsByClassName("dz-success-mark").style.opacity = "1";
+					}
+					};
+				}(file, totalSteps, step), duration);
+				}
+			}
+			}
+	</script>
+	<script src="assets/js/dropzone.js"></script>
 	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->
 </body>
