@@ -606,9 +606,9 @@
 							<div class="row gy-5 g-xl-10">
 								<div class="col-xl-12">
 									<!--begin::Notice-->
-									<div class="notice bg-light-primary rounded shadow p-6">
+									<div class="notice bg-light-primary rounded shadow p-5">
 										<!--begin::Input group-->
-										<div class="row mb-6 align-items-center">
+										<div class="row align-items-center">
 											<!--begin::Col-->
 											<div class="col-6 col-xxl-3">
 												<label class="form-label fs-6 fw-bolder text-gray-700 mb-3">Perihal Surat</label>
@@ -620,7 +620,7 @@
 											</div>
 											<!--end::Col-->
 											<!--begin::Col-->
-											<div class="col-6 col-xxl-2">
+											<div class="col-6 col-xxl-3">
 												<label class="form-label fs-6 fw-bolder text-gray-700 mb-3">No. Register</label>
 												<!--begin::Input group-->
 												<div class="mb-5 border border-primary border-dashed rounded">
@@ -634,7 +634,7 @@
 												<label class="form-label fs-6 fw-bolder text-gray-700 mb-3">Tgl. Terima Surat</label>
 												<!--begin::Input group-->
 												<div class="mb-5 border border-primary border-dashed rounded">
-													<input type="date" class="form-control form-control-solid" placeholder="Tgl. Terima Surat" />
+													<input class="form-control form-control-solid" placeholder="Pick a date" id="kt_datepicker_1"/>
 												</div>
 												<!--end::Input group-->
 											</div>
@@ -649,7 +649,7 @@
 									<!--end::Notice-->
 								</div>
 							</div>
-							<div class="row">
+							<div class="row mb-5">
 								<!--begin::Hero nav-->
 								<div class="card-rounded bg-light d-flex flex-stack flex-wrap p-5 mt-6">
 									<!--begin::Nav-->
@@ -659,7 +659,7 @@
 									<li class="nav-item">
 										<a class="nav-link text-active-primary me-6 active" data-bs-toggle="tab"
 											href="#TabSemua">Total Surat
-											<span class="badge badge-primary badge-circle p-5 ms-1">9771</span>
+											<span class="ms-3">(9771)</span>
 										</a>
 									</li>
 									<!--end::Nav item-->
@@ -667,7 +667,7 @@
 									<li class="nav-item">
 										<a class="nav-link text-active-primary me-6" data-bs-toggle="tab"
 											href="#TabSudah">Sudah Diregister
-											<span class="badge badge-warning badge-circle p-5 ms-1">8914</span>
+											<span class="ms-3">(8914)</span>
 										</a>
 									</li>
 									<!--end::Nav item-->
@@ -675,7 +675,7 @@
 									<li class="nav-item">
 										<a class="nav-link text-active-primary me-6" data-bs-toggle="tab"
 											href="#TabBelum">Belum Diregistrasi
-											<span class="badge badge-success badge-circle p-5 ms-1">792</span>
+											<span class="ms-3">(792)</span>
 										</a>
 									</li>
 									<!--end::Nav item-->
@@ -683,7 +683,7 @@
 									<li class="nav-item">
 										<a class="nav-link text-active-primary me-6" data-bs-toggle="tab"
 											href="#TabSelesai">Ditolak
-											<span class="badge badge-success badge-circle p-5 ms-1">65</span>
+											<span class="ms-3">(65)</span>
 										</a>
 									</li>
 									<!--end::Nav item-->
@@ -694,7 +694,7 @@
 							</div>
 							<!--end::Row-->
 							<!--begin::Contacts-->
-							<div class="row g-6 g-xl-9 mt-2">
+							<div class="row g-6 g-xl-9">
 								<!--begin::Col-->
 								<div class="col-md-6 col-xxl-4">
 									<a href="#">
@@ -852,82 +852,8 @@
 	<script src="assets/js/custom/widgets.js"></script>
 	<script src="assets/js/custom/apps/chat/chat.js"></script>
 	<script src="assets/js/custom/modals/upgrade-plan.js"></script>
-	<script src="assets/js/custom/documentation/forms/dropzonejs.js"></script>
-	<script src="assets/js/custom/documentation/documentation.js"></script>
 	<script>
-		// set the dropzone container id
-		var id = "#kt_dropzonejs_example_2";
-
-		// set the preview element template
-		var previewNode = $(id + " .dropzone-item");
-		previewNode.id = "";
-		var previewTemplate = previewNode.parent(".dropzone-items").html();
-		previewNode.remove();
-
-		var myDropzone = new Dropzone(id, { // Make the whole body a dropzone
-			url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
-			parallelUploads: 20,
-			previewTemplate: previewTemplate,
-			maxFilesize: 1, // Max filesize in MB
-			autoQueue: false, // Make sure the files aren't queued until manually added
-			previewsContainer: id + " .dropzone-items", // Define the container to display the previews
-			clickable: id +
-				" .dropzone-select" // Define the element that should be used as click trigger to select files.
-		});
-
-		myDropzone.on("addedfile", function (file) {
-			// Hookup the start button
-			file.previewElement.querySelector(id + " .dropzone-start").onclick = function () {
-				myDropzone.enqueueFile(file);
-			};
-			$(document).find(id + " .dropzone-item").css("display", "");
-			$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "inline-block");
-		});
-
-		// Update the total progress bar
-		myDropzone.on("totaluploadprogress", function (progress) {
-			$(this).find(id + " .progress-bar").css("width", progress + "%");
-		});
-
-		myDropzone.on("sending", function (file) {
-			// Show the total progress bar when upload starts
-			$(id + " .progress-bar").css("opacity", "1");
-			// And disable the start button
-			file.previewElement.querySelector(id + " .dropzone-start").setAttribute("disabled", "disabled");
-		});
-
-		// Hide the total progress bar when nothing's uploading anymore
-		myDropzone.on("complete", function (progress) {
-			var thisProgressBar = id + " .dz-complete";
-			setTimeout(function () {
-				$(thisProgressBar + " .progress-bar, " + thisProgressBar + " .progress, " + thisProgressBar +
-					" .dropzone-start").css("opacity", "0");
-			}, 300)
-
-		});
-
-		// Setup the buttons for all transfers
-		document.querySelector(id + " .dropzone-upload").onclick = function () {
-			myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
-		};
-
-		// Setup the button for remove all files
-		document.querySelector(id + " .dropzone-remove-all").onclick = function () {
-			$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "none");
-			myDropzone.removeAllFiles(true);
-		};
-
-		// On all files completed upload
-		myDropzone.on("queuecomplete", function (progress) {
-			$(id + " .dropzone-upload").css("display", "none");
-		});
-
-		// On all files removed
-		myDropzone.on("removedfile", function (file) {
-			if (myDropzone.files.length < 1) {
-				$(id + " .dropzone-upload, " + id + " .dropzone-remove-all").css("display", "none");
-			}
-		});
+		$("#kt_datepicker_1").flatpickr();
 	</script>
 	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->
