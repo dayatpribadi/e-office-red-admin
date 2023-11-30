@@ -502,34 +502,54 @@
 					<!--begin::Container-->
 					<div class="container-xxl" id="kt_content_container">
 							<!--begin::Row-->
-							<div class="row bg-light-primary shadow rounded p-6 align-items-center">
-								<div class="col-12 col-xxl-3 text-xxl-center mb-2 mb-xxl-0">
-									<a href="#" class="btn btn-primary px-6 align-self-center text-nowrap">
-										<i class="fa fa-plus-circle me-2"></i>Tambah LKH
-									</a>
+							<div class="row bg-light-primary shadow p-6 rounded align-items-center">
+								<div class="col-12 col-xxl-3 mb-3">
+									<label for="exampleFormControlInput1" class="form-label">Tanggal Awal Laporan</label>
+									<input class="form-control" placeholder="Pick a date" id="kt_datepicker_1"/>
 								</div>
-								<div class="col-12 col-xxl-3 mb-2 mb-xxl-0">
-									<!-- <label for="exampleFormControlInput1" class="form-label">NIP</label> -->
-									<input class="form-control form-control-solid border border-primary border-dashed" placeholder="Pick date rage" id="kt_daterangepicker_1"/>
+								<div class="col-12 col-xxl-3 mb-3">
+									<label for="exampleFormControlInput1" class="form-label">Tanggal Akhir Laporan</label>
+									<input class="form-control" placeholder="Pick a date" id="kt_datepicker_2"/>
 								</div>
-								<div class="col-12 col-xxl-3 mb-2 mb-xxl-0">
-									<!-- <label for="exampleFormControlInput1" class="form-label">Perangkat Daerah</label> -->
-									<select name="country" aria-label="Perangkat Daerah"
+								<div class="col-12 col-xxl-3 mb-3">
+									<label for="exampleFormControlInput1" class="form-label">Status Laporan</label>
+									<select name="country" aria-label="Pilih Status"
 									data-control="select2"
-									data-placeholder="Perangkat Daerah"
-									class="form-select form-select-solid form-select-lg fw-bold border border-primary border-dashed">
-									<option value="Belum Diverifikasi">Belum Diverifikasi</option>
-									<option value="Sudah Diverifikasi" selected>Sudah Diverifikasi</option>
-									<option value="Ditolak">Ditolak</option>
+									data-placeholder="Pilih Status"
+									class="form-select form-select-lg fw-bold">
+									<option value="">Select a Country...</option>
+									<option>Belum Diverifikasi</option>
+									<option>Sudah Diverifikasi</option>
+									<option>Ditolak</option>
 									</select>
 								</div>
-								<div class="col-12 col-xxl-3 text-xxl-center mb-2 mb-xxl-0">
-									<a href="#" class="btn btn-warning px-6 align-self-center text-nowrap">
-										<i class="fa fa-filter me-2"></i>
-										Filter Pencarian</a>
+								<div class="col-3 pt-3 pt-md-0 text-md-end">
+									<a href="#" class="btn btn-primary px-6 align-self-center text-nowrap"><i class="fa fa-search me-2"></i> Filter Pencarian</a>
 								</div>
 							</div>
-							<!--end::Row-->
+
+							<!--begin::Documents toolbar-->
+							<div class="row pt-5">
+								<div class="d-flex flex-wrap flex-stack mb-2 pe-0 ps-4">
+									<!--begin::Title-->
+									<a type="button" class='btn btn-light-primary border border-white shadow btn-sm' data-bs-toggle="modal" data-bs-target="#kt_modal_tambah" da>
+										<i class="fa fa-plus-circle me-2"></i>
+										Tambah LKH</a>
+									<span class="fs-6 text-gray-400 fw-bold ms-1">Periode : Desember 2023</span></h3>
+									<!--end::Title-->
+									<!--begin::Controls-->
+									<div class="d-flex my-2 gap-4">
+										<!--end::Search-->
+
+										<a type="button" class='btn btn-success btn-sm' data-bs-toggle="modal" data-bs-target="#kt_modal_tambah">
+											<i class="fa fa-file-download me-2"></i>
+											Download Rekap LKH</a>
+									</div>
+									<!--end::Controls-->
+								</div>
+							</div>
+							<!--end::Documents toolbar-->
+
 							<!--begin::Row-->
 							<div class="row mt-8">
 								<!--begin::Tables Widget 11-->
@@ -544,12 +564,12 @@
 									<!--begin::Body-->
 									<div class="card-body py-3">
 										<!--begin::Table container-->
-										<div class="table-responsive">
+										<div class="table-responsive mb-10">
 											<!--begin::Table-->
-											<table class="table align-middle gs-0 gy-4">
+											<table class="table align-middle table-striped gs-0 gy-4">
 												<!--begin::Table head-->
 												<thead>
-													<tr class="fw-bolder text-muted bg-light">
+													<tr class="fw-bolder text-white border bg-primary">
 														<th class="ps-4 rounded-start">No</th>
 														<th class="min-w-200px align-middle text-center">Hari/Tanggal</th>
 														<th class="min-w-200px align-middle text-center">Urusan</th>
@@ -574,24 +594,92 @@
 														<td>monitor penambahan fitur tambah data kartu keluarga dan atributnya pada aplikasi sidesi</td>
 														<td><span class="badge badge-square bg-warning text-white px-3"><i class="fa fa-clock me-2 text-white"></i>Belum Diverifikasi</span></td>
 														<td class="text-center">
-															<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+															<button type="button" data-bs-toggle="modal" data-bs-target="#kt_modal_tambah" class="btn btn-icon text-white bg-primary bg-hover-opacity-75 btn-sm me-1">
 																<!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
 																<span class="svg-icon svg-icon-3">
-																	<i class="fa fa-eye"></i>
+																	<i class="fa fa-eye text-white"></i>
 																</span>
 																<!--end::Svg Icon-->
-															</a>
-															<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+															</button>
+															<button type="button" data-bs-toggle="modal" data-bs-target="#kt_modal_tambah" class="btn btn-icon text-white bg-success bg-hover-opacity-75 btn-sm me-1">
 																<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
 																<span class="svg-icon svg-icon-3">
-																	<i class="fa fa-edit"></i>
+																	<i class="fa fa-edit text-white"></i>
+																</span>
+																<!--end::Svg Icon-->
+															</button>
+															<button type="button" class="btn btn-icon text-white bg-danger bg-hover-opacity-75 btn-sm">
+																<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
+																<span class="svg-icon svg-icon-3">
+																	<i class="fa fa-trash text-white"></i>
+																</span>
+																<!--end::Svg Icon-->
+															</button>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-center">2</td>
+														<td>Jum'at, 03 November 2023</td>
+														<td>KEPEGAWAIAN / ORGANISASI</td>
+														<td>Monitor kegiatan bawahan atau lainnya</td>
+														<td>
+															<span class="badge badge-square bg-primary px-3"><i class="fa fa-clock me-2 text-white"></i>60 Menit</span>
+														</td>
+														<td>monitor penambahan fitur tambah data kartu keluarga dan atributnya pada aplikasi sidesi</td>
+														<td><span class="badge badge-square bg-warning text-white px-3"><i class="fa fa-clock me-2 text-white"></i>Belum Diverifikasi</span></td>
+														<td class="text-center">
+															<a href="#" class="btn btn-icon text-white bg-primary bg-hover-opacity-75 btn-sm me-1">
+																<!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
+																<span class="svg-icon svg-icon-3">
+																	<i class="fa fa-eye text-white"></i>
 																</span>
 																<!--end::Svg Icon-->
 															</a>
-															<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm">
+															<a href="#" class="btn btn-icon text-white bg-success bg-hover-opacity-75 btn-sm me-1">
+																<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+																<span class="svg-icon svg-icon-3">
+																	<i class="fa fa-edit text-white"></i>
+																</span>
+																<!--end::Svg Icon-->
+															</a>
+															<a href="#" class="btn btn-icon text-white bg-danger bg-hover-opacity-75 btn-sm">
 																<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
 																<span class="svg-icon svg-icon-3">
-																	<i class="fa fa-trash"></i>
+																	<i class="fa fa-trash text-white"></i>
+																</span>
+																<!--end::Svg Icon-->
+															</a>
+														</td>
+													</tr>
+													<tr>
+														<td class="text-center">3</td>
+														<td>Jum'at, 03 November 2023</td>
+														<td>KEPEGAWAIAN / ORGANISASI</td>
+														<td>Monitor kegiatan bawahan atau lainnya</td>
+														<td>
+															<span class="badge badge-square bg-primary px-3"><i class="fa fa-clock me-2 text-white"></i>60 Menit</span>
+														</td>
+														<td>monitor penambahan fitur tambah data kartu keluarga dan atributnya pada aplikasi sidesi</td>
+														<td><span class="badge badge-square bg-warning text-white px-3"><i class="fa fa-clock me-2 text-white"></i>Belum Diverifikasi</span></td>
+														<td class="text-center">
+															<a href="#" class="btn btn-icon text-white bg-primary bg-hover-opacity-75 btn-sm me-1">
+																<!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
+																<span class="svg-icon svg-icon-3">
+																	<i class="fa fa-eye text-white"></i>
+																</span>
+																<!--end::Svg Icon-->
+															</a>
+															<a href="#" class="btn btn-icon text-white bg-success bg-hover-opacity-75 btn-sm me-1">
+																<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+																<span class="svg-icon svg-icon-3">
+																	<i class="fa fa-edit text-white"></i>
+																</span>
+																<!--end::Svg Icon-->
+															</a>
+															<a href="#" class="btn btn-icon text-white bg-danger bg-hover-opacity-75 btn-sm">
+																<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
+																<span class="svg-icon svg-icon-3">
+																	<i class="fa fa-trash text-white"></i>
 																</span>
 																<!--end::Svg Icon-->
 															</a>
@@ -605,6 +693,43 @@
 										<!--end::Table container-->
 									</div>
 									<!--begin::Body-->
+									<!--begin::Pagination-->
+									<div class="d-flex flex-stack flex-wrap-10 p-6">
+										<div class="fs-6 fw-bold text-gray-700">Showing 1 to 10 of 50 entries</div>
+										<!--begin::Pages-->
+										<ul class="pagination">
+											<li class="page-item previous">
+												<a href="#" class="page-link">
+													<i class="previous"></i>
+												</a>
+											</li>
+											<li class="page-item active">
+												<a href="#" class="page-link">1</a>
+											</li>
+											<li class="page-item">
+												<a href="#" class="page-link">2</a>
+											</li>
+											<li class="page-item">
+												<a href="#" class="page-link">3</a>
+											</li>
+											<li class="page-item">
+												<a href="#" class="page-link">4</a>
+											</li>
+											<li class="page-item">
+												<a href="#" class="page-link">5</a>
+											</li>
+											<li class="page-item">
+												<a href="#" class="page-link">6</a>
+											</li>
+											<li class="page-item next">
+												<a href="#" class="page-link">
+													<i class="next"></i>
+												</a>
+											</li>
+										</ul>
+										<!--end::Pages-->
+									</div>
+									<!--end::Pagination-->
 								</div>
 								<!--end::Tables Widget 11-->
 							</div>
@@ -1125,43 +1250,7 @@
 							</div>
 							<!--end::Modal - New Card-->
 
-							<!--begin::Pagination-->
-							<div class="d-flex flex-stack flex-wrap pt-10">
-								<div class="fs-6 fw-bold text-gray-700">Showing 1 to 10 of 50 entries</div>
-								<!--begin::Pages-->
-								<ul class="pagination">
-									<li class="page-item previous">
-										<a href="#" class="page-link">
-											<i class="previous"></i>
-										</a>
-									</li>
-									<li class="page-item active">
-										<a href="#" class="page-link">1</a>
-									</li>
-									<li class="page-item">
-										<a href="#" class="page-link">2</a>
-									</li>
-									<li class="page-item">
-										<a href="#" class="page-link">3</a>
-									</li>
-									<li class="page-item">
-										<a href="#" class="page-link">4</a>
-									</li>
-									<li class="page-item">
-										<a href="#" class="page-link">5</a>
-									</li>
-									<li class="page-item">
-										<a href="#" class="page-link">6</a>
-									</li>
-									<li class="page-item next">
-										<a href="#" class="page-link">
-											<i class="next"></i>
-										</a>
-									</li>
-								</ul>
-								<!--end::Pages-->
-							</div>
-							<!--end::Pagination-->
+
 					</div>
 					<!--end::Container-->
 
@@ -1241,6 +1330,8 @@
 	<script src="assets/js/custom/documentation/forms/daterangepicker.js"></script>
 	<script>
 		$("#kt_daterangepicker_1").daterangepicker();
+		$("#kt_datepicker_1").flatpickr();
+		$("#kt_datepicker_2").flatpickr();
 	</script>
 	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->

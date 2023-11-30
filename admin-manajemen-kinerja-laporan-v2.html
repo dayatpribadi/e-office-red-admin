@@ -508,28 +508,30 @@
 									<select name="country" aria-label="Perangkat Daerah"
 									data-control="select2"
 									data-placeholder="Perangkat Daerah"
-									class="form-select form-select-solid form-select-lg fw-bold border border-primary border-dashed">
+									class="form-select form-select-lg fw-bold border">
 									<option value="Belum Diverifikasi">Ariel</option>
 									<option value="Sudah Diverifikasi" selected>Radja</option>
 									<option value="Ditolak">Irsan</option>
 									</select>
 								</div>
-								<div class="col-12 col-xxl-3 mb-2 mb-xxl-0">
-									<!-- <label for="exampleFormControlInput1" class="form-label">NIP</label> -->
-									<input class="form-control form-control-solid border border-primary border-dashed" placeholder="Pick date rage" id="kt_daterangepicker_1"/>
+								<div class="col-12 col-xxl-2 mb-2 mb-xxl-0">
+									<input class="form-control form-control-lg" placeholder="Tanggal Awal" id="kt_datepicker_1"/>
+								</div>
+								<div class="col-12 col-xxl-2 mb-2 mb-xxl-0">
+									<input class="form-control form-control-lg" placeholder="Tanggal Akhir" id="kt_datepicker_2"/>
 								</div>
 								<div class="col-12 col-xxl-3 mb-2 mb-xxl-0">
 									<!-- <label for="exampleFormControlInput1" class="form-label">Perangkat Daerah</label> -->
 									<select name="country" aria-label="Perangkat Daerah"
 									data-control="select2"
 									data-placeholder="Perangkat Daerah"
-									class="form-select form-select-solid form-select-lg fw-bold border border-primary border-dashed">
+									class="form-select form-select-lg fw-bold border">
 									<option value="Belum Diverifikasi">Belum Diverifikasi</option>
 									<option value="Sudah Diverifikasi" selected>Sudah Diverifikasi</option>
 									<option value="Ditolak">Ditolak</option>
 									</select>
 								</div>
-								<div class="col-12 col-xxl-3 text-xxl-center mb-2 mb-xxl-0">
+								<div class="col-12 col-xxl-2 text-xxl-center mb-2 mb-xxl-0">
 									<a href="#" class="btn btn-warning px-6 align-self-center text-nowrap">
 										<i class="fa fa-filter me-2"></i>
 										Filter Pencarian</a>
@@ -550,12 +552,12 @@
 									<!--begin::Body-->
 									<div class="card-body py-3">
 										<!--begin::Table container-->
-										<div class="table-responsive">
+										<div class="table-responsive mb-10">
 											<!--begin::Table-->
-											<table class="table align-middle gs-0 gy-4">
+											<table class="table align-middle table-striped border gs-0 gy-4">
 												<!--begin::Table head-->
-												<thead>
-													<tr class="fw-bolder text-muted bg-light">
+												<thead class="border">
+													<tr class="fw-bolder text-white bg-primary">
 														<th class="ps-4 rounded-start align-middle">No</th>
 														<th class="min-w-200px align-middle">Hari/Tanggal</th>
 														<th class="min-w-200px align-middle">Nama Pegawai</th>
@@ -563,14 +565,14 @@
 														<th class="min-w-200px align-middle">Uraian Aktivitas</th>
 														<th class="align-middle">Menit</th>
 														<th class="min-w-200px align-middle">Keterangan</th>
-														<th class="align-middle">Status KL</th>
+														<th class="min-w-125px align-middle">Status KL</th>
 														<th class="align-middle">Status LKH</th>
 														<th class="min-w-200px text-center align-middle rounded-end">Aksi</th>
 													</tr>
 												</thead>
 												<!--end::Table head-->
 												<!--begin::Table body-->
-												<tbody>
+												<tbody class="border">
 													<tr>
 														<td class="text-center">1</td>
 														<td>Jum'at, 03 November 2023</td>
@@ -1254,6 +1256,8 @@
 	<script src="assets/js/custom/documentation/forms/daterangepicker.js"></script>
 	<script>
 		$("#kt_daterangepicker_1").daterangepicker();
+		$("#kt_datepicker_1").flatpickr();
+		$("#kt_datepicker_2").flatpickr();
 	</script>
 	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->
