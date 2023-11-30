@@ -610,7 +610,7 @@
 										<!--begin::Input group-->
 										<div class="row align-items-center">
 											<!--begin::Col-->
-											<div class="col-6 col-xxl-3">
+											<div class="col-12 col-xxl-3 mb-2 mb-xxl-0">
 												<label class="form-label fs-6 fw-bolder text-gray-700 mb-3">Perihal Surat</label>
 												<!--begin::Input group-->
 												<div class="mb-5 border border-primary border-dashed rounded">
@@ -619,15 +619,23 @@
 												<!--end::Input group-->
 											</div>
 											<!--end::Col-->
-											<!--begin::Col-->
-											<div class="col-6 col-xxl-3">
-												<label class="form-label fs-6 fw-bolder text-gray-700 mb-3">Periode Tanggal Surat</label>
-												<input class="form-control form-control-solid mb-4 border border-primary border-dashed" placeholder="Pick date rage" id="kt_daterangepicker_1"/>
-												<!--end::Input group-->
+											<div class="col-12 col-xxl-3 mb-2 mb-xxl-0">
+												<label class="form-label fs-6 fw-bolder text-gray-700 mb-3">Perihal Surat</label>
+												<div class="mb-5 border border-primary border-dashed rounded">
+													<input class="form-control form-control-lg" placeholder="Tanggal Awal" id="kt_datepicker_1"/>
+												</div>
+
+											</div>
+											<div class="col-12 col-xxl-3 mb-2 mb-xxl-0">
+												<label class="form-label fs-6 fw-bolder text-gray-700 mb-3">Perihal Surat</label>
+												<div class="mb-5 border border-primary border-dashed rounded">
+													<input class="form-control form-control-lg" placeholder="Tanggal Akhir" id="kt_datepicker_2"/>
+												</div>
+
 											</div>
 											<!--end::Col-->
 
-											<div class="col-2 pt-6 text-md-end">
+											<div class="col-3 pt-4 text-md-center">
 												<a href="#" class="btn btn-primary px-6 align-self-center text-nowrap">Filter Pencarian</a>
 											</div>
 	
@@ -646,7 +654,7 @@
 									<li class="nav-item">
 										<a class="nav-link text-active-primary me-6 active" data-bs-toggle="tab"
 											href="#TabSemua">Total Surat
-											<span class="badge badge-primary badge-circle p-5 ms-1">8131</span>
+											<span class="ms-1">(8131)</span>
 										</a>
 									</li>
 									<!--end::Nav item-->
@@ -654,7 +662,7 @@
 									<li class="nav-item">
 										<a class="nav-link text-active-primary me-6" data-bs-toggle="tab"
 											href="#TabSudah">Sudah Diregister
-											<span class="badge badge-warning badge-circle p-5 ms-1">0</span>
+											<span class="ms-1">(0)</span>
 										</a>
 									</li>
 									<!--end::Nav item-->
@@ -662,7 +670,7 @@
 									<li class="nav-item">
 										<a class="nav-link text-active-primary me-6" data-bs-toggle="tab"
 											href="#TabBelum">Belum Diregister
-											<span class="badge badge-success badge-circle p-5 ms-1">8131</span>
+											<span class=" ms-1">(8131)</span>
 										</a>
 									</li>
 									<!--end::Nav item-->
@@ -868,6 +876,8 @@
 	<script src="assets/js/custom/documentation/documentation.js"></script>
 	<script>
 		$("#kt_daterangepicker_1").daterangepicker();
+		$("#kt_datepicker_1").flatpickr();
+		$("#kt_datepicker_2").flatpickr();
 	</script>
 
 	<!--end::Page Custom Javascript-->
