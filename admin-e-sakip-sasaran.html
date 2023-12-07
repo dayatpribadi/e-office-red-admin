@@ -626,7 +626,7 @@
 									<div class="row align-items-center justify-content-between">
 										<!--end::Col-->
 										<div class="col-12 col-xxl-3 pb-5 pb-xxl-0">
-											<a href="#" class="btn btn-primary px-6 align-self-center text-nowrap"><i class="fa fa-plus me-2"></i>Tambah Sasaran</a>
+											<button class="btn btn-primary px-6 align-self-center text-nowrap" data-bs-toggle="modal" data-bs-target="#kt_modal_1"><i class="fa fa-plus me-2"></i>Tambah Sasaran</button>
 										</div>
 										<!--begin::Col-->
 										<div class="col-12 col-xxl-6">
@@ -941,6 +941,49 @@
 	<!--end::Page-->
 	</div>
 	<!--end::Root-->
+	<div class="modal fade" tabindex="-1" id="kt_modal_1">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Tambah Sasaran</h5>
+	
+					<!--begin::Close-->
+					<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+						<span class="svg-icon svg-icon-2x"></span>
+					</div>
+					<!--end::Close-->
+				</div>
+	
+				<div class="modal-body">
+					<div class="mb-10">
+						<label for="" class="form-label">Pilih Misi</label>
+						<select class="form-select form-select-solid" data-control="select2" data-placeholder="Select an option" data-allow-clear="true">
+							<option></option>
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+						</select>
+					</div>
+					<div class="mb-10">
+						<label for="" class="form-label">Pilih Tujuan</label>
+						<select class="form-select form-select-solid" data-control="select2" data-placeholder="Select an option" data-allow-clear="true">
+							<option></option>
+							<option value="1">Option 1</option>
+							<option value="2">Option 2</option>
+						</select>
+					</div>
+					<div class="mb-10">
+						<label for="exampleFormControlInput1" class="required form-label">Nama Sasaran</label>
+						<textarea name="textarea_input" class="form-control form-control-solid"></textarea>
+					</div>
+				</div>
+	
+				<div class="modal-footer">
+					<button type="button" class="btn btn-light" data-bs-dismiss="modal">Batal</button>
+					<button type="button" class="btn btn-primary">Simpan</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!--begin::Scrolltop-->
 	<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
