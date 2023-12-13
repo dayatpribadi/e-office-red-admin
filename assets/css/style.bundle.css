@@ -54255,12 +54255,14 @@ body {
     .container-sm,
     .container-xl,
     .container-xxl {
-        padding: 0 50px !important
+        /* padding: 0 50px !important */
+        padding: 0 20px 0 10px !important
     }
 
     .wrapper {
-        padding-top: 50px;
-        padding-left: 350px
+        padding-top: 10px;
+        /* padding-left: 350px */
+        padding-left: 300px
     }
 
     .header-fixed[data-kt-sticky-header=on] .wrapper {
@@ -54530,7 +54532,7 @@ body {
 }
 
 @media (min-width:992px) {
-    .aside {
+    /* .aside {
         position: fixed;
         top: 50px;
         bottom: 50px;
@@ -54538,6 +54540,16 @@ body {
         z-index: 100;
         overflow: hidden;
         width: 300px;
+        border-radius: 2rem
+    } */
+    .aside {
+        position: fixed;
+        top: 20px;
+        bottom: 20px;
+        left: 20px;
+        z-index: 100;
+        overflow: hidden;
+        width: 270px;
         border-radius: 2rem
     }
 
