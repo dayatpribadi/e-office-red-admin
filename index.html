@@ -27,602 +27,149 @@
 	</head>
 	<!--end::Head-->
 	<!--begin::Body-->
-	<body>
+	<body id="kt_body" class="bg-body">
 		<!--begin::Main-->
-		<!--begin::Root-->
 		<div class="d-flex flex-column flex-root">
-			<!--begin::Page-->
-			<div class="page d-flex flex-row flex-column-fluid">
+			<!--begin::Authentication - Sign-in -->
+			<div class="d-flex flex-column flex-lg-row flex-column-fluid">
 				<!--begin::Aside-->
-				<div id="kt_aside" class="aside py-9" data-kt-drawer="true" data-kt-drawer-name="aside" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_aside_toggle">
-					<!--begin::Brand-->
-					<div class="aside-logo flex-column-auto px-9 mb-9" id="kt_aside_logo">
-						<!--begin::Logo-->
-						<a href="#">
-							<img alt="Logo" src="assets/media/logos/e-office-ogan-ilir.png" class="h-40px logo" />
-						</a>
-						<!--end::Logo-->
-					</div>
-					<!--end::Brand-->
-					<!--begin::Aside menu-->
-					<div class="aside-menu flex-column-fluid ps-5 pe-3 mb-9" id="kt_aside_menu">
-						<!--begin::Aside Menu-->
-						<div class="w-100 hover-scroll-overlay-y d-flex pe-2" id="kt_aside_menu_wrapper" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_aside_logo, #kt_aside_footer" data-kt-scroll-wrappers="#kt_aside, #kt_aside_menu, #kt_aside_menu_wrapper" data-kt-scroll-offset="100">
-							<!--begin::Menu-->
-							<div class="menu menu-column menu-rounded fw-bold my-auto" id="#kt_aside_menu" data-kt-menu="true">
-								<div class="menu-item">
-									<a class="menu-link" href="index.html">
-										<span class="menu-icon">
-											<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
-											<span class="svg-icon svg-icon-2">
-												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M2 16C2 16.6 2.4 17 3 17H21C21.6 17 22 16.6 22 16V15H2V16Z" fill="black"/>
-													<path opacity="0.3" d="M21 3H3C2.4 3 2 3.4 2 4V15H22V4C22 3.4 21.6 3 21 3Z" fill="black"/>
-													<path opacity="0.3" d="M15 17H9V20H15V17Z" fill="black"/>
-												</svg>
-											</span>
-											<!--end::Svg Icon-->
-										</span>
-										<span class="menu-title">Dashboard</span>
-									</a>
-								</div>
-								<div class="menu-item">
-									<a class="menu-link" href="profil.html">
-										<span class="menu-icon">
-											<!--begin::Svg Icon | path: icons/duotune/arrows/arr001.svg-->
-											<span class="svg-icon svg-icon-2">
-												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M6.28548 15.0861C7.34369 13.1814 9.35142 12 11.5304 12H12.4696C14.6486 12 16.6563 13.1814 17.7145 15.0861L19.3493 18.0287C20.0899 19.3618 19.1259 21 17.601 21H6.39903C4.87406 21 3.91012 19.3618 4.65071 18.0287L6.28548 15.0861Z" fill="black"/>
-													<rect opacity="0.3" x="8" y="3" width="8" height="8" rx="4" fill="black"/>
-													</svg>
-											</span>
-											<!--end::Svg Icon-->
-										</span>
-										<span class="menu-title">Profil Lembaga</span>
-									</a>
-								</div>
-							</div>
-							<!--end::Menu-->
+				<div class="d-flex flex-column flex-lg-row-auto w-xl-600px positon-xl-relative" style="background-color: #009ef6">
+					<!--begin::Wrapper-->
+					<div class="d-flex flex-column position-xl-fixed top-0 bottom-0 w-xl-600px scroll-y">
+						<!--begin::Content-->
+						<div class="d-flex flex-row-fluid flex-column text-center p-10 pt-lg-20">
+							<!--begin::Logo-->
+
+							<!--end::Logo-->
+							<!--begin::Title-->
+							<h1 class="fw-bolder fs-2qx pb-5 pb-md-10" style="color: #ffffff;">Welcome to E-Office</h1>
+							<!--end::Title-->
+							<!--begin::Description-->
+							<p class="fw-bold fs-2" style="color: #ffffff;">Discover Amazing Application
+							<br />with great build tools</p>
+							<!--end::Description-->
 						</div>
-						<!--end::Aside Menu-->
+						<!--end::Content-->
+						<!--begin::Illustration-->
+						<div class="d-flex flex-row-auto bgi-no-repeat bgi-position-x-center bgi-size-contain bgi-position-y-bottom min-h-100px min-h-lg-350px" style="background-image: url(assets/media/illustrations/sigma-1/4.png)"></div>
+						<!--end::Illustration-->
 					</div>
-					<!--end::Aside menu-->
-					<!--begin::Footer-->
-					<div class="aside-footer flex-column-auto px-9" id="kt_aside_footer">
-						<!--begin::User panel-->
-						<div class="d-flex flex-stack">
-							<!--begin::Wrapper-->
-							<div class="d-flex align-items-center">
-								<!--begin::Avatar-->
-								<div class="symbol symbol-circle symbol-40px">
-									<img src="assets/media/icons/logo-oi.png" alt="photo" />
-								</div>
-								<!--end::Avatar-->
-								<!--begin::User info-->
-								<div class="ms-2">
-									<!--begin::Name-->
-									<a href="#" class="text-gray-800 text-hover-primary fs-6 fw-bolder lh-1">Administrator</a>
-									<!--end::Name-->
-									<!--begin::Major-->
-									<span class="text-muted fw-bold d-block fs-7 lh-1">Admin BKPSDM</span>
-									<!--end::Major-->
-								</div>
-								<!--end::User info-->
-							</div>
-							<!--end::Wrapper-->
-							<!--begin::User menu-->
-							<div class="ms-1">
-								<div class="btn btn-sm btn-icon btn-active-color-primary position-relative me-n2" data-kt-menu-trigger="click" data-kt-menu-overflow="true" data-kt-menu-placement="top-end">
-									<!--begin::Svg Icon | path: icons/duotune/coding/cod001.svg-->
-									<span class="svg-icon svg-icon-1">
-										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-											<path opacity="0.3" d="M22.1 11.5V12.6C22.1 13.2 21.7 13.6 21.2 13.7L19.9 13.9C19.7 14.7 19.4 15.5 18.9 16.2L19.7 17.2999C20 17.6999 20 18.3999 19.6 18.7999L18.8 19.6C18.4 20 17.8 20 17.3 19.7L16.2 18.9C15.5 19.3 14.7 19.7 13.9 19.9L13.7 21.2C13.6 21.7 13.1 22.1 12.6 22.1H11.5C10.9 22.1 10.5 21.7 10.4 21.2L10.2 19.9C9.4 19.7 8.6 19.4 7.9 18.9L6.8 19.7C6.4 20 5.7 20 5.3 19.6L4.5 18.7999C4.1 18.3999 4.1 17.7999 4.4 17.2999L5.2 16.2C4.8 15.5 4.4 14.7 4.2 13.9L2.9 13.7C2.4 13.6 2 13.1 2 12.6V11.5C2 10.9 2.4 10.5 2.9 10.4L4.2 10.2C4.4 9.39995 4.7 8.60002 5.2 7.90002L4.4 6.79993C4.1 6.39993 4.1 5.69993 4.5 5.29993L5.3 4.5C5.7 4.1 6.3 4.10002 6.8 4.40002L7.9 5.19995C8.6 4.79995 9.4 4.39995 10.2 4.19995L10.4 2.90002C10.5 2.40002 11 2 11.5 2H12.6C13.2 2 13.6 2.40002 13.7 2.90002L13.9 4.19995C14.7 4.39995 15.5 4.69995 16.2 5.19995L17.3 4.40002C17.7 4.10002 18.4 4.1 18.8 4.5L19.6 5.29993C20 5.69993 20 6.29993 19.7 6.79993L18.9 7.90002C19.3 8.60002 19.7 9.39995 19.9 10.2L21.2 10.4C21.7 10.5 22.1 11 22.1 11.5ZM12.1 8.59998C10.2 8.59998 8.6 10.2 8.6 12.1C8.6 14 10.2 15.6 12.1 15.6C14 15.6 15.6 14 15.6 12.1C15.6 10.2 14 8.59998 12.1 8.59998Z" fill="black" />
-											<path d="M17.1 12.1C17.1 14.9 14.9 17.1 12.1 17.1C9.30001 17.1 7.10001 14.9 7.10001 12.1C7.10001 9.29998 9.30001 7.09998 12.1 7.09998C14.9 7.09998 17.1 9.29998 17.1 12.1ZM12.1 10.1C11 10.1 10.1 11 10.1 12.1C10.1 13.2 11 14.1 12.1 14.1C13.2 14.1 14.1 13.2 14.1 12.1C14.1 11 13.2 10.1 12.1 10.1Z" fill="black" />
-										</svg>
-									</span>
-									<!--end::Svg Icon-->
-								</div>
-								<!--begin::Menu-->
-								<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-6 w-275px" data-kt-menu="true">
-									<!--begin::Menu item-->
-									<div class="menu-item px-3">
-										<div class="menu-content d-flex align-items-center px-3">
-											<!--begin::Avatar-->
-											<div class="symbol symbol-50px me-5">
-												<img alt="Logo" src="assets/media/icons/logo-oi.png" />
-											</div>
-											<!--end::Avatar-->
-											<!--begin::Username-->
-											<div class="d-flex flex-column">
-												<div class="fw-bolder d-flex align-items-center fs-5">Administrator</div>
-											</div>
-											<!--end::Username-->
-										</div>
-									</div>
-									<!--end::Menu item-->
-									<!--begin::Menu separator-->
-									<div class="separator my-2"></div>
-									<!--end::Menu separator-->
-									<!--begin::Menu item-->
-									<div class="menu-item px-5 my-1">
-										<a href="#" class="menu-link px-5">Pengaturan Akun</a>
-									</div>
-									<!--end::Menu item-->
-									<!--begin::Menu item-->
-									<div class="menu-item px-5">
-										<a href="portal.html" class="menu-link px-5">Keluar</a>
-									</div>
-									<!--end::Menu item-->
-									<!--begin::Menu separator-->
-									<div class="separator my-2"></div>
-									<!--end::Menu separator-->
-									<!--begin::Menu item-->
-									<div class="menu-item px-5">
-										<div class="menu-content px-5">
-											<label class="form-check form-switch form-check-custom form-check-solid pulse pulse-success" for="kt_user_menu_dark_mode_toggle">
-												<input class="form-check-input w-30px h-20px" type="checkbox" value="1" name="mode" id="kt_user_menu_dark_mode_toggle" data-kt-url="index.html" />
-												<span class="pulse-ring ms-n1"></span>
-												<span class="form-check-label text-gray-600 fs-7">Dark Mode</span>
-											</label>
-										</div>
-									</div>
-									<!--end::Menu item-->
-								</div>
-								<!--end::Menu-->
-							</div>
-							<!--end::User menu-->
-						</div>
-						<!--end::User panel-->
-					</div>
-					<!--end::Footer-->
+					<!--end::Wrapper-->
 				</div>
 				<!--end::Aside-->
-
-				<!--begin::Wrapper-->
-				<div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
-					<!--begin::Header-->
-					<div id="kt_header" class="header">
-						<!--begin::Container-->
-						<div class="container d-flex align-items-center justify-content-between" id="kt_header_container">
-							<!--begin::Page title-->
-							<div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-lg-2 pb-5 pb-lg-0" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
-								<!--begin::Heading-->
-								<h1 class="d-flex flex-column text-dark fw-bolder my-0 fs-1">Hello, Administrator
-								<small class="text-muted fs-6 fw-bold ms-1 pt-1">Badan Kepegawaian Pengembangan Sumber Daya Manusia</small></h1>
-								<!--end::Heading-->
-							</div>
-							<!--end::Page title=-->
-							<!--begin::Wrapper-->
-							<div class="d-flex d-lg-none align-items-center ms-n2 me-2">
-								<!--begin::Aside mobile toggle-->
-								<div class="btn btn-icon btn-active-icon-primary" id="kt_aside_toggle">
-									<!--begin::Svg Icon | path: icons/duotune/abstract/abs015.svg-->
-									<span class="svg-icon svg-icon-1 mt-1">
-										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-											fill="none">
-											<path
-												d="M21 7H3C2.4 7 2 6.6 2 6V4C2 3.4 2.4 3 3 3H21C21.6 3 22 3.4 22 4V6C22 6.6 21.6 7 21 7Z"
-												fill="black" />
-											<path opacity="0.3"
-												d="M21 14H3C2.4 14 2 13.6 2 13V11C2 10.4 2.4 10 3 10H21C21.6 10 22 10.4 22 11V13C22 13.6 21.6 14 21 14ZM22 20V18C22 17.4 21.6 17 21 17H3C2.4 17 2 17.4 2 18V20C2 20.6 2.4 21 3 21H21C21.6 21 22 20.6 22 20Z"
-												fill="black" />
-										</svg>
-									</span>
-									<!--end::Svg Icon-->
-								</div>
-								<!--end::Aside mobile toggle-->
-								<!--begin::Logo-->
-								<a href="index.html" class="d-flex align-items-center">
-									<img alt="Logo" src="assets/media/logos/e-office-ogan-ilir.png" class="h-20px" />
-								</a>
-								<!--end::Logo-->
-							</div>
-							<!--end::Wrapper-->
-							<!--begin::Topbar-->
-							<div class="d-flex align-items-center flex-shrink-0">
-								<!--begin::Search-->
-								<a href="index.html" type="button" class="btn btn-light-primary px-6 h-40px"><i
-										class="fa fa-arrow-left"></i> Kembali</a>
-								<!--end::Search-->
-								<!--begin::Activities-->
-								<div class="d-flex align-items-center ms-3 ms-lg-4">
-									<!--begin::Drawer toggle-->
-									<a href="helpdesk.html"
-										class="btn btn-icon btn-color-gray-700 btn-active-color-primary btn-outline btn-outline-secondary w-40px h-40px">
-										<!--begin::Svg Icon | path: icons/duotune/general/gen007.svg-->
-										<span class="svg-icon svg-icon-1">
-											<i class="fa fa-headphones"></i>
-										</span>
-										<!--end::Svg Icon-->
-									</a>
-									<!--end::Drawer toggle-->
-								</div>
-								<!--end::Activities-->
-								<!--begin::Chat-->
-								<div class="d-flex d-none align-items-center ms-3 ms-lg-4">
-									<!--begin::Drawer wrapper-->
-									<div class="btn btn-icon btn-color-gray-700 btn-active-color-primary btn-outline btn-outline-secondary position-relative w-40px h-40px"
-										id="kt_drawer_chat_toggle">
-										<!--begin::Svg Icon | path: icons/duotune/communication/com003.svg-->
-										<span class="svg-icon svg-icon-1">
-											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-												viewBox="0 0 24 24" fill="none">
-												<path opacity="0.3"
-													d="M2 4V16C2 16.6 2.4 17 3 17H13L16.6 20.6C17.1 21.1 18 20.8 18 20V17H21C21.6 17 22 16.6 22 16V4C22 3.4 21.6 3 21 3H3C2.4 3 2 3.4 2 4Z"
-													fill="black" />
-												<path
-													d="M18 9H6C5.4 9 5 8.6 5 8C5 7.4 5.4 7 6 7H18C18.6 7 19 7.4 19 8C19 8.6 18.6 9 18 9ZM16 12C16 11.4 15.6 11 15 11H6C5.4 11 5 11.4 5 12C5 12.6 5.4 13 6 13H15C15.6 13 16 12.6 16 12Z"
-													fill="black" />
-											</svg>
-										</span>
-										<!--end::Svg Icon-->
-										<!--begin::Bullet-->
-										<span
-											class="bullet bullet-dot bg-success h-6px w-6px position-absolute translate-middle top-0 start-50 animation-blink"></span>
-										<!--end::Bullet-->
-									</div>
-									<!--end::Drawer wrapper-->
-								</div>
-								<!--end::Chat-->
-							</div>
-							<!--end::Topbar-->
-						</div>
-						<!--end::Container-->
-					</div>
-					<!--end::Header-->
+				<!--begin::Body-->
+				<div class="d-flex flex-column flex-lg-row-fluid py-10">
 					<!--begin::Content-->
-					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-						<!--begin::Container-->
-						<div class="container-xxl" id="kt_content_container">
-							<div class="row g-5 g-xl-8">
-								<div class="col-12">
-									<!--begin::Engage widget 1-->
-									<div class="card bgi-position-y-bottom bgi-position-x-end bgi-no-repeat bgi-size-cover h-150px h-xxl-250px bg-primary mb-5 mb-xl-8" style="background-position: 85% 0px;background-size: 350px auto;background-image:url('assets/media/illustrations/data-extraction-animate.svg')">
-										<!--begin::Body-->
-										<div class="card-body d-flex flex-column justify-content-center">
-											<!--begin::Title-->
-											<h3 class="text-white fs-2x fw-bolder line-height-lg">Selamat Datang,
-											<br />Aplikasi E-Office Ogan Ilir</h3>
-											<br>
-											<span class="text-white fs-7">Bekerja semakin mudah dengan e-office</span>
-											<!--end::Title-->
-										</div>
-										<!--end::Body-->
-									</div>
+					<div class="d-flex flex-center flex-column flex-column-fluid">
+						<!--begin::Wrapper-->
+						<div class="w-lg-500px p-10 p-lg-15 mx-auto border rounded">
+							<!--begin::Form-->
+							<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" action="#">
+								<!--begin::Heading-->
+								<div class="text-start mb-10">
+									<!--begin::Title-->
+									<h1 class="text-dark mb-3">Masuk ke Aplikasi</h1>
+									<!--end::Title-->
 								</div>
-							</div>
+								<!--begin::Heading-->
+								<!--begin::Actions-->
+								<div class="text-center">
+									<!--begin::Submit button-->
+									<a type="button" href="login.html" class="btn btn-lg btn-primary w-100 mb-5">
+										<span class="indicator-label">Masuk dengan SSO Ogan Ilir</span>
+										<span class="indicator-progress">Please wait...
+										<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+									</a>
+									<!--end::Submit button-->
 
-							<!--begin::Row-->
-							<div class="row">
-								<!--begin::Col-->
-								<div class="col-4 col-xl-2">
-									<!--begin::Card-->
-									<div class="card bg-transparent">
-										<!--begin::Card body-->
-										<div class="card-body d-flex justify-content-center text-center flex-column p-8">
-											<!--begin::Name-->
-											<a href="master-data.html" class="text-gray-800 text-hover-primary d-flex flex-column">
-												<!--begin::Image-->
-												<div class="symbol symbol-60px mb-5">
-													<img src="assets/media/illustrations/master-da.png" alt="" />
-												</div>
-												<!--end::Image-->
-												<!--begin::Title-->
-												<div class="fw-bold mb-2 fs-5">Master Data</div>
-												<!--end::Title-->
-											</a>
-											<!--end::Name-->
-										</div>
-										<!--end::Card body-->
-									</div>
-									<!--end::Card-->
+                                    <!--begin::Accordion-->
+                                    <div class="accordion" id="kt_accordion_1">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="kt_accordion_1_header_2">
+                                                <button class="accordion-button fs-4 fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kt_accordion_1_body_2" aria-expanded="false" aria-controls="kt_accordion_1_body_2">
+                                                Login Pegawai Non-ASN
+                                                </button>
+                                            </h2>
+                                            <div id="kt_accordion_1_body_2" class="accordion-collapse collapse" aria-labelledby="kt_accordion_1_header_2" data-bs-parent="#kt_accordion_1">
+                                                <div class="accordion-body">
+                                                    <form>
+                                                        <!--begin::Input group-->
+                                                        <div class="fv-row mb-3 text-start">
+                                                            <!--begin::Label-->
+                                                            <label class="form-label fs-6 fw-bolder text-dark">Username</label>
+                                                            <!--end::Label-->
+                                                            <!--begin::Input-->
+
+                                                            <div class="input-group">
+                                                                <!--begin::Input-->
+                                                                <input class="form-control form-control-lg border" type="text" name="username" placeholder="Masukkan Username" autocomplete="off" />
+                                                                <!--end::Input-->
+                                                                <span class="input-group-text"><i class="fa fa-mail-bulk"></i></span>
+                                                            </div>
+                                                            <!--end::Input-->
+                                                        </div>
+                                                        <!--end::Input group-->
+                                                        <!--begin::Input group-->
+                                                        <div class="fv-row mb-3 text-start">
+                                                            <!--begin::Wrapper-->
+                                                            <div class="input-group d-flex flex-stack mb-2">
+                                                                <!--begin::Label-->
+                                                                <label class="form-label fw-bolder text-dark fs-6 mb-0">Password</label>
+                                                                <!--end::Label-->
+                                                            </div>
+                                                            <!--end::Input group-->
+                                                            <div class="input-group">
+                                                                <!--begin::Input-->
+                                                                <input class="form-control form-control-lg border" type="password" name="password" placeholder="Masukkan Password" autocomplete="off" />
+                                                                <!--end::Input-->
+                                                                <span class="input-group-text"><i class="fa fa-eye"></i></span>
+                                                            </div>
+                                                        </div>
+													<!--begin::Input group-->
+													<div class="form-group text-start row mb-10">
+														<label class="col-form-label ol-lg-3 col-sm-12">reCaptcha</label>
+														<div class="col-lg-4 col-md-9 col-sm-12">
+															<div class="g-recaptcha" data-sitekey="6Lf92jMUAAAAANk8wz68r73rA2uPGr4_e0gn96BL"></div>
+														</div>
+													</div>
+													<!--end::Input group-->
+
+													<script src="https://www.google.com/recaptcha/api.js"></script>
+                                                        <button type="submit" id="kt_sign_in_submit" class="btn btn-lg btn-primary w-100 mb-5">
+                                                            <span class="indicator-label">Masuk</span>
+                                                            <span class="indicator-progress">Please wait...
+                                                            <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end::Accordion-->
 								</div>
-								<!--end::Col-->
-
-								<!--begin::Col-->
-								<div class="col-4 col-xl-2">
-									<!--begin::Card-->
-									<div class="card bg-transparent">
-										<!--begin::Card body-->
-										<div class="card-body d-flex justify-content-center text-center flex-column p-8">
-											<!--begin::Name-->
-											<a href="admin-e-absensi-dashboard.html" class="text-gray-800 text-hover-primary d-flex flex-column">
-												<!--begin::Image-->
-												<div class="symbol symbol-60px mb-5">
-													<img src="assets/media/illustrations/appointment.jpeg" alt="" />
-												</div>
-												<!--end::Image-->
-												<!--begin::Title-->
-												<div class="fw-bold mb-2 fs-5">E-Absensi</div>
-												<!--end::Title-->
-											</a>
-											<!--end::Name-->
-										</div>
-										<!--end::Card body-->
-									</div>
-									<!--end::Card-->
-								</div>
-								<!--end::Col-->
-
-								<!--begin::Col-->
-								<div class="col-4 col-xl-2">
-									<!--begin::Card-->
-									<div class="card bg-transparent">
-										<!--begin::Card body-->
-										<div class="card-body d-flex justify-content-center text-center flex-column p-8">
-											<!--begin::Name-->
-											<a href="admin-kepegawaian-dashboard.html" class="text-gray-800 text-hover-primary d-flex flex-column">
-												<!--begin::Image-->
-												<div class="symbol symbol-60px mb-5">
-													<img src="assets/media/illustrations/3_pns_edit_1.jpg" alt="" />
-												</div>
-												<!--end::Image-->
-												<!--begin::Title-->
-												<div class="fw-bold mb-2 fs-5">Kepegawaian</div>
-												<!--end::Title-->
-											</a>
-											<!--end::Name-->
-										</div>
-										<!--end::Card body-->
-									</div>
-									<!--end::Card-->
-								</div>
-								<!--end::Col-->
-
-								<!--begin::Col-->
-								<div class="col-4 col-xl-2">
-									<!--begin::Card-->
-									<div class="card bg-transparent">
-										<!--begin::Card body-->
-										<div class="card-body d-flex justify-content-center text-center flex-column p-8">
-											<!--begin::Name-->
-											<a href="admin-manajemen-kinerja-dashboard.html" class="text-gray-800 text-hover-primary d-flex flex-column">
-												<!--begin::Image-->
-												<div class="symbol symbol-60px mb-5">
-													<img src="assets/media/illustrations/report.png" alt="" />
-												</div>
-												<!--end::Image-->
-												<!--begin::Title-->
-												<div class="fw-bold mb-2 fs-5">Manajemen Kinerja</div>
-												<!--end::Title-->
-											</a>
-											<!--end::Name-->
-										</div>
-										<!--end::Card body-->
-									</div>
-									<!--end::Card-->
-								</div>
-								<!--end::Col-->
-
-								<!--begin::Col-->
-								<div class="col-4 col-xl-2">
-									<!--begin::Card-->
-									<div class="card bg-transparent">
-										<!--begin::Card body-->
-										<div class="card-body d-flex justify-content-center text-center flex-column p-8">
-											<!--begin::Name-->
-											<a href="admin-tpp-dashboard.html" class="text-gray-800 text-hover-primary d-flex flex-column">
-												<!--begin::Image-->
-												<div class="symbol symbol-60px mb-5">
-													<img src="assets/media/illustrations/data-analysis_6657929.png" alt="" />
-												</div>
-												<!--end::Image-->
-												<!--begin::Title-->
-												<div class="fw-bold mb-2 fs-5">TPP</div>
-												<!--end::Title-->
-											</a>
-											<!--end::Name-->
-										</div>
-										<!--end::Card body-->
-									</div>
-									<!--end::Card-->
-								</div>
-								<!--end::Col-->
-
-								<!--begin::Col-->
-								<div class="col-4 col-xl-2">
-									<!--begin::Card-->
-									<div class="card bg-transparent">
-										<!--begin::Card body-->
-										<div class="card-body d-flex justify-content-center text-center flex-column p-8">
-											<!--begin::Name-->
-											<a href="kgb.html" class="text-gray-800 text-hover-primary d-flex flex-column">
-												<!--begin::Image-->
-												<div class="symbol symbol-60px mb-5">
-													<img src="assets/media/illustrations/data-analysis_6657929.png" alt="" />
-												</div>
-												<!--end::Image-->
-												<!--begin::Title-->
-												<div class="fw-bold mb-2 fs-5">Kenaikan Gaji Berkala</div>
-												<!--end::Title-->
-											</a>
-											<!--end::Name-->
-										</div>
-										<!--end::Card body-->
-									</div>
-									<!--end::Card-->
-								</div>
-								<!--end::Col-->
-
-								<!--begin::Col-->
-								<div class="col-4 col-xl-2">
-									<!--begin::Card-->
-									<div class="card bg-transparent">
-										<!--begin::Card body-->
-										<div class="card-body d-flex justify-content-center text-center flex-column p-8">
-											<!--begin::Name-->
-											<a href="admin-surat-dashboard.html" class="text-gray-800 text-hover-primary d-flex flex-column">
-												<!--begin::Image-->
-												<div class="symbol symbol-60px mb-5">
-													<img src="assets/media/illustrations/email.avif" alt="" />
-												</div>
-												<!--end::Image-->
-												<!--begin::Title-->
-												<div class="fw-bold mb-2 fs-5">Tata Naskah Surat</div>
-												<!--end::Title-->
-											</a>
-											<!--end::Name-->
-										</div>
-										<!--end::Card body-->
-									</div>
-									<!--end::Card-->
-								</div>
-								<!--end::Col-->
-
-								<!--begin::Col-->
-								<div class="col-4 col-xl-2">
-									<!--begin::Card-->
-									<div class="card bg-transparent">
-										<!--begin::Card body-->
-										<div class="card-body d-flex justify-content-center text-center flex-column p-8">
-											<!--begin::Name-->
-											<a href="admin-e-sakip-dashboard.html" class="text-gray-800 text-hover-primary d-flex flex-column">
-												<!--begin::Image-->
-												<div class="symbol symbol-60px mb-5">
-													<img src="assets/media/illustrations/linear.jpeg" alt="" />
-												</div>
-												<!--end::Image-->
-												<!--begin::Title-->
-												<div class="fw-bold mb-2 fs-5">Sakip</div>
-												<!--end::Title-->
-											</a>
-											<!--end::Name-->
-										</div>
-										<!--end::Card body-->
-									</div>
-									<!--end::Card-->
-								</div>
-								<!--end::Col-->
-
-								<!--begin::Col-->
-								<div class="col-4 col-xl-2">
-									<!--begin::Card-->
-									<div class="card bg-transparent">
-										<!--begin::Card body-->
-										<div class="card-body d-flex justify-content-center text-center flex-column p-8">
-											<!--begin::Name-->
-											<a href="laporan.html" class="text-gray-800 text-hover-primary d-flex flex-column">
-												<!--begin::Image-->
-												<div class="symbol symbol-60px mb-5">
-													<img src="assets/media/illustrations/report.png" alt="" />
-												</div>
-												<!--end::Image-->
-												<!--begin::Title-->
-												<div class="fw-bold mb-2 fs-5">Laporan</div>
-												<!--end::Title-->
-											</a>
-											<!--end::Name-->
-										</div>
-										<!--end::Card body-->
-									</div>
-									<!--end::Card-->
-								</div>
-								<!--end::Col-->
-
-								<!--begin::Col-->
-								<div class="col-4 col-xl-2">
-									<!--begin::Card-->
-									<div class="card bg-transparent">
-										<!--begin::Card body-->
-										<div class="card-body d-flex justify-content-center text-center flex-column p-8">
-											<!--begin::Name-->
-											<a href="helpdesk.html" class="text-gray-800 text-hover-primary d-flex flex-column">
-												<!--begin::Image-->
-												<div class="symbol symbol-60px mb-5">
-													<img src="assets/media/illustrations/52388.jpg" alt="" />
-												</div>
-												<!--end::Image-->
-												<!--begin::Title-->
-												<div class="fw-bold mb-2 fs-5">Helpdesk</div>
-												<!--end::Title-->
-											</a>
-											<!--end::Name-->
-										</div>
-										<!--end::Card body-->
-									</div>
-									<!--end::Card-->
-								</div>
-								<!--end::Col-->
-
-								<!--begin::Col-->
-								<div class="col-4 col-xl-2">
-									<!--begin::Card-->
-									<div class="card bg-transparent">
-										<!--begin::Card body-->
-										<div class="card-body d-flex justify-content-center text-center flex-column p-8">
-											<!--begin::Name-->
-											<a href="admin-inovasi-daerah.html" class="text-gray-800 text-hover-primary d-flex flex-column">
-												<!--begin::Image-->
-												<div class="symbol symbol-60px mb-5">
-													<img src="assets/media/illustrations/inno.png" alt="" />
-												</div>
-												<!--end::Image-->
-												<!--begin::Title-->
-												<div class="fw-bold mb-2 fs-5">Si-Indah OI</div>
-												<!--end::Title-->
-											</a>
-											<!--end::Name-->
-										</div>
-										<!--end::Card body-->
-									</div>
-									<!--end::Card-->
-								</div>
-								<!--end::Col-->
-
-							</div>
-							<!--end:Row-->
-
+								<!--end::Actions-->
+							</form>
+							<!--end::Form-->
 						</div>
-						<!--end::Container-->
+						<!--end::Wrapper-->
 					</div>
+					<!--end::Content-->
 					<!--begin::Footer-->
-					<div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
-						<!--begin::Container-->
-						<div class="container d-flex flex-column flex-md-row flex-stack">
-							<!--begin::Copyright-->
-							<div class="text-dark order-2 order-md-1">
-								<span class="text-gray-400 fw-bold me-1">Developed by</span>
-								<a href="#" target="_blank" class="text-muted text-hover-primary fw-bold me-2 fs-6">Diskominfo Kab. Ogan Ilir 2023</a>
-							</div>
-							<!--end::Copyright-->
-							<!--begin::Menu-->
-							<ul class="menu menu-gray-600 menu-hover-primary fw-bold order-1">
-								<li class="menu-item">
-									<a href="#" target="_blank" class="menu-link px-2">Website Pemda</a>
-								</li>
-								<li class="menu-item">
-									<a href="#" target="_blank" class="menu-link px-2">Dokumentasi</a>
-								</li>
-								<li class="menu-item">
-									<a href="#" target="_blank" class="menu-link px-2">Call Center</a>
-								</li>
-							</ul>
-							<!--end::Menu-->
+					<div class="d-flex flex-center flex-wrap fs-6 p-5 pb-0">
+						<!--begin::Links-->
+						<div class="d-flex flex-center fw-bold fs-6">
+							<a href="#" class="text-muted text-hover-primary px-2" target="_blank">About</a>
+							<a href="#" class="text-muted text-hover-primary px-2" target="_blank">Support</a>
+							<a href="#" class="text-muted text-hover-primary px-2" target="_blank">Purchase</a>
 						</div>
-						<!--end::Container-->
+						<!--end::Links-->
 					</div>
 					<!--end::Footer-->
-					<!--end::Content-->
 				</div>
-				<!--end::Wrapper-->
-
+				<!--end::Body-->
 			</div>
-			<!--end::Page-->
+			<!--end::Authentication - Sign-in-->
 		</div>
-		<!--end::Root-->
-
-		<!--begin::Scrolltop-->
-		<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
-			<!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
-			<span class="svg-icon">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-					<rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)" fill="black" />
-					<path d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z" fill="black" />
-				</svg>
-			</span>
-			<!--end::Svg Icon-->
-		</div>
-		<!--end::Scrolltop-->
 		<!--end::Main-->
 		<script>var hostUrl = "assets/";</script>
 		<!--begin::Javascript-->
@@ -630,16 +177,20 @@
 		<script src="assets/plugins/global/plugins.bundle.js"></script>
 		<script src="assets/js/scripts.bundle.js"></script>
 		<!--end::Global Javascript Bundle-->
-		<!--begin::Page Vendors Javascript(used by this page)-->
-		<script src="assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
-		<!--end::Page Vendors Javascript-->
 		<!--begin::Page Custom Javascript(used by this page)-->
-		<script src="assets/js/custom/widgets.js"></script>
-		<script src="assets/js/custom/apps/chat/chat.js"></script>
-		<script src="assets/js/custom/modals/create-app.js"></script>
-		<script src="assets/js/custom/modals/upgrade-plan.js"></script>
+		<script src="assets/js/custom/authentication/sign-in/general.js"></script>
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script>
+            grecaptcha.ready(function () {
+                if (grecaptcha.getResponse() === "") {
+                    alert("Please validate the Google reCaptcha.");
+                } else {
+                    alert("Successful validation! Now you can submit this form to your server side processing.");
+                }
+            });
+        </script>
 	</body>
 	<!--end::Body-->
 </html>
