@@ -26,7 +26,9 @@
 	<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
 	<link href="assets/plugins/clockpicker/jquery-clockpicker.css" rel="stylesheet" >
 	<link href="assets/plugins/clockpicker/bootstrap-clockpicker.css" rel="stylesheet" >
+	<link href="assets/plugins/clock/clock.css" rel="stylesheet">
 	<!--end::Global Stylesheets Bundle-->
+
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -456,13 +458,23 @@
 											<div class="d-flex flex-column mb-7 fv-row clockpicker">
 												<!--begin::Label-->
 												<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
-													<span class="required">Nama Shift</span>
+													<span class="required">Waktu</span>
 													<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
 														title="Specify a card holder's name"></i>
 												</label>
 												<!--end::Label-->
 												<input type="text" class="form-control form-control-solid" placeholder=""
-													name="namaShift" value="18:00" />
+													name="waktu" value="08:00" />
+											</div>
+											<div class="d-flex flex-column mb-7 fv-row">
+												<!--begin::Label-->
+												<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+													<span class="required">Waktu</span>
+													<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
+														title="Specify a card holder's name"></i>
+												</label>
+												<!--end::Label-->
+												<input type="text" class="form-control form-control-solid timepicker" name="open" placeholder="08:00" readonly>
 											</div>
 											<div class="row">
 												<!--begin::Input group-->
@@ -692,13 +704,16 @@
 	<script src="assets/js/custom/documentation/documentation.js"></script>
 	<script src="assets/plugins/clockpicker/jquery-clockpicker.js"></script>
 	<script src="assets/plugins/clockpicker/bootstrap-clockpicker.js"></script>
+	<script src="assets/plugins/clock/timedropper.min.js"></script>
+	<script src="assets/plugins/clock/clock.js"></script>
 	<script type="text/javascript">
 		$('.clockpicker').clockpicker({
 			placement: 'bottom',
 			align: 'left',
 			donetext: 'Done'
 		});
-		</script>
+	</script>
+
 	<!--end::Javascript-->
 </body>
 <!--end::Body-->
