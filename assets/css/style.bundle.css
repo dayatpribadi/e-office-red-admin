@@ -74,14 +74,14 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-/* .bg-transfigma {
+.bg-transfigma {
     background-image: url(../../assets/media/illustrations/bg-vector.png);
     background-size: 100% 200px;
     background-repeat: no-repeat;
     background-position: bottom right;
     position: absolute;
     bottom: 0;
-} */
+}
 
 hr {
     margin: 1rem 0;
@@ -11552,6 +11552,12 @@ fieldset:disabled .btn {
 .bg-body {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important
+}
+
+.bg-body-img {
+    background-image: url(/assets/media/illustrations/bg-test.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bg-transparent {
@@ -54262,7 +54268,7 @@ body {
     .wrapper {
         padding-top: 10px;
         /* padding-left: 350px */
-        padding-left: 300px
+        padding-left: 350px;
     }
 
     .header-fixed[data-kt-sticky-header=on] .wrapper {
@@ -54549,7 +54555,7 @@ body {
         left: 20px;
         z-index: 100;
         overflow: hidden;
-        width: 270px;
+        width: 320px;
         border-radius: 2rem
     }
 
