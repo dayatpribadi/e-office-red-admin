@@ -54401,7 +54401,7 @@ body {
 }
 
 .aside .aside-menu .menu>.menu-item>.menu-link .menu-title {
-    font-size: 1.1rem
+    font-size: 1.3rem
 }
 
 .aside .aside-menu .menu>.menu-item.menu-accordion.show>.menu-link>.menu-icon .svg-icon,
@@ -54533,8 +54533,26 @@ body {
     background-color: #181c32
 }
 
+/* .aside .aside-menu .menu .menu-item>.menu-link.active .menu-title {
+    font-weight: 600;
+    color: #009ef7;
+    border-bottom: 2px solid #009ef7;
+    padding: 0.5rem 0;
+} */
+
 .aside .aside-menu .menu .menu-item>.menu-link.active .menu-title {
-    font-weight: 600
+    font-weight: 700;
+    color: #FFF;
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.aside .aside-menu .menu .menu-item>.menu-link .menu-title {
+    font-size: 1.2rem;
 }
 
 @media (min-width:992px) {
@@ -54548,6 +54566,7 @@ body {
         width: 300px;
         border-radius: 2rem
     } */
+    
     .aside {
         position: fixed;
         top: 20px;
