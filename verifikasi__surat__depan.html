@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-	<!--begin::Head-->
-	<head><base href="">
-		<title>E-Office Kabupaten Ogan Ilir</title>
-		<meta name="description" content="E-Office Kabupaten Ogan Ilir" />
-		<meta name="keywords" content="E-Office Kabupaten Ogan Ilir" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta charset="utf-8" />
-		<meta property="og:locale" content="en_US" />
-		<meta property="og:type" content="article" />
-		<meta property="og:title" content="E-Office Kabupaten Ogan Ilir" />
-		<meta property="og:url" content="#" />
-		<meta property="og:site_name" content="E-Office Kabupaten Ogan Ilir" />
-		<link rel="canonical" href="https://e-office.oganilirkab.go.id" />
-		<link rel="shortcut icon" href="assets/media/logos/fav.png" />
-		<!--begin::Fonts-->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
-		<!--end::Fonts-->
-		<!--begin::Page Vendor Stylesheets(used by this page)-->
-		<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
-		<!--end::Page Vendor Stylesheets-->
-		<!--begin::Global Stylesheets Bundle(used by all pages)-->
-		<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
-		<!--end::Global Stylesheets Bundle-->
-	</head>
-	<!--begin::Body-->
-	<body id="kt_body" class="bg-body">
-		<!--begin::Main-->
-		<div class="d-flex flex-column flex-root">
-			<!--begin::Authentication - Coming Soon-->
-			<div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed pt-20" style="background-image: url(assets/media/illustrations/dozzy-1/14.png">
-				<!--begin::Content-->
-				<div class="d-flex flex-column flex-center p-10 p-lg-20">
-					<!--begin::Logo-->
-					<a href="../../demo3/dist/index.html" class="mb-20">
-						<img alt="Logo" src="assets/media/logos/Logo_Semesta_Horizontal.png" class="h-75px" />
-					</a>
-					<!--end::Logo-->
-					<!--begin::Description-->
-					<div class="fw-bolder fs-2 text-muted mb-5">Informasi hasil verifikasi surat Dinas yang terdaftar pada sistem</div>
-					<!--end::Description-->
-					<form class="form fv-row" >
-						<!--begin::Input group-->
-						<div class="d-flex flex-center">
-							<!--begin::Input-->
-							<input id="searchbox" onkeyup="myFunction()" class="form-control form-control-lg form-control-solid w-md-475px m-2" type="text" name="nomor_surat" placeholder="Cari berdasarkan nomor surat" autocomplete="off" />
-							<!--end::Input-->
-							<!--begin::Action-->
-							<a href="" type="button" id="submit" class="btn btn-lg btn-primary fw-bolder m-2 text-nowrap">
-								<span class="indicator-label">Periksa Surat</span>
-								<span class="indicator-progress">Please wait...
+<!--begin::Head-->
+
+<head>
+	<base href="">
+	<title>E-Office Kabupaten Ogan Ilir</title>
+	<meta name="description" content="E-Office Kabupaten Ogan Ilir" />
+	<meta name="keywords" content="E-Office Kabupaten Ogan Ilir" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="E-Office Kabupaten Ogan Ilir" />
+	<meta property="og:url" content="#" />
+	<meta property="og:site_name" content="E-Office Kabupaten Ogan Ilir" />
+	<link rel="canonical" href="https://e-office.oganilirkab.go.id" />
+	<link rel="shortcut icon" href="assets/media/logos/fav.png" />
+	<!--begin::Fonts-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+	<!--end::Fonts-->
+	<!--begin::Page Vendor Stylesheets(used by this page)-->
+	<link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+	<!--end::Page Vendor Stylesheets-->
+	<!--begin::Global Stylesheets Bundle(used by all pages)-->
+	<link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+	<!--end::Global Stylesheets Bundle-->
+</head>
+<!--begin::Body-->
+
+<body id="kt_body" class="bg-body">
+	<!--begin::Main-->
+	<div class="d-flex flex-column flex-root">
+		<!--begin::Authentication - Coming Soon-->
+		<div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed pt-20"
+			style="background-image: url(assets/media/illustrations/dozzy-1/14.png)">
+			<!--begin::Content-->
+			<div class="d-flex flex-column flex-center p-10 p-lg-20">
+				<!--begin::Logo-->
+				<a href="index.html" class="mb-20">
+					<img alt="Logo" src="assets/media/logos/Logo_Semesta_Horizontal.png" class="h-75px" />
+				</a>
+				<!--end::Logo-->
+				<!--begin::Description-->
+				<div class="fw-bolder fs-2 text-muted mb-5">Informasi hasil verifikasi surat Dinas yang terdaftar pada
+					sistem</div>
+				<!--end::Description-->
+				<form class="form fv-row">
+					<!--begin::Input group-->
+					<div class="d-flex flex-center">
+						<!--begin::Input-->
+						<input id="searchbox" onkeyup="myFunction()"
+							class="form-control form-control-lg form-control-solid w-md-475px m-2" type="text"
+							name="nomor_surat" placeholder="Cari berdasarkan nomor surat" autocomplete="off" />
+						<!--end::Input-->
+						<!--begin::Action-->
+						<a href="" type="button" id="submit" class="btn btn-lg btn-primary fw-bolder m-2 text-nowrap">
+							<span class="indicator-label">Periksa Surat</span>
+							<span class="indicator-progress">Please wait...
 								<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-							</a>
-							<!--end::Action-->
-						</div>
-						<!--end::Input group-->
-					</form>
-					<!--end::Form-->
-				</div>
-				<!--end::Content-->
+						</a>
+						<!--end::Action-->
+					</div>
+					<!--end::Input group-->
+				</form>
+				<!--end::Form-->
 			</div>
-			<!--end::Authentication - Coming Soon-->
+			<!--end::Content-->
 		</div>
-		<!--end::Main-->
-		<script>var hostUrl = "assets/";</script>
-		<!--begin::Javascript-->
-		<!--begin::Global Javascript Bundle(used by all pages)-->
-		<script src="assets/plugins/global/plugins.bundle.js"></script>
-		<script src="assets/js/scripts.bundle.js"></script>
-		<!--end::Global Javascript Bundle-->
-		<!--begin::Page Custom Javascript(used by this page)-->
-		<script src="assets/js/custom/authentication/sign-up/coming-soon.js"></script>
-		<!--end::Page Custom Javascript-->
-		<!--end::Javascript-->
-	</body>
-	<!--end::Body-->
+		<!--end::Authentication - Coming Soon-->
+	</div>
+	<!--end::Main-->
+	<script>
+		var hostUrl = "assets/";
+	</script>
+	<!--begin::Javascript-->
+	<!--begin::Global Javascript Bundle(used by all pages)-->
+	<script src="assets/plugins/global/plugins.bundle.js"></script>
+	<script src="assets/js/scripts.bundle.js"></script>
+	<!--end::Global Javascript Bundle-->
+	<!--begin::Page Custom Javascript(used by this page)-->
+	<script src="assets/js/custom/authentication/sign-up/coming-soon.js"></script>
+	<!--end::Page Custom Javascript-->
+	<!--end::Javascript-->
+</body>
+<!--end::Body-->
+
 </html>
