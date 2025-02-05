@@ -62,37 +62,59 @@
 						<!--begin::Engage widget 2-->
 						<div class="card card-xl-stretch mb-5 mb-xl-0 rounded">
 							<!--begin::Body-->
-							<div class="card-body py-10 d-flex flex-column flex-lg-row shadow flex-stack"
-								style="border: 8px solid #037bcb; border-radius: 8px;">
+							<div class="card-body" style="border: 8px solid #037bcb; border-radius: 8px;">
 								<!--begin::Info-->
 								<!--begin::Wrapper-->
-								<div class="col-12 h-75px py-5 mb-5">
+								<div class="col-12 py-10">
 									<!--begin::Row-->
-									<div class="row mb-5 mb-lg-0">
+									<div class="row justify-content-between align-items-center">
 										<!--begin::Col-->
-										<div
-											class="col-12 col-md-10 d-flex bg-light rounded align-items-center mb-3 mb-lg-0">
-											<!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
-											<span class="svg-icon svg-icon-1 svg-icon-gray-400 me-1">
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-													viewBox="0 0 24 24" fill="none">
-													<rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546"
-														height="2" rx="1" transform="rotate(45 17.0365 15.1223)"
-														fill="black" />
-													<path
-														d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
-														fill="black" />
-												</svg>
-											</span>
-											<!--end::Svg Icon-->
-											<!--begin::Input-->
-											<input type="text" class="form-control form-control-flush flex-grow-1"
-												name="search" value=""
-												placeholder="Silakan masukkan nomor pendaftaran untuk melihat riwayat surat Anda..." />
-											<!--end::Input-->
+										<div class="col-12 col-md-5 mb-3">
+											<div class="d-flex bg-light rounded align-items-center px-3">
+												<!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
+												<span class="svg-icon svg-icon-1 svg-icon-gray-400 me-1">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+														viewBox="0 0 24 24" fill="none">
+														<rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546"
+															height="2" rx="1" transform="rotate(45 17.0365 15.1223)"
+															fill="black" />
+														<path
+															d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
+															fill="black" />
+													</svg>
+												</span>
+												<!--end::Svg Icon-->
+												<!--begin::Input-->
+												<input type="text" class="form-control form-control-flush flex-grow-1"
+													name="search" value=""
+													placeholder="Silakan masukkan nomor pendaftaran untuk melihat riwayat surat Anda..." />
+												<!--end::Input-->
+											</div>
 										</div>
 										<!--begin::Action-->
-										<div class="col-12 col-md-2 text-end">
+										<div class="col-12 col-md-5 mb-3">
+											<div class="row justify-content-center align-items-center rounded">
+												<div class="col-12 col-md-6 d-flex mb-3 mb-md-0">
+													<div class="captcha">
+														<div class="rounded">
+															<img class="rounded" width="200"
+																src="https://semesta.oganilirkab.go.id/captcha/default?DFw8gYWf">
+														</div>
+													</div>
+													<button type="button" class="btn btn-icon text-danger" id="reload"
+														wire:click.prevent="reloadCaptcha()">
+														<i class="fa fa-undo "></i>
+													</button>
+												</div>
+												<div class="col-12 col-md-6 ">
+													<input id="captcha" type="text" class="form-control"
+														placeholder="Masukkan Captcha" wire:model.defer="captcha"
+														wire:keydown.enter="login()">
+												</div>
+
+											</div>
+										</div>
+										<div class="col-12 col-md-2 mb-3 text-end">
 											<button type="submit" class="btn btn-dark"
 												id="kt_advanced_search_button_1">Lacak Layanan</button>
 										</div>
