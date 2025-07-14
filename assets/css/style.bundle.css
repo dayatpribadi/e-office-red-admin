@@ -11569,7 +11569,7 @@ fieldset:disabled .btn {
 }
 
 .bg-body-img3 {
-    background-image: url(../media/illustrations/21.gif);
+    background-image: url("../media/illustrations/21.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
