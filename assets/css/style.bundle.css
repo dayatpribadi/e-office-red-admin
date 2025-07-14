@@ -11555,8 +11555,30 @@ fieldset:disabled .btn {
 }
 
 .bg-body-img {
-    background-image: url(/assets/media/illustrations/bg-test.svg);
+    background-image: url(/assets/media/illustrations/4.gif);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-body-img2 {
+    background-image: url(/assets/media/illustrations/1.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-body-img3 {
+    background-image: url(/assets/media/illustrations/21.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-body-img4 {
+    background-image: url(/assets/media/illustrations/2.gif);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -54370,21 +54392,25 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .bg-pattern2 {
     background-image: url(../media/misc/pattern-5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .bg-pattern3 {
     background-image: url(../media/misc/pattern-2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .bg-pattern4 {
     background-image: url(../media/misc/pattern-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .bg-pattern5 {
     background-image: url(../media/misc/pattern-9.jpg);
     background-repeat: no-repeat;
@@ -54543,9 +54569,12 @@ body {
 .aside .aside-menu .menu .menu-item>.menu-link.active .menu-title {
     font-weight: 700;
     color: #FFF;
-    background: #00c6ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #00c6ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 0.5rem 1rem;
     border-radius: 0.3rem;
     font-size: 1.2rem;
@@ -54566,7 +54595,7 @@ body {
         width: 300px;
         border-radius: 2rem
     } */
-    
+
     .aside {
         position: fixed;
         top: 20px;
